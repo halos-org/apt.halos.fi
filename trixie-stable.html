@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaLOS APT Repository</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb"><a href="index.html">Back to all distributions</a></div>
+        <header>
+            <h1>HaLOS APT Repository</h1>
+            <p class="subtitle">Debian packages for the HaLOS operating system</p>
+        </header>
+
+        <div class="dist-section">
+            <div class="dist-card">
+                <h3>Trixie Stable</h3>
+                <p class="dist-meta">19 packages</p>
+                <p class="dist-desc">HaLOS packages for Debian Trixie (stable releases)</p>
+                <div class="package-list">
+                    <strong>Available Packages:</strong>
+                    <details class="component-group" open>
+                        <summary>Main Packages <span class="pkg-count">(19 packages)</span></summary>
+                        <div class="component-content">
+                        <div class="package-item">
+                            <h4>cockpit-apt <span class="version">v0.3.0-5</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Modern APT package manager interface for Cockpit A web-based package manager interface for Cockpit that provides: - Browse packages by Debian section (games, web, development, etc.) - Search and filter packages by name or description - View detailed package information, dependencies, and file lists - Install and remove packages with progress tracking - View available package updates - Modern React-based UI with PatternFly components . This package provides a modern, user-friendly interface for managing APT packages through Cockpit&#x27;s web interface, designed for Debian and Ubuntu systems.</p>
+                            <div class="install-cmd">sudo apt install cockpit-apt</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>cockpit-authelia-users <span class="version">v0.2.1-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Cockpit plugin for Authelia user management A web-based user management interface for Authelia that provides: - List, create, edit, and delete Authelia users - Manage user groups and permissions - Password management with Argon2id hashing - Modern React-based UI with PatternFly components . This package provides a user-friendly interface for managing Authelia users through Cockpit&#x27;s web interface.</p>
+                            <div class="install-cmd">sudo apt install cockpit-authelia-users</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>cockpit-container-apps <span class="version">v0.1.1-3</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Container app management interface for Cockpit A web-based container app manager interface for Cockpit that provides: - Browse container apps by store and category - Search and filter apps by name or description - View detailed app information and configuration - Install and remove container app packages - Configure container apps through dynamic forms - Modern React-based UI with PatternFly components . This package provides a user-friendly interface for managing container applications through Cockpit&#x27;s web interface, designed for the HaLOS distribution.</p>
+                            <div class="install-cmd">sudo apt install cockpit-container-apps</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>cockpit-dockermanager <span class="version">v1.0.7.3-2</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Cockpit plugin for Docker container management Docker Manager is a lightweight and intuitive utility designed to help you manage your Docker containers via a simplified web interface through Cockpit. . Features: * List, start, stop, search and restart containers * View container status, uptime, details and exposed ports * In-window terminal with individual container terminal functionality * Image management</p>
+                            <div class="install-cmd">sudo apt install cockpit-dockermanager</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>cockpit-networkmanager-halos <span class="version">v0.2.0-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Cockpit NetworkManager module with WiFi support for HaLOS This package provides the NetworkManager integration for Cockpit with comprehensive WiFi configuration support including: . - WiFi network scanning and connection management - WPA2/WPA3 Personal authentication - Access Point (hotspot) mode configuration - Simultaneous AP + Client mode support . This is a HaLOS-specific build from the hatlabs/cockpit fork (wifi branch) with WiFi features under development for potential upstream contribution.</p>
+                            <div class="install-cmd">sudo apt install cockpit-networkmanager-halos</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>container-packaging-tools <span class="version">v0.5.0-7</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Generate Debian packages from container application definitions container-packaging-tools is a command-line tool that converts simple container app definitions into full-fledged Debian packages. It eliminates the need for package maintainers to understand Debian packaging internals. . Features: - Template-based generation using Jinja2 - Input validation with JSON schemas - Consistent package structure across all apps - Support for Docker Compose orchestration - Systemd service integration . The tool reads docker-compose.yml, config.yml, and metadata.json from application directories and generates complete Debian package structures ready for building with dpkg-buildpackage.</p>
+                            <div class="install-cmd">sudo apt install container-packaging-tools</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>halos <span class="version">v0.2.10-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Base system metapackage for HaLOS This metapackage installs the base HaLOS system, providing web-based Raspberry Pi management through Cockpit. . The HaLOS base system includes: * Cockpit web interface for system management * Network configuration with Wi-Fi hotspot support * Storage management through cockpit-storaged * Package management through cockpit-apt * Container app management through cockpit-container-apps * Homarr dashboard for container app access * Automatic container discovery and dashboard integration * Custom HaLOS branding . HaLOS is a Debian-based operating system designed for easy management of Raspberry Pi systems through a web interface.</p>
+                            <div class="install-cmd">sudo apt install halos</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>halos-cockpit-config <span class="version">v0.5.0-3</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">HaLOS Cockpit configuration and branding This package provides HaLOS-specific configuration for the Cockpit web interface, including branding (logo, CSS, favicon), Homarr dashboard integration, and mDNS subdomain advertisement for cockpit.{hostname}.local.</p>
+                            <div class="install-cmd">sudo apt install halos-cockpit-config</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>halos-core-containers <span class="version">v0.2.3-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Core infrastructure stack (Traefik, Authelia, Homarr) HaLOS core infrastructure providing the foundational web services: . - Traefik: Reverse proxy and load balancer for all HaLOS web traffic - Authelia: Single Sign-On (SSO) identity provider with OIDC support - Homarr: Dashboard landing page for accessing all installed applications . These services are tightly integrated and managed as a single unit. Traefik handles HTTPS termination and routing, Authelia provides authentication, and Homarr serves as the main user interface.</p>
+                            <div class="install-cmd">sudo apt install halos-core-containers</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>halos-homarr-branding <span class="version">v0.2.2-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">HaLOS branding and default configuration for Homarr dashboard This package provides the Hat Labs &quot;HaLOS&quot; branding configuration for the Homarr dashboard, including default theme colors, admin credentials, and pre-configured board layout. The homarr-container-adapter reads this configuration during first-boot setup to initialize Homarr with HaLOS branding.</p>
+                            <div class="install-cmd">sudo apt install halos-homarr-branding</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>halos-marine <span class="version">v0.2.10-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">HaLOS marine system metapackage This metapackage extends the base HaLOS system with marine navigation and monitoring software. . The HaLOS marine system adds: * Marine container store for browsing marine applications * Signal K server for marine data collection and distribution * Pre-configured marine software stack . This package depends on the halos base metapackage and adds marine-specific components for boat and vessel management.</p>
+                            <div class="install-cmd">sudo apt install halos-marine</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>halos-mdns-publisher <span class="version">v0.2.3-6</span> <span class="arch-badge">arm64</span></h4>
+                            <p class="description">HaLOS mDNS subdomain publisher and resolver Native systemd service that advertises container subdomains via mDNS. Monitors Docker containers for the halos.subdomain label and uses avahi-publish to advertise the corresponding subdomains. . Also configures the system to resolve multi-label mDNS hostnames (e.g., auth.hostname.local) which are used by HaLOS services. . Features: - Monitors Docker for containers with halos.subdomain label - Publishes subdomains as &lt;subdomain&gt;.&lt;hostname&gt;.local - Configures system mDNS resolution for multi-label hostnames - Automatic cleanup when containers stop</p>
+                            <div class="install-cmd">sudo apt install halos-mdns-publisher</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>homarr-container-adapter <span class="version">v0.4.2-1</span> <span class="arch-badge">arm64</span></h4>
+                            <p class="description">Homarr dashboard adapter for HaLOS Adapter service that handles first-boot setup and container auto-discovery for the Homarr dashboard. . Features: - Completes Homarr onboarding with HaLOS branding - Creates admin user and default dashboard - Watches Docker events for real-time container discovery - Auto-adds containers with homarr.* labels to dashboard</p>
+                            <div class="install-cmd">sudo apt install homarr-container-adapter</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>marine-avnav-container <span class="version">v20251028-11</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Touch-optimized chart plotter for sailing and motor yachts AvNav is a navigation software specifically designed for touch operation on tablets and smartphones. It combines a chart plotter with routing capabilities and integration with marine electronics. . Features: - Touch-optimized web interface - Multiple chart format support (mbtiles, gemf, xml) - Route planning and navigation - AIS integration - Anchor watch functionality - NMEA data display and logging - Plugin system for extensions</p>
+                            <div class="install-cmd">sudo apt install marine-avnav-container</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>marine-container-store <span class="version">v0.3.0-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Marine container application store for Cockpit Container Apps This package provides the store definition and branding for the Marine container application store, designed to work with cockpit-container-apps. . When installed alongside cockpit-container-apps, it enables a curated view of marine and sailing applications including navigation software, chart plotters, weather routing, data logging, and monitoring dashboards. . The store filters packages from apt.hatlabs.fi and other repositories based on Debian tags (debtags), sections, and package metadata.</p>
+                            <div class="install-cmd">sudo apt install marine-container-store</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>marine-grafana-container <span class="version">v12.3.2-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Data visualization and monitoring platform Grafana is an open-source platform for monitoring and observability. Create beautiful dashboards to visualize marine data from InfluxDB, Signal K, and other data sources. . Features: - Rich visualization options (graphs, gauges, maps) - Multiple data source support - Alert notifications - Dashboard sharing and templating - Plugin ecosystem</p>
+                            <div class="install-cmd">sudo apt install marine-grafana-container</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>marine-influxdb-container <span class="version">v2.8.0-1</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Time-series database for marine data logging InfluxDB is a high-performance time-series database designed for handling large volumes of timestamped data. Perfect for marine applications to store and analyze historical data from Signal K, sensors, and other sources. . Features: - High-performance time-series data storage - Built-in web UI for data exploration - Powerful query language (Flux) - Retention policies for automatic data management - Integration with Grafana for visualization</p>
+                            <div class="install-cmd">sudo apt install marine-influxdb-container</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>marine-opencpn-container <span class="version">v5.12.4-8</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Open source chart plotter and navigation software OpenCPN is a free software project to create a concise chart plotter and navigation software for use as an underway or planning tool. Designed to be used at the helm station of your boat while underway. . Features: - Raster and vector chart support - AIS target tracking - GPS and autopilot integration - Weather routing and GRIB file support - Extensive plugin system - Route and waypoint management</p>
+                            <div class="install-cmd">sudo apt install marine-opencpn-container</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>marine-signalk-server-container <span class="version">v2.21.2-2</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Signal K server for marine data processing and routing Signal K is a modern and open data format for marine use. A Signal K server provides a central hub for collecting, processing, and distributing marine data from multiple sources including NMEA 0183, NMEA 2000, and other sensors. . Features: - WebSocket API for real-time data streaming - Data logging and historical playback - Web app server for marine applications - Plugin system for extending functionality - Instrument integration and display</p>
+                            <div class="install-cmd">sudo apt install marine-signalk-server-container</div>
+                        </div>
+                        </div>
+                    </details>
+                </div>
+                <details class="install-section">
+                    <summary>Add this distribution</summary>
+                    <div class="install-content">
+                        <div class="command-block">echo "deb [signed-by=/usr/share/keyrings/halos.gpg] https://apt.halos.fi trixie-stable main" | sudo tee -a /etc/apt/sources.list.d/halos.list</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="info-box">
+            <h3>Repository Signing Key</h3>
+            <p>All packages are cryptographically signed for security.</p>
+            <p style="margin-top: 10px;">
+                Download: <a href="halos-apt-key.asc">halos-apt-key.asc</a><br>
+                Fingerprint: <code>1F618CAAB3B6F165AC58EFBCB1835859F78C7A12</code>
+            </p>
+        </div>
+
+        <footer>
+            <p>Last updated: 2026-02-14 22:46:42 UTC</p>
+            <p><a href="index.html">Back to all distributions</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,456 @@
+Package: cockpit-apt
+Version: 0.3.0-5
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 13549
+Depends: cockpit (>= 276), python3, python3-apt
+Filename: pool/trixie-stable/main/cockpit-apt_0.3.0-5_all.deb
+Size: 1334476
+MD5sum: 83fa8f2c27d1e2a3d45074b86f076b5e
+SHA1: 69bae1a4b6122048601270df5ae073f5070be228
+SHA256: 9be821d6e0e695eaa4f05a218c94bc7a6797265cd81e150679c6af1d3e229505
+Section: admin
+Priority: optional
+Homepage: https://github.com/hatlabs/cockpit-apt
+Description: Modern APT package manager interface for Cockpit
+ A web-based package manager interface for Cockpit that provides:
+  - Browse packages by Debian section (games, web, development, etc.)
+  - Search and filter packages by name or description
+  - View detailed package information, dependencies, and file lists
+  - Install and remove packages with progress tracking
+  - View available package updates
+  - Modern React-based UI with PatternFly components
+ .
+ This package provides a modern, user-friendly interface for managing
+ APT packages through Cockpit's web interface, designed for Debian
+ and Ubuntu systems.
+
+Package: cockpit-authelia-users
+Version: 0.2.1-1
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 13071
+Depends: python3, cockpit (>= 276), python3-yaml, python3-argon2
+Filename: pool/trixie-stable/main/cockpit-authelia-users_0.2.1-1_all.deb
+Size: 1270588
+MD5sum: 769dc017df0c6e559a89af0c4e7edad3
+SHA1: 1cb4af306f5b98db1a74a9f4d28b68ce3f2c9380
+SHA256: ddf05c731031a834338666bbcf9c78afe786d027e31503a988b9006e4c94a411
+Section: admin
+Priority: optional
+Homepage: https://github.com/hatlabs/cockpit-authelia-users
+Description: Cockpit plugin for Authelia user management
+ A web-based user management interface for Authelia that provides:
+  - List, create, edit, and delete Authelia users
+  - Manage user groups and permissions
+  - Password management with Argon2id hashing
+  - Modern React-based UI with PatternFly components
+ .
+ This package provides a user-friendly interface for managing
+ Authelia users through Cockpit's web interface.
+
+Package: cockpit-container-apps
+Version: 0.1.1-3
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 12944
+Depends: python3-yaml, python3:any, cockpit (>= 276), python3-apt
+Filename: pool/trixie-stable/main/cockpit-container-apps_0.1.1-3_all.deb
+Size: 1270096
+MD5sum: 81fd118de86174371eb01ef9cc667f3e
+SHA1: b58b08b75e75a823752458831fc69540bead35e8
+SHA256: dddac806e400c30a14562969e49ce3660bdc36e787f9b1ed40200939199769f2
+Section: admin
+Priority: optional
+Homepage: https://github.com/hatlabs/cockpit-container-apps
+Description: Container app management interface for Cockpit
+ A web-based container app manager interface for Cockpit that provides:
+  - Browse container apps by store and category
+  - Search and filter apps by name or description
+  - View detailed app information and configuration
+  - Install and remove container app packages
+  - Configure container apps through dynamic forms
+  - Modern React-based UI with PatternFly components
+ .
+ This package provides a user-friendly interface for managing container
+ applications through Cockpit's web interface, designed for the HaLOS
+ distribution.
+
+Package: cockpit-dockermanager
+Version: 1.0.7.3-2
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 76
+Depends: cockpit (>= 200)
+Recommends: docker.io | docker-ce
+Filename: pool/trixie-stable/main/cockpit-dockermanager_1.0.7.3-2_all.deb
+Size: 17352
+MD5sum: df3a97c06ad9b72631a1754c9a353864
+SHA1: a7bc4bd7bc394880ab7b6e2b91e14ba4fff1901c
+SHA256: 759768e31233510298bd6ba9cfa7cf38dd30a818c12a4b8f02d80e7843717267
+Section: admin
+Priority: optional
+Homepage: https://github.com/chrisjbawden/cockpit-dockermanager
+Description: Cockpit plugin for Docker container management
+ Docker Manager is a lightweight and intuitive utility designed to help you
+ manage your Docker containers via a simplified web interface through Cockpit.
+ .
+ Features:
+  * List, start, stop, search and restart containers
+  * View container status, uptime, details and exposed ports
+  * In-window terminal with individual container terminal functionality
+  * Image management
+
+Package: cockpit-networkmanager-halos
+Version: 0.2.0-1
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 18130
+Depends: cockpit (>= 276), network-manager (>= 1.20)
+Conflicts: cockpit-networkmanager
+Replaces: cockpit-networkmanager
+Provides: cockpit-networkmanager
+Filename: pool/trixie-stable/main/cockpit-networkmanager-halos_0.2.0-1_all.deb
+Size: 1828348
+MD5sum: b96ac639d1e78c62b5e7a4efb940219c
+SHA1: 86d79ca8eaab12179f58dbd479e1b8b8a3d47327
+SHA256: cf90f833d6cdd2fbeb7f8e52928c149d36d0b39339eb83f08f2f3a0f692219ba
+Section: admin
+Priority: optional
+Homepage: https://github.com/hatlabs/cockpit
+Description: Cockpit NetworkManager module with WiFi support for HaLOS
+ This package provides the NetworkManager integration for Cockpit with
+ comprehensive WiFi configuration support including:
+ .
+  - WiFi network scanning and connection management
+  - WPA2/WPA3 Personal authentication
+  - Access Point (hotspot) mode configuration
+  - Simultaneous AP + Client mode support
+ .
+ This is a HaLOS-specific build from the hatlabs/cockpit fork (wifi branch)
+ with WiFi features under development for potential upstream contribution.
+
+Package: container-packaging-tools
+Version: 0.5.0-7
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 363
+Depends: python3-jinja2, python3-pil, python3-pydantic (>= 2.0), python3-requests, python3-yaml, python3:any, dpkg-dev
+Filename: pool/trixie-stable/main/container-packaging-tools_0.5.0-7_all.deb
+Size: 68648
+MD5sum: 73137c089c5777978ffb28d2373e752b
+SHA1: a6efc5bef4667a5a224066609b2c2bb8b17ea4c8
+SHA256: ece696b50577006138da2c6ff6153cd4d92cc2a24af56960d85f05784c0b92aa
+Section: devel
+Priority: optional
+Homepage: https://github.com/hatlabs/container-packaging-tools
+Description: Generate Debian packages from container application definitions
+ container-packaging-tools is a command-line tool that converts simple
+ container app definitions into full-fledged Debian packages. It eliminates
+ the need for package maintainers to understand Debian packaging internals.
+ .
+ Features:
+  - Template-based generation using Jinja2
+  - Input validation with JSON schemas
+  - Consistent package structure across all apps
+  - Support for Docker Compose orchestration
+  - Systemd service integration
+ .
+ The tool reads docker-compose.yml, config.yml, and metadata.json from
+ application directories and generates complete Debian package structures
+ ready for building with dpkg-buildpackage.
+
+Package: halos
+Version: 0.2.10-1
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 12
+Depends: cockpit, cockpit-networkmanager, cockpit-networkmanager-halos, cockpit-storaged, cockpit-apt, cockpit-authelia-users, cockpit-dockermanager, cockpit-container-apps, halos-cockpit-config, docker.io (>= 20.10) | docker-ce (>= 20.10), docker-compose | docker-compose-plugin, docker-cli, halos-core-containers, homarr-container-adapter, halos-mdns-publisher
+Filename: pool/trixie-stable/main/halos_0.2.10-1_all.deb
+Size: 2518
+MD5sum: f0eac7bb41e00afa40caa2aa7ef3a25c
+SHA1: 2b9dd14a4ad9a4b0bbb48229b0659f33a1b490cd
+SHA256: bebb6b4442d91327d3f1550ebb359c0f1fbb64473e25ae7ed92bf11bf130a7ec
+Section: metapackages
+Priority: optional
+Homepage: https://github.com/hatlabs/halos-metapackages
+Description: Base system metapackage for HaLOS
+ This metapackage installs the base HaLOS system, providing web-based
+ Raspberry Pi management through Cockpit.
+ .
+ The HaLOS base system includes:
+  * Cockpit web interface for system management
+  * Network configuration with Wi-Fi hotspot support
+  * Storage management through cockpit-storaged
+  * Package management through cockpit-apt
+  * Container app management through cockpit-container-apps
+  * Homarr dashboard for container app access
+  * Automatic container discovery and dashboard integration
+  * Custom HaLOS branding
+ .
+ HaLOS is a Debian-based operating system designed for easy management
+ of Raspberry Pi systems through a web interface.
+
+Package: halos-cockpit-config
+Version: 0.5.0-3
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 59
+Depends: cockpit, avahi-utils, xdg-utils
+Breaks: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
+Replaces: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
+Provides: cockpit-branding-halos, halos-cockpit-branding
+Filename: pool/trixie-stable/main/halos-cockpit-config_0.5.0-3_all.deb
+Size: 22820
+MD5sum: 83e6fd5082c43f8509f81989e1696aa2
+SHA1: abc5fd55751489864772020ffa2d18e83a977988
+SHA256: 9d1269a883f39f2dae7374a88e4c3dbf0811810f9be219e6131adf893b2c7a1b
+Section: admin
+Priority: optional
+Homepage: https://github.com/hatlabs/halos-distro
+Description: HaLOS Cockpit configuration and branding
+ This package provides HaLOS-specific configuration for the Cockpit
+ web interface, including branding (logo, CSS, favicon), Homarr dashboard
+ integration, and mDNS subdomain advertisement for cockpit.{hostname}.local.
+
+Package: halos-core-containers
+Version: 0.2.3-1
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 126
+Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), halos-homarr-branding
+Recommends: halos-cockpit-config
+Conflicts: halos-reverse-proxy
+Provides: halos-reverse-proxy
+Filename: pool/trixie-stable/main/halos-core-containers_0.2.3-1_all.deb
+Size: 46396
+MD5sum: 508131a6fcf9193945a7650b36cc4167
+SHA1: 907e1bdf6cb8b40bbf27ed3b4fa7e8244398db65
+SHA256: 519bf628b102799ac1800415fafeccf68269b166488578b2b92f298cdd4c634e
+Section: web
+Priority: optional
+Homepage: https://github.com/hatlabs/halos-core-containers
+Description: Core infrastructure stack (Traefik, Authelia, Homarr)
+ HaLOS core infrastructure providing the foundational web services:
+ .
+  - Traefik: Reverse proxy and load balancer for all HaLOS web traffic
+  - Authelia: Single Sign-On (SSO) identity provider with OIDC support
+  - Homarr: Dashboard landing page for accessing all installed applications
+ .
+ These services are tightly integrated and managed as a single unit.
+ Traefik handles HTTPS termination and routing, Authelia provides
+ authentication, and Homarr serves as the main user interface.
+Tag: role::container-app, field::core, category::infrastructure, interface::web
+
+Package: halos-homarr-branding
+Version: 0.2.2-1
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 757
+Depends: xdg-utils
+Recommends: halos-core-containers | halos-homarr-container
+Filename: pool/trixie-stable/main/halos-homarr-branding_0.2.2-1_all.deb
+Size: 398350
+MD5sum: 1a8d3caa07e4f09fc0792e501cd4668d
+SHA1: b2be90f0f00d1f3e178b530813e641fd930d8b4b
+SHA256: 9ffa8744bf7c45fd308db7ce4081e3ccd871000aa8212d3644fb82dc094a8632
+Section: admin
+Priority: optional
+Homepage: https://github.com/hatlabs/halos-distro
+Description: HaLOS branding and default configuration for Homarr dashboard
+ This package provides the Hat Labs "HaLOS" branding configuration for
+ the Homarr dashboard, including default theme colors, admin credentials,
+ and pre-configured board layout. The homarr-container-adapter reads this
+ configuration during first-boot setup to initialize Homarr with HaLOS
+ branding.
+
+Package: halos-marine
+Version: 0.2.10-1
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 12
+Depends: halos (>= 0.2.10-1), gpsd, marine-container-store, marine-signalk-server-container
+Filename: pool/trixie-stable/main/halos-marine_0.2.10-1_all.deb
+Size: 2350
+MD5sum: f4eabb745d3972311051fdaebc2bafab
+SHA1: ec2847ad4a2e706ba07876045bed2f4de8665092
+SHA256: f807be9d02d77231230afdc42db0f270dbe817152fb00ccdb914ea2374216615
+Section: metapackages
+Priority: optional
+Homepage: https://github.com/hatlabs/halos-metapackages
+Description: HaLOS marine system metapackage
+ This metapackage extends the base HaLOS system with marine navigation
+ and monitoring software.
+ .
+ The HaLOS marine system adds:
+  * Marine container store for browsing marine applications
+  * Signal K server for marine data collection and distribution
+  * Pre-configured marine software stack
+ .
+ This package depends on the halos base metapackage and adds marine-specific
+ components for boat and vessel management.
+
+Package: marine-avnav-container
+Version: 20251028-11
+Architecture: all
+Maintainer: Hat Labs <support@hatlabs.fi>
+Installed-Size: 108
+Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
+Filename: pool/trixie-stable/main/marine-avnav-container_20251028-11_all.deb
+Size: 66918
+MD5sum: 75b5d54753823dd39601f6d7cbc28f12
+SHA1: b8cd1222d64127f9c6b0523627da90a145c8b289
+SHA256: 392aaec7e8c3c96d5a9059d00405076bdc77e9ad65da8be98114cc56547af2ac
+Section: graphics
+Priority: optional
+Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
+Description: Touch-optimized chart plotter for sailing and motor yachts
+ AvNav is a navigation software specifically designed for touch operation on
+ tablets and smartphones. It combines a chart plotter with routing
+ capabilities and integration with marine electronics.
+ .
+ Features:
+ - Touch-optimized web interface
+ - Multiple chart format support (mbtiles, gemf, xml)
+ - Route planning and navigation
+ - AIS integration
+ - Anchor watch functionality
+ - NMEA data display and logging
+ - Plugin system for extensions
+Tag: role::container-app, field::marine, field::navigation, field::geography, category::navigation, category::chartplotters, scope::application, interface::web, use::routing, works-with::maps, x-display-name::AvNav
+
+Package: marine-container-store
+Version: 0.3.0-1
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 17
+Filename: pool/trixie-stable/main/marine-container-store_0.3.0-1_all.deb
+Size: 3100
+MD5sum: 87a84a187154f6b5343bb8d5140648b2
+SHA1: c03880db67ec5a8fcaece923f3118ef856465447
+SHA256: fd7cba4eebcdf7df6858be4d789415e579c674e50b37ca4b3c3bb78443cbbc99
+Section: admin
+Priority: optional
+Homepage: https://github.com/hatlabs/halos-marine-containers
+Description: Marine container application store for Cockpit Container Apps
+ This package provides the store definition and branding for the Marine
+ container application store, designed to work with cockpit-container-apps.
+ .
+ When installed alongside cockpit-container-apps, it enables a curated
+ view of marine and sailing applications including navigation software,
+ chart plotters, weather routing, data logging, and monitoring dashboards.
+ .
+ The store filters packages from apt.hatlabs.fi and other repositories
+ based on Debian tags (debtags), sections, and package metadata.
+Tag: role::container-store
+
+Package: marine-grafana-container
+Version: 12.3.2-1
+Architecture: all
+Maintainer: Hat Labs <support@hatlabs.fi>
+Installed-Size: 54
+Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
+Recommends: marine-influxdb-container
+Filename: pool/trixie-stable/main/marine-grafana-container_12.3.2-1_all.deb
+Size: 9112
+MD5sum: 67a9496a2df249f98d8212fdc15f5f35
+SHA1: 3894d8af36e8254c6d432ad439133c7bbe203a25
+SHA256: 060e112e3e29709b30d88f4abe24b047eb29be6a8923dd01a0b2b8f84c1c4d8d
+Section: web
+Priority: optional
+Homepage: https://grafana.com/
+Description: Data visualization and monitoring platform
+ Grafana is an open-source platform for monitoring and observability. Create
+ beautiful dashboards to visualize marine data from InfluxDB, Signal K, and
+ other data sources.
+ .
+ Features:
+ - Rich visualization options (graphs, gauges, maps)
+ - Multiple data source support
+ - Alert notifications
+ - Dashboard sharing and templating
+ - Plugin ecosystem
+Tag: role::container-app, field::marine, category::visualization, category::monitoring, interface::web, use::monitoring, works-with::logfile, x-display-name::Grafana
+
+Package: marine-influxdb-container
+Version: 2.8.0-1
+Architecture: all
+Maintainer: Hat Labs <support@hatlabs.fi>
+Installed-Size: 50
+Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
+Filename: pool/trixie-stable/main/marine-influxdb-container_2.8.0-1_all.deb
+Size: 7554
+MD5sum: bdcb12ec8cba81b292f3c84e55b01084
+SHA1: 18796bf4bc981a51e9d907dc8cea50dbd71325db
+SHA256: 4fc1c3db355fa6ea59bd40e5eedf53a379a382a80a4cef3858765aa287109de7
+Section: net
+Priority: optional
+Homepage: https://www.influxdata.com/
+Description: Time-series database for marine data logging
+ InfluxDB is a high-performance time-series database designed for handling
+ large volumes of timestamped data. Perfect for marine applications to store
+ and analyze historical data from Signal K, sensors, and other sources.
+ .
+ Features:
+ - High-performance time-series data storage
+ - Built-in web UI for data exploration
+ - Powerful query language (Flux)
+ - Retention policies for automatic data management
+ - Integration with Grafana for visualization
+Tag: role::container-app, field::marine, category::monitoring, interface::web, use::organizing, works-with::logfile, x-display-name::InfluxDB
+
+Package: marine-opencpn-container
+Version: 5.12.4-8
+Architecture: all
+Maintainer: Hat Labs <support@hatlabs.fi>
+Installed-Size: 52
+Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
+Filename: pool/trixie-stable/main/marine-opencpn-container_5.12.4-8_all.deb
+Size: 12622
+MD5sum: 0b06855f9d553e67a95730d924276e12
+SHA1: 1d0fb98d3573dd3bf1b248b91ec343b9bd0a0475
+SHA256: 7025c3a806b179f00db620360f18f6deadfa7671076f8c5d651aa17504d06c05
+Section: graphics
+Priority: optional
+Homepage: https://opencpn.org/
+Description: Open source chart plotter and navigation software
+ OpenCPN is a free software project to create a concise chart plotter and
+ navigation software for use as an underway or planning tool. Designed to
+ be used at the helm station of your boat while underway.
+ .
+ Features:
+ - Raster and vector chart support
+ - AIS target tracking
+ - GPS and autopilot integration
+ - Weather routing and GRIB file support
+ - Extensive plugin system
+ - Route and waypoint management
+Tag: role::container-app, field::marine, field::navigation, field::geography, category::navigation, category::chartplotters, scope::application, interface::web, use::routing, works-with::maps, x-display-name::OpenCPN
+
+Package: marine-signalk-server-container
+Version: 2.21.2-2
+Architecture: all
+Maintainer: Hat Labs <support@hatlabs.fi>
+Installed-Size: 54
+Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
+Filename: pool/trixie-stable/main/marine-signalk-server-container_2.21.2-2_all.deb
+Size: 9698
+MD5sum: 81872cfa6be35f2d3bc25844f21f81d5
+SHA1: 96355f73a849cb1706968430f3e3b660885a28e6
+SHA256: 5dcdbf8912385dc0c6b816d891c04cec1701bb8f25b3b8102f18148437ea0eaa
+Section: net
+Priority: optional
+Homepage: https://signalk.org/
+Description: Signal K server for marine data processing and routing
+ Signal K is a modern and open data format for marine use. A Signal K server
+ provides a central hub for collecting, processing, and distributing marine
+ data from multiple sources including NMEA 0183, NMEA 2000, and other sensors.
+ .
+ Features:
+ - WebSocket API for real-time data streaming
+ - Data logging and historical playback
+ - Web app server for marine applications
+ - Plugin system for extending functionality
+ - Instrument integration and display
+Tag: role::container-app, field::marine, category::communication, category::monitoring, interface::web, use::routing, network::server, x-display-name::Signal K Server
+

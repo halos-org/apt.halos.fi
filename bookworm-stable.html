@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaLOS APT Repository</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb"><a href="index.html">Back to all distributions</a></div>
+        <header>
+            <h1>HaLOS APT Repository</h1>
+            <p class="subtitle">Debian packages for the HaLOS operating system</p>
+        </header>
+
+        <div class="dist-section">
+            <div class="dist-card">
+                <h3>Bookworm Stable</h3>
+                <p class="dist-meta">0 packages</p>
+                <p class="dist-desc">HaLOS packages for Debian Bookworm (stable releases)</p>
+                <div class="package-list">
+                    <strong>Available Packages:</strong>
+                    <details class="component-group" open>
+                        <summary>Main Packages <span class="pkg-count">(0 packages)</span></summary>
+                        <div class="component-content">
+                            <p class="empty-msg">No packages in this component yet.</p>
+                        </div>
+                    </details>
+                </div>
+                <details class="install-section">
+                    <summary>Add this distribution</summary>
+                    <div class="install-content">
+                        <div class="command-block">echo "deb [signed-by=/usr/share/keyrings/halos.gpg] https://apt.halos.fi bookworm-stable main" | sudo tee -a /etc/apt/sources.list.d/halos.list</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="info-box">
+            <h3>Repository Signing Key</h3>
+            <p>All packages are cryptographically signed for security.</p>
+            <p style="margin-top: 10px;">
+                Download: <a href="halos-apt-key.asc">halos-apt-key.asc</a><br>
+                Fingerprint: <code>1F618CAAB3B6F165AC58EFBCB1835859F78C7A12</code>
+            </p>
+        </div>
+
+        <footer>
+            <p>Last updated: 2026-02-14 22:46:42 UTC</p>
+            <p><a href="index.html">Back to all distributions</a></p>
+        </footer>
+    </div>
+</body>
+</html>
