@@ -83,6 +83,28 @@ Description: Core infrastructure stack (Traefik, Authelia, Homarr)
  authentication, and Homarr serves as the main user interface.
 Tag: role::container-app, field::core, category::infrastructure, interface::web
 
+Package: halos-homarr-branding
+Version: 0.2.3-1
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 757
+Depends: xdg-utils
+Recommends: halos-core-containers | halos-homarr-container
+Filename: pool/trixie-unstable/main/halos-homarr-branding_0.2.3-1_all.deb
+Size: 398212
+MD5sum: 870c2e56711cfcba799d7fe9c8912ae7
+SHA1: 72a7739239b91634a6bb74174194c00ce81d3504
+SHA256: 465028dbe44eb5752e23a6685fda6de67b4e170ba7467398013e662eaa1057e6
+Section: admin
+Priority: optional
+Homepage: https://github.com/halos-org/halos-distro
+Description: HaLOS branding and default configuration for Homarr dashboard
+ This package provides the Hat Labs "HaLOS" branding configuration for
+ the Homarr dashboard, including default theme colors, admin credentials,
+ and pre-configured board layout. The homarr-container-adapter reads this
+ configuration during first-boot setup to initialize Homarr with HaLOS
+ branding.
+
 Package: halos-marine
 Version: 0.3.0-3
 Architecture: all
