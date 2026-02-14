@@ -26,6 +26,9 @@ on:
           - arm64
           - armhf
 
+permissions:
+  contents: write
+
 jobs:
   remove-package:
     runs-on: ubuntu-latest
