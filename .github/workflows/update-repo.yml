@@ -13,6 +13,9 @@ concurrency:
   group: apt-repo-update
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   update-apt-repo:
     runs-on: ubuntu-latest
