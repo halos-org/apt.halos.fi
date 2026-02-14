@@ -104,14 +104,16 @@ jobs:
       run: |
         echo "=== Fetching existing repository from gh-pages ==="
 
-        # Fetch gh-pages branch
-        git fetch origin gh-pages --depth=1
-
         # Create apt-repo directory
         mkdir -p apt-repo
 
-        # Extract existing repository content from gh-pages to apt-repo/
-        git checkout origin/gh-pages -- pool dists halos-apt-key.asc halos-apt-key.gpg index.html 2>/dev/null || echo "No existing repository content"
+        # Fetch gh-pages branch (may not exist on first run)
+        if git fetch origin gh-pages --depth=1 2>/dev/null; then
+          # Extract existing repository content from gh-pages to apt-repo/
+          git checkout origin/gh-pages -- pool dists halos-apt-key.asc halos-apt-key.gpg index.html 2>/dev/null || echo "No existing repository content"
+        else
+          echo "No gh-pages branch found (first run). Starting with empty repository."
+        fi
 
         # Move fetched content into apt-repo directory
         if [ -d "pool" ]; then
