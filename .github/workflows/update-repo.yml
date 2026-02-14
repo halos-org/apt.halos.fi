@@ -1,0 +1,738 @@
+name: Update APT Repository
+
+on:
+  repository_dispatch:
+    types: [package-updated]  # This listens for the event from package repos
+  workflow_dispatch:          # Manual trigger
+  schedule:
+    - cron: '0 6 * * *'        # Daily rebuild
+
+# Serialize all APT repo updates to prevent race conditions.
+# Without this, concurrent workflows can overwrite each other's changes.
+concurrency:
+  group: apt-repo-update
+  cancel-in-progress: false
+
+jobs:
+  update-apt-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Debug repository dispatch
+      if: github.event_name == 'repository_dispatch'
+      run: |
+        echo "Event type: ${{ github.event.action }}"
+        echo "Client payload: ${{ toJson(github.event.client_payload) }}"
+        echo "Triggered by: ${{ github.event.client_payload.repository }}"
+
+    - name: Parse payload and determine target distribution
+      id: payload
+      run: |
+        # Define supported distributions (single source of truth)
+        # apt.halos.fi only has distro-specific distributions, no legacy stable/unstable
+        ALL_DISTRIBUTIONS="bookworm-stable bookworm-unstable trixie-stable trixie-unstable"
+        echo "all_distributions=$ALL_DISTRIBUTIONS" >> $GITHUB_OUTPUT
+
+        # Extract payload fields (defaults for backward compatibility and scheduled runs)
+        DISTRO="${{ github.event.client_payload.distro }}"
+        CHANNEL="${{ github.event.client_payload.channel }}"
+        COMPONENT="${{ github.event.client_payload.component }}"
+        TARGET_REPO="${{ github.event.client_payload.repository }}"
+
+        # Set defaults if not provided
+        DISTRO="${DISTRO:-any}"
+        CHANNEL="${CHANNEL:-stable}"
+        COMPONENT="${COMPONENT:-main}"
+
+        # Normalize to lowercase for case-insensitive comparison
+        DISTRO=$(echo "$DISTRO" | tr '[:upper:]' '[:lower:]')
+        CHANNEL=$(echo "$CHANNEL" | tr '[:upper:]' '[:lower:]')
+        COMPONENT=$(echo "$COMPONENT" | tr '[:upper:]' '[:lower:]')
+
+        # Map to distribution name
+        if [ "$DISTRO" = "any" ]; then
+          DISTRIBUTION="$CHANNEL"
+        else
+          DISTRIBUTION="${DISTRO}-${CHANNEL}"
+        fi
+
+        echo "=== Payload Configuration ==="
+        echo "Distro: $DISTRO"
+        echo "Channel: $CHANNEL"
+        echo "Component: $COMPONENT"
+        echo "Distribution: $DISTRIBUTION"
+        echo "Target Repository: ${TARGET_REPO:-<all repositories>}"
+
+        # Export for later steps
+        echo "distro=$DISTRO" >> $GITHUB_OUTPUT
+        echo "channel=$CHANNEL" >> $GITHUB_OUTPUT
+        echo "component=$COMPONENT" >> $GITHUB_OUTPUT
+        echo "distribution=$DISTRIBUTION" >> $GITHUB_OUTPUT
+        echo "target_repo=$TARGET_REPO" >> $GITHUB_OUTPUT
+
+        # Determine if this is a targeted update or full rebuild
+        if [ -n "$TARGET_REPO" ]; then
+          echo "mode=targeted" >> $GITHUB_OUTPUT
+          echo "Mode: Targeted update for $TARGET_REPO"
+        else
+          echo "mode=full" >> $GITHUB_OUTPUT
+          echo "Mode: Full repository rebuild"
+        fi
+
+    - name: Discover package repositories
+      id: discover
+      run: |
+        echo "Discovering repositories with 'apt-package' topic..."
+
+        # Use GitHub API to find repos with apt-package topic in halos-org
+        repos=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/search/repositories?q=org:halos-org+topic:apt-package" | \
+          jq -r '.items[].full_name')
+
+        echo "Found repositories:"
+        echo "$repos"
+
+        # Store for next step
+        echo "repos<<EOF" >> $GITHUB_OUTPUT
+        echo "$repos" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+
+    - name: Fetch existing repository (targeted mode)
+      if: steps.payload.outputs.mode == 'targeted'
+      run: |
+        echo "=== Fetching existing repository from gh-pages ==="
+
+        # Fetch gh-pages branch
+        git fetch origin gh-pages --depth=1
+
+        # Create apt-repo directory
+        mkdir -p apt-repo
+
+        # Extract existing repository content from gh-pages to apt-repo/
+        git checkout origin/gh-pages -- pool dists halos-apt-key.asc halos-apt-key.gpg index.html 2>/dev/null || echo "No existing repository content"
+
+        # Move fetched content into apt-repo directory
+        if [ -d "pool" ]; then
+          mv pool apt-repo/ 2>/dev/null || true
+        fi
+        if [ -d "dists" ]; then
+          mv dists apt-repo/ 2>/dev/null || true
+        fi
+        if [ -f "halos-apt-key.asc" ]; then
+          mv halos-apt-key.asc apt-repo/ 2>/dev/null || true
+        fi
+        if [ -f "halos-apt-key.gpg" ]; then
+          mv halos-apt-key.gpg apt-repo/ 2>/dev/null || true
+        fi
+        if [ -f "index.html" ]; then
+          mv index.html apt-repo/ 2>/dev/null || true
+        fi
+
+        echo "Existing repository content preserved"
+
+        # Detailed package inventory for debugging
+        echo ""
+        echo "=== PACKAGE INVENTORY AFTER FETCH ==="
+        total_packages=0
+        for dist_dir in apt-repo/pool/*/; do
+          if [ -d "$dist_dir" ]; then
+            dist_name=$(basename "$dist_dir")
+            for comp_dir in "$dist_dir"*/; do
+              if [ -d "$comp_dir" ]; then
+                comp_name=$(basename "$comp_dir")
+                pkg_count=$(find "$comp_dir" -name "*.deb" 2>/dev/null | wc -l | tr -d ' ')
+                if [ "$pkg_count" -gt 0 ]; then
+                  echo "  $dist_name/$comp_name: $pkg_count packages"
+                  find "$comp_dir" -name "*.deb" 2>/dev/null | head -5 | while read pkg; do
+                    echo "    - $(basename "$pkg")"
+                  done
+                  if [ "$pkg_count" -gt 5 ]; then
+                    echo "    ... and $((pkg_count - 5)) more"
+                  fi
+                  total_packages=$((total_packages + pkg_count))
+                fi
+              fi
+            done
+          fi
+        done
+        echo "  TOTAL: $total_packages packages fetched from gh-pages"
+        echo "==========================================="
+
+        # Save package count for later validation
+        echo "$total_packages" > /tmp/initial_package_count.txt
+        find apt-repo/pool -name "*.deb" 2>/dev/null | sort > /tmp/initial_packages.txt
+
+    - name: Setup build environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y dpkg-dev apt-utils curl jq gnupg
+
+        # Create packages directory
+        mkdir -p packages
+
+        MODE="${{ steps.payload.outputs.mode }}"
+
+        if [ "$MODE" = "full" ]; then
+          echo "=== Full rebuild mode: Creating fresh directory structure ==="
+          for dist in ${{ steps.payload.outputs.all_distributions }}; do
+            echo "Creating distribution: $dist"
+            mkdir -p "apt-repo/pool/$dist/main"
+            mkdir -p "apt-repo/dists/$dist/main/binary-arm64"
+            mkdir -p "apt-repo/dists/$dist/main/binary-armhf"
+            mkdir -p "apt-repo/dists/$dist/main/binary-all"
+          done
+        else
+          echo "=== Targeted mode: Preserving existing structure, creating missing directories ==="
+          TARGET_DIST="${{ steps.payload.outputs.distribution }}"
+          COMPONENT="${{ steps.payload.outputs.component }}"
+
+          mkdir -p "apt-repo/pool/$TARGET_DIST/$COMPONENT"
+          mkdir -p "apt-repo/dists/$TARGET_DIST/$COMPONENT/binary-arm64"
+          mkdir -p "apt-repo/dists/$TARGET_DIST/$COMPONENT/binary-armhf"
+          mkdir -p "apt-repo/dists/$TARGET_DIST/$COMPONENT/binary-all"
+
+          echo "Ensured $TARGET_DIST/$COMPONENT directories exist"
+        fi
+
+        echo "=== Distribution directories ==="
+        ls -la apt-repo/dists/ 2>/dev/null || echo "apt-repo/dists/ not yet created"
+
+    - name: Import GPG signing key
+      run: |
+        echo "${{ secrets.APT_SIGNING_KEY }}" | gpg --import --batch
+        GPG_KEY_ID=$(gpg --list-secret-keys --keyid-format LONG | grep sec | head -1 | sed 's/.*\/\([A-Z0-9]*\) .*/\1/')
+        echo "GPG_KEY_ID=$GPG_KEY_ID" >> $GITHUB_ENV
+        echo "Using GPG key: $GPG_KEY_ID"
+
+    - name: Download packages
+      run: |
+        MODE="${{ steps.payload.outputs.mode }}"
+        TARGET_REPO="${{ steps.payload.outputs.target_repo }}"
+        CHANNEL="${{ steps.payload.outputs.channel }}"
+
+        # Source helper functions (fail fast if missing)
+        source scripts/suffix-parsing-functions.sh || { echo "Failed to load suffix parsing functions"; exit 1; }
+        source scripts/routing-functions.sh || { echo "Failed to load routing functions"; exit 1; }
+
+        # Function to download packages from a repository
+        download_from_repo() {
+          local repo=$1
+          local release_tag=$2
+
+          echo "=== Processing $repo (release: $release_tag) ==="
+
+          # Get release info
+          if [ "$release_tag" = "latest" ]; then
+            echo "Fetching latest release from $repo..."
+            release_info=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/$repo/releases/latest")
+          elif [ "$release_tag" = "prerelease" ]; then
+            echo "Fetching latest pre-release from $repo..."
+            release_info=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/$repo/releases" | \
+              jq '[.[] | select(.prerelease == true)] | sort_by(.published_at) | reverse | .[0]')
+          else
+            echo "Fetching release $release_tag from $repo..."
+            release_info=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/$repo/releases/tags/$release_tag")
+          fi
+
+          # Check if release exists
+          if [ "$(echo "$release_info" | jq -r '.message // empty')" = "Not Found" ]; then
+            echo "No release found for $repo (tag: $release_tag)"
+            return
+          fi
+
+          # Check for null/empty release_info
+          if [ -z "$release_info" ] || [ "$release_info" = "null" ]; then
+            if [ "$release_tag" = "prerelease" ]; then
+              echo "No pre-release found for $repo"
+            else
+              echo "No release information found for $repo"
+            fi
+            return
+          fi
+
+          local actual_tag=$(echo "$release_info" | jq -r '.tag_name')
+          echo "Release tag: $actual_tag"
+
+          # Download all .deb files from the release
+          echo "Downloading .deb files..."
+          echo "$release_info" | jq -r '.assets[] | select(.name | endswith(".deb")) | "\(.name)|\(.browser_download_url)"' | \
+          while IFS='|' read -r name url; do
+            if [ -n "$name" ] && [ -n "$url" ]; then
+              echo "Downloading $name..."
+              temp_file="packages/temp_$name"
+              curl -L --fail -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                   -H "Accept: application/octet-stream" \
+                   "$url" -o "$temp_file"
+
+              if [ $? -eq 0 ]; then
+                echo "Downloaded $name"
+
+                # Extract package metadata
+                actual_version=$(dpkg-deb --field "$temp_file" Version 2>/dev/null || true)
+                package_name=$(dpkg-deb --field "$temp_file" Package 2>/dev/null || true)
+                architecture=$(dpkg-deb --field "$temp_file" Architecture 2>/dev/null || true)
+
+                if [ -n "$actual_version" ] && [ -n "$package_name" ] && [ -n "$architecture" ]; then
+                  # Parse suffix from original filename
+                  parse_package_suffix "$name" pkg_distro pkg_component || true
+                  if [ $? -eq 0 ]; then
+                    echo "  Parsed suffix: distro=$pkg_distro, component=$pkg_component"
+                    if ! validate_suffix "$pkg_distro" "$pkg_component"; then
+                      echo "  Using fallback: distro=any, component=main"
+                      pkg_distro="any"
+                      pkg_component="main"
+                    fi
+                  else
+                    echo "  No suffix found, using defaults: distro=$pkg_distro, component=$pkg_component"
+                  fi
+
+                  # Create canonical filename
+                  correct_filename="${package_name}_${actual_version}_${architecture}.deb"
+                  final_path="packages/$correct_filename"
+
+                  mv "$temp_file" "$final_path"
+
+                  # Store metadata for routing
+                  {
+                    echo "package=$package_name"
+                    echo "version=$actual_version"
+                    echo "architecture=$architecture"
+                    echo "distro=$pkg_distro"
+                    echo "component=$pkg_component"
+                    echo "original_filename=$name"
+                  } > "${final_path}.meta"
+
+                  echo "  Package: $package_name"
+                  echo "  Version: $actual_version"
+                  echo "  Architecture: $architecture"
+                  echo "  Distro: $pkg_distro"
+                  echo "  Component: $pkg_component"
+                  echo "  Filename: $correct_filename"
+                else
+                  echo "  Could not extract package metadata, keeping original filename"
+                  mv "$temp_file" "packages/$name"
+                fi
+              else
+                echo "Failed to download $name"
+                rm -f "$temp_file"
+              fi
+            fi
+          done
+          echo ""
+        }
+
+        # Determine which repositories and releases to process
+        if [ "$MODE" = "targeted" ]; then
+          echo "=== Targeted Update Mode ==="
+          if [ "$CHANNEL" = "unstable" ]; then
+            RELEASE_TAG="prerelease"
+          else
+            RELEASE_TAG="latest"
+          fi
+
+          download_from_repo "$TARGET_REPO" "$RELEASE_TAG"
+        else
+          echo "=== Full Rebuild Mode ==="
+          echo "Downloading all packages and routing based on metadata..."
+
+          for channel in stable unstable; do
+            if [ "$channel" = "unstable" ]; then
+              RELEASE_TAG="prerelease"
+            else
+              RELEASE_TAG="latest"
+            fi
+
+            echo ""
+            echo "--- Downloading $channel packages (release: $RELEASE_TAG) ---"
+
+            rm -rf packages/*
+            mkdir -p packages
+
+            echo "${{ steps.discover.outputs.repos }}" | while IFS= read -r repo; do
+              if [ -n "$repo" ]; then
+                source scripts/suffix-parsing-functions.sh || { echo "Failed to load suffix parsing functions"; exit 1; }
+                source scripts/routing-functions.sh || { echo "Failed to load routing functions"; exit 1; }
+                download_from_repo "$repo" "$RELEASE_TAG"
+              fi
+            done
+
+            # Route downloaded packages based on their metadata
+            if ls packages/*.deb 1> /dev/null 2>&1; then
+              pkg_count=$(ls packages/*.deb | wc -l)
+              echo "Routing $pkg_count packages ($channel channel) to appropriate distributions..."
+              routing_failed=0
+
+              for pkg in packages/*.deb; do
+                pkg_name=$(basename "$pkg")
+                meta_file="${pkg}.meta"
+
+                unset distro component package version architecture original_filename
+
+                if [ -f "$meta_file" ]; then
+                  source "$meta_file" 2>/dev/null || {
+                    echo "Failed to read metadata for $pkg_name"
+                    routing_failed=$((routing_failed + 1))
+                    continue
+                  }
+
+                  if [ "$distro" = "any" ]; then
+                    echo "  -> $pkg_name (distro=any, component=$component)"
+                    targets_list=""
+                    for d in "${SUPPORTED_DISTROS[@]}"; do
+                      targets_list="$targets_list ${d}-${channel}/$component"
+                    done
+                    echo "      Routes to:$targets_list"
+                  else
+                    echo "  -> $pkg_name (distro=$distro, component=$component)"
+                    echo "      Routes to: ${distro}-${channel}/$component"
+                  fi
+                fi
+
+                if ! route_package "$pkg" "$channel"; then
+                  echo "Failed to route $pkg_name"
+                  routing_failed=$((routing_failed + 1))
+                fi
+              done
+
+              routed_count=$((pkg_count - routing_failed))
+
+              if [ $routing_failed -eq 0 ]; then
+                echo "Successfully routed all $pkg_count $channel packages"
+              else
+                echo "Failed to route $routing_failed/$pkg_count packages"
+                exit 1
+              fi
+            else
+              echo "No packages downloaded for $channel"
+            fi
+          done
+
+          rm -rf packages/*
+        fi
+
+        echo "=== Full rebuild completed ==="
+    - name: Build APT repository structure
+      run: |
+        MODE="${{ steps.payload.outputs.mode }}"
+        TARGET_DIST="${{ steps.payload.outputs.distribution }}"
+        COMPONENT="${{ steps.payload.outputs.component }}"
+        CHANNEL="${{ steps.payload.outputs.channel }}"
+
+        # Source helper functions
+        source scripts/suffix-parsing-functions.sh
+        source scripts/routing-functions.sh
+
+        # Route packages based on metadata (targeted mode only)
+        if [ "$MODE" = "targeted" ]; then
+          if ls packages/*.deb 1> /dev/null 2>&1; then
+            echo "=== Routing packages via metadata (Targeted mode) ==="
+            routing_failed=0
+            for pkg in packages/*.deb; do
+              echo "Routing: $(basename "$pkg")"
+              if ! route_package "$pkg" "$CHANNEL"; then
+                echo "Failed to route $(basename "$pkg")"
+                routing_failed=$((routing_failed + 1))
+              fi
+            done
+            pkg_count=$(ls packages/*.deb | wc -l)
+
+            if [ $routing_failed -eq 0 ]; then
+              echo "Successfully routed $pkg_count packages"
+            else
+              echo "Failed to route $routing_failed/$pkg_count packages"
+              exit 1
+            fi
+
+            # Log package inventory after routing
+            echo ""
+            echo "=== PACKAGE INVENTORY AFTER ROUTING ==="
+            for dist_dir in apt-repo/pool/*/; do
+              if [ -d "$dist_dir" ]; then
+                dist_name=$(basename "$dist_dir")
+                for comp_dir in "$dist_dir"*/; do
+                  if [ -d "$comp_dir" ]; then
+                    comp_name=$(basename "$comp_dir")
+                    pkg_count=$(find "$comp_dir" -name "*.deb" 2>/dev/null | wc -l | tr -d ' ')
+                    if [ "$pkg_count" -gt 0 ]; then
+                      echo "  $dist_name/$comp_name: $pkg_count packages"
+                    fi
+                  fi
+                done
+              fi
+            done
+            total_after=$(find apt-repo/pool -name "*.deb" 2>/dev/null | wc -l | tr -d ' ')
+            echo "  TOTAL: $total_after packages in pool"
+            echo "==========================================="
+          else
+            echo "No packages to route"
+          fi
+        else
+          echo "=== Full Rebuild Mode: Packages already routed in Download step ==="
+        fi
+
+        cd apt-repo
+
+        # Function to build distribution metadata for a specific component
+        build_component() {
+          local dist=$1
+          local component=$2
+
+          echo "=== Building distribution: $dist/$component ==="
+
+          local dist_path="dists/$dist"
+          local comp_path="$dist_path/$component"
+          local pool_path="pool/$dist/$component"
+
+          if [ ! -d "$pool_path" ]; then
+            echo "Pool directory pool/$dist/$component does not exist - skipping"
+            return 0
+          fi
+
+          if ! ls "$pool_path"/*.deb 1>/dev/null 2>&1; then
+            echo "No .deb packages in pool/$dist/$component - skipping"
+            return 0
+          fi
+
+          mkdir -p "$comp_path/binary-arm64"
+          mkdir -p "$comp_path/binary-armhf"
+          mkdir -p "$comp_path/binary-all"
+
+          echo "Generating Packages files..."
+
+          dpkg-scanpackages -a arm64 "$pool_path" /dev/null > "$comp_path/binary-arm64/Packages" 2>/dev/null || touch "$comp_path/binary-arm64/Packages"
+          gzip -kf "$comp_path/binary-arm64/Packages"
+
+          dpkg-scanpackages -a armhf "$pool_path" /dev/null > "$comp_path/binary-armhf/Packages" 2>/dev/null || touch "$comp_path/binary-armhf/Packages"
+          gzip -kf "$comp_path/binary-armhf/Packages"
+
+          dpkg-scanpackages -a all "$pool_path" /dev/null > "$comp_path/binary-all/Packages" 2>/dev/null || touch "$comp_path/binary-all/Packages"
+          gzip -kf "$comp_path/binary-all/Packages"
+
+          echo "Built $dist/$component"
+        }
+
+        # Function to build Release file for a distribution
+        build_release() {
+          local dist=$1
+
+          echo "=== Generating Release file for $dist ==="
+
+          local dist_path="dists/$dist"
+
+          # Find components that have been built (have Packages files)
+          local components=""
+          if [ -f "$dist_path/main/binary-arm64/Packages" ] || [ -f "$dist_path/main/binary-armhf/Packages" ] || [ -f "$dist_path/main/binary-all/Packages" ]; then
+            components="main"
+          fi
+
+          # Default to main component if no packages found
+          if [ -z "$components" ]; then
+            echo "No packages in $dist, creating empty main component"
+            components="main"
+            mkdir -p "$dist_path/main/binary-arm64"
+            mkdir -p "$dist_path/main/binary-armhf"
+            mkdir -p "$dist_path/main/binary-all"
+            touch "$dist_path/main/binary-arm64/Packages"
+            touch "$dist_path/main/binary-armhf/Packages"
+            touch "$dist_path/main/binary-all/Packages"
+            gzip -kf "$dist_path/main/binary-arm64/Packages"
+            gzip -kf "$dist_path/main/binary-armhf/Packages"
+            gzip -kf "$dist_path/main/binary-all/Packages"
+          fi
+
+          # Determine suite and description based on distribution pattern
+          if [[ "$dist" =~ ^([a-z0-9]+)-(stable|unstable)$ ]]; then
+            CODENAME="${BASH_REMATCH[1]}"
+            STABILITY="${BASH_REMATCH[2]}"
+            SUITE="$dist"
+            CODENAME_DISPLAY="$(echo ${CODENAME:0:1} | tr '[:lower:]' '[:upper:]')${CODENAME:1}"
+            if [[ "$STABILITY" == "stable" ]]; then
+              DESC="HaLOS packages for Debian $CODENAME_DISPLAY (stable)"
+            else
+              DESC="HaLOS packages for Debian $CODENAME_DISPLAY (unstable - rolling)"
+            fi
+          else
+            SUITE="$dist"
+            CODENAME="$dist"
+            DESC="HaLOS APT Repository - $dist"
+          fi
+
+          cd "$dist_path"
+
+          cat > Release << EOF
+        Origin: HaLOS
+        Label: HaLOS APT Repository
+        Suite: $SUITE
+        Codename: $CODENAME
+        Version: 1.0
+        Architectures: arm64 armhf all
+        Components: $components
+        Description: $DESC
+        Date: $(date -Ru)
+        EOF
+
+          apt-ftparchive release . >> Release
+
+          echo "Signing Release file..."
+          gpg --batch --yes --detach-sign --armor -u $GPG_KEY_ID -o Release.gpg Release
+          gpg --batch --yes --clear-sign -u $GPG_KEY_ID -o InRelease Release
+
+          cd ../..
+          echo "Generated Release file for $dist"
+        }
+
+        # Determine which distributions to build
+        if [ "$MODE" = "targeted" ]; then
+          DISTRO="${{ steps.payload.outputs.distro }}"
+
+          if [ "$DISTRO" = "any" ]; then
+            echo "=== Targeted Mode: Updating all distributions for distro=any ==="
+
+            SUPPORTED_DISTROS="bookworm trixie"
+
+            for distro in $SUPPORTED_DISTROS; do
+              dist="${distro}-${CHANNEL}"
+              build_component "$dist" "$COMPONENT"
+              build_release "$dist"
+            done
+          else
+            echo "=== Targeted Mode: Updating $TARGET_DIST only ==="
+            build_component "$TARGET_DIST" "$COMPONENT"
+            build_release "$TARGET_DIST"
+          fi
+        else
+          echo "=== Full Rebuild Mode ==="
+          echo "Building metadata for all distributions"
+
+          for dist in ${{ steps.payload.outputs.all_distributions }}; do
+            build_component "$dist" "main"
+            build_release "$dist"
+          done
+        fi
+
+        echo ""
+        echo "=== Repository structure ==="
+        find dists -name "Packages" -o -name "Release" | sort
+
+    - name: Export public GPG key
+      run: |
+        cd apt-repo
+        gpg --export --armor $GPG_KEY_ID > halos-apt-key.asc
+        gpg --export $GPG_KEY_ID > halos-apt-key.gpg
+
+        FINGERPRINT=$(gpg --fingerprint $GPG_KEY_ID | grep -A1 "pub " | tail -n1 | tr -d ' ')
+        echo "GPG_FINGERPRINT=$FINGERPRINT" >> $GITHUB_ENV
+        echo "Key fingerprint: $FINGERPRINT"
+
+    - name: Install test dependencies
+      run: |
+        pip3 install pytest
+
+    - name: Run index generation tests
+      run: |
+        cd scripts
+        pytest test_generate_index.py -v
+
+    - name: Generate repository index pages
+      run: |
+        set -e
+        python3 scripts/generate_index.py \
+          apt-repo \
+          --gpg-fingerprint "$GPG_FINGERPRINT"
+
+    - name: Validate package inventory
+      run: |
+        echo "=== PACKAGE INVENTORY BEFORE DEPLOY ==="
+
+        final_packages=0
+        for dist_dir in apt-repo/pool/*/; do
+          if [ -d "$dist_dir" ]; then
+            dist_name=$(basename "$dist_dir")
+            for comp_dir in "$dist_dir"*/; do
+              if [ -d "$comp_dir" ]; then
+                comp_name=$(basename "$comp_dir")
+                pkg_count=$(find "$comp_dir" -name "*.deb" 2>/dev/null | wc -l | tr -d ' ')
+                if [ "$pkg_count" -gt 0 ]; then
+                  echo "  $dist_name/$comp_name: $pkg_count packages"
+                  final_packages=$((final_packages + pkg_count))
+                fi
+              fi
+            done
+          fi
+        done
+        echo "  TOTAL: $final_packages packages ready to deploy"
+        echo "==========================================="
+
+        find apt-repo/pool -name "*.deb" 2>/dev/null | sort > /tmp/final_packages.txt
+
+        # Compare with initial inventory (only in targeted mode)
+        MODE="${{ steps.payload.outputs.mode }}"
+        if [ "$MODE" = "targeted" ] && [ -f /tmp/initial_packages.txt ]; then
+          echo ""
+          echo "=== PACKAGE DIFF ANALYSIS ==="
+
+          removed=$(comm -23 /tmp/initial_packages.txt /tmp/final_packages.txt)
+          if [ -n "$removed" ]; then
+            removed_count=$(echo "$removed" | wc -l | tr -d ' ')
+            echo "REMOVED PACKAGES ($removed_count):"
+            echo "$removed" | while read pkg; do
+              echo "  - $(basename "$pkg")"
+            done
+          else
+            echo "No packages removed"
+          fi
+
+          added=$(comm -13 /tmp/initial_packages.txt /tmp/final_packages.txt)
+          if [ -n "$added" ]; then
+            added_count=$(echo "$added" | wc -l | tr -d ' ')
+            echo "ADDED PACKAGES ($added_count):"
+            echo "$added" | while read pkg; do
+              echo "  + $(basename "$pkg")"
+            done
+          else
+            echo "No new packages added"
+          fi
+
+          echo "==========================================="
+
+          # FAIL if packages were removed (safety check)
+          if [ -n "$removed" ]; then
+            echo ""
+            echo "ERROR: Packages would be removed by this deployment!"
+            echo "This indicates a potential race condition."
+            echo "Failing the workflow to prevent package loss."
+            exit 1
+          fi
+        fi
+
+        echo ""
+        echo "Package inventory validation passed"
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./apt-repo
+        cname: apt.halos.fi
+
+    - name: Report status
+      run: |
+        echo "=== APT Repository Update Complete ==="
+        echo "Repository deployed to: https://apt.halos.fi"
+        echo ""
+        echo "Distribution Summary:"
+
+        for dist in ${{ steps.payload.outputs.all_distributions }}; do
+          pkgfile="apt-repo/dists/$dist/main/binary-arm64/Packages"
+          if [ -f "$pkgfile" ]; then
+            count=$(grep -c '^Package:' "$pkgfile" 2>/dev/null || echo "0")
+            echo "  $dist/main: $count packages"
+          else
+            echo "  $dist: (not built this run)"
+          fi
+        done
