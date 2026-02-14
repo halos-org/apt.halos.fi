@@ -1,3 +1,27 @@
+Package: cockpit-authelia-users
+Version: 0.2.2-1
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 13071
+Depends: python3, cockpit (>= 276), python3-yaml, python3-argon2
+Filename: pool/trixie-unstable/main/cockpit-authelia-users_0.2.2-1_all.deb
+Size: 1270652
+MD5sum: c987de73497a1cd19225763d27de9581
+SHA1: adcf23e10c07231ec0f81d504f7cccc316769f15
+SHA256: 56ee0560e307f4fcf5fbae473c5bcf1d1f3795ea9a38ba012e1a17a39acd370f
+Section: admin
+Priority: optional
+Homepage: https://github.com/halos-org/cockpit-authelia-users
+Description: Cockpit plugin for Authelia user management
+ A web-based user management interface for Authelia that provides:
+  - List, create, edit, and delete Authelia users
+  - Manage user groups and permissions
+  - Password management with Argon2id hashing
+  - Modern React-based UI with PatternFly components
+ .
+ This package provides a user-friendly interface for managing
+ Authelia users through Cockpit's web interface.
+
 Package: cockpit-dockermanager
 Version: 1.0.7.4-1
 Architecture: all
