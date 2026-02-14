@@ -29,6 +29,35 @@ Description: Base system metapackage for HaLOS
  HaLOS is a Debian-based operating system designed for easy management
  of Raspberry Pi systems through a web interface.
 
+Package: halos-core-containers
+Version: 0.2.3-2
+Architecture: all
+Maintainer: Hat Labs <info@hatlabs.fi>
+Installed-Size: 126
+Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), halos-homarr-branding
+Recommends: halos-cockpit-config
+Conflicts: halos-reverse-proxy
+Provides: halos-reverse-proxy
+Filename: pool/trixie-unstable/main/halos-core-containers_0.2.3-2_all.deb
+Size: 46380
+MD5sum: d527f9b6605d5fcf0254d27dcbb80538
+SHA1: d22c931c21bd6625c472f47bb8573b2a1bacf186
+SHA256: 8a2704668cddd005d1f8fe5953fad5ce56ebcac91af94f280577c3dac6be1c76
+Section: web
+Priority: optional
+Homepage: https://github.com/halos-org/halos-core-containers
+Description: Core infrastructure stack (Traefik, Authelia, Homarr)
+ HaLOS core infrastructure providing the foundational web services:
+ .
+  - Traefik: Reverse proxy and load balancer for all HaLOS web traffic
+  - Authelia: Single Sign-On (SSO) identity provider with OIDC support
+  - Homarr: Dashboard landing page for accessing all installed applications
+ .
+ These services are tightly integrated and managed as a single unit.
+ Traefik handles HTTPS termination and routing, Authelia provides
+ authentication, and Homarr serves as the main user interface.
+Tag: role::container-app, field::core, category::infrastructure, interface::web
+
 Package: halos-marine
 Version: 0.3.0-3
 Architecture: all
