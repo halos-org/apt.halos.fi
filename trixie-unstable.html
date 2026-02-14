@@ -17,7 +17,7 @@
         <div class="dist-section">
             <div class="dist-card">
                 <h3>Trixie Unstable</h3>
-                <p class="dist-meta">12 packages</p>
+                <p class="dist-meta">13 packages</p>
                 <p class="dist-desc">HaLOS packages for Debian Trixie (rolling)</p>
                 <div class="warning-box">
                     <strong>Warning: Unstable Channel:</strong> Contains latest packages from main branch. May include untested changes. Use stable for production systems.
@@ -26,7 +26,7 @@
                 <div class="package-list">
                     <strong>Available Packages:</strong>
                     <details class="component-group" open>
-                        <summary>Main Packages <span class="pkg-count">(12 packages)</span></summary>
+                        <summary>Main Packages <span class="pkg-count">(13 packages)</span></summary>
                         <div class="component-content">
                         <div class="package-item">
                             <h4>cockpit-authelia-users <span class="version">v0.2.2-1</span> <span class="arch-badge">all</span></h4>
@@ -57,6 +57,11 @@
                             <h4>halos-marine <span class="version">v0.3.0-3</span> <span class="arch-badge">all</span></h4>
                             <p class="description">HaLOS marine system metapackage This metapackage extends the base HaLOS system with marine navigation and monitoring software. . The HaLOS marine system adds: * Marine container store for browsing marine applications * Signal K server for marine data collection and distribution * Pre-configured marine software stack . This package depends on the halos base metapackage and adds marine-specific components for boat and vessel management.</p>
                             <div class="install-cmd">sudo apt install halos-marine</div>
+                        </div>
+                        <div class="package-item">
+                            <h4>halos-mdns-publisher <span class="version">v0.2.4-1</span> <span class="arch-badge">arm64</span></h4>
+                            <p class="description">HaLOS mDNS subdomain publisher and resolver Native systemd service that advertises container subdomains via mDNS. Monitors Docker containers for the halos.subdomain label and uses avahi-publish to advertise the corresponding subdomains. . Also configures the system to resolve multi-label mDNS hostnames (e.g., auth.hostname.local) which are used by HaLOS services. . Features: - Monitors Docker for containers with halos.subdomain label - Publishes subdomains as &lt;subdomain&gt;.&lt;hostname&gt;.local - Configures system mDNS resolution for multi-label hostnames - Automatic cleanup when containers stop</p>
+                            <div class="install-cmd">sudo apt install halos-mdns-publisher</div>
                         </div>
                         <div class="package-item">
                             <h4>marine-avnav-container <span class="version">v20251028-11</span> <span class="arch-badge">all</span></h4>
@@ -109,7 +114,7 @@
         </div>
 
         <footer>
-            <p>Last updated: 2026-02-14 22:29:01 UTC</p>
+            <p>Last updated: 2026-02-14 22:30:17 UTC</p>
             <p><a href="index.html">Back to all distributions</a></p>
         </footer>
     </div>

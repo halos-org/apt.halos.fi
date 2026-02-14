@@ -155,6 +155,35 @@ Description: HaLOS marine system metapackage
  This package depends on the halos base metapackage and adds marine-specific
  components for boat and vessel management.
 
+Package: halos-mdns-publisher
+Version: 0.2.4-1
+Architecture: arm64
+Maintainer: Hat Labs Ltd <info@hatlabs.fi>
+Depends: avahi-daemon, avahi-utils, libnss-mdns, libc6
+Recommends: docker.io | docker-ce
+Conflicts: halos-mdns-publisher-container
+Replaces: halos-mdns-publisher-container
+Filename: pool/trixie-unstable/main/halos-mdns-publisher_0.2.4-1_arm64.deb
+Size: 1179196
+MD5sum: 736cd3095711e8f0b85e8c622cc2d91f
+SHA1: 2614e90017e0020bf7e410fc63264de110581f31
+SHA256: 41d4f9a2c9b5505950ed2daebde8c36977b3628a8e98f2bfb09f80140ac6c32e
+Section: admin
+Priority: optional
+Description: HaLOS mDNS subdomain publisher and resolver
+ Native systemd service that advertises container subdomains via mDNS.
+ Monitors Docker containers for the halos.subdomain label and uses
+ avahi-publish to advertise the corresponding subdomains.
+ .
+ Also configures the system to resolve multi-label mDNS hostnames
+ (e.g., auth.hostname.local) which are used by HaLOS services.
+ .
+ Features:
+  - Monitors Docker for containers with halos.subdomain label
+  - Publishes subdomains as <subdomain>.<hostname>.local
+  - Configures system mDNS resolution for multi-label hostnames
+  - Automatic cleanup when containers stop
+
 Package: marine-avnav-container
 Version: 20251028-11
 Architecture: all
