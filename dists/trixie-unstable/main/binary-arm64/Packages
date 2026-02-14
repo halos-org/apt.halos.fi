@@ -1,3 +1,28 @@
+Package: cockpit-dockermanager
+Version: 1.0.7.4-1
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 76
+Depends: cockpit (>= 200)
+Recommends: docker.io | docker-ce
+Filename: pool/trixie-unstable/main/cockpit-dockermanager_1.0.7.4-1_all.deb
+Size: 17384
+MD5sum: 8610ae1f1b1436a7701b0db579bd38f8
+SHA1: a6b28deca790bcaee40ff173734ef0b4da6d1e95
+SHA256: 6fa35ca646ac0d30ff13a160a70747ac43626bb4c8211d7f4f1c02ae1aecd2cd
+Section: admin
+Priority: optional
+Homepage: https://github.com/chrisjbawden/cockpit-dockermanager
+Description: Cockpit plugin for Docker container management
+ Docker Manager is a lightweight and intuitive utility designed to help you
+ manage your Docker containers via a simplified web interface through Cockpit.
+ .
+ Features:
+  * List, start, stop, search and restart containers
+  * View container status, uptime, details and exposed ports
+  * In-window terminal with individual container terminal functionality
+  * Image management
+
 Package: halos
 Version: 0.3.0-3
 Architecture: all
