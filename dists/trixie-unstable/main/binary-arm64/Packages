@@ -3659,17 +3659,17 @@ Description: Core infrastructure stack (Traefik, Authelia, Homarr)
 Tag: role::container-app, field::core, category::infrastructure, interface::web
 
 Package: halos-homarr-branding
-Version: 0.2.4-1
+Version: 0.2.5-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 757
+Installed-Size: 759
 Depends: xdg-utils
 Recommends: halos-core-containers | halos-homarr-container
-Filename: pool/trixie-unstable/main/halos-homarr-branding_0.2.4-1_all.deb
-Size: 398188
-MD5sum: 60bcb8d81ff36438355395309ed430e5
-SHA1: 0194efd1653d6811373550b67fe2f8b30acd56d4
-SHA256: dfe7e9fe1a4bddd2c92932e1940473dd53b536e9ff6d20c2591669bbca2ef237
+Filename: pool/trixie-unstable/main/halos-homarr-branding_0.2.5-1_all.deb
+Size: 401156
+MD5sum: 944fc42f442d677e0c07bd53a0b9b4f5
+SHA1: 5da69d7163ecc8371dd8daebb7140012b795dbd3
+SHA256: 75821b2e47d50abad93ed1fe3d468145c2133d40d72d0b23b06a65aed802740e
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/halos
