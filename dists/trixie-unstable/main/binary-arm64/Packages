@@ -3608,19 +3608,19 @@ Description: Base system metapackage for HaLOS
  of Raspberry Pi systems through a web interface.
 
 Package: halos-cockpit-config
-Version: 0.5.2-2
+Version: 0.5.3-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 59
+Installed-Size: 71
 Depends: cockpit, avahi-utils, xdg-utils
 Breaks: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Replaces: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Provides: cockpit-branding-halos, halos-cockpit-branding
-Filename: pool/trixie-unstable/main/halos-cockpit-config_0.5.2-2_all.deb
-Size: 22904
-MD5sum: f25c6ab54957616590bbf1ee2178ebcc
-SHA1: 4b77e194043f654802736720d791a68fa8e71668
-SHA256: b2c7421a2363a3679d4111fa50e3e82e7d2d1415c19b893994ab4240589ab483
+Filename: pool/trixie-unstable/main/halos-cockpit-config_0.5.3-1_all.deb
+Size: 34504
+MD5sum: 04a7759140a5d4ecd0f83295de03b3bc
+SHA1: a44bbc383b01ffe30c6f6ef30e06601077e29666
+SHA256: 5c7bbf71a08f02ebfb28f2b3ef9177a253e939e6250df1236e6027954ca5e4a6
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/halos
