@@ -1,17 +1,17 @@
 Package: cockpit-apt
-Version: 0.3.0-5
+Version: 0.3.1-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 13549
 Depends: cockpit (>= 276), python3, python3-apt
-Filename: pool/trixie-stable/main/cockpit-apt_0.3.0-5_all.deb
-Size: 1334476
-MD5sum: 83fa8f2c27d1e2a3d45074b86f076b5e
-SHA1: 69bae1a4b6122048601270df5ae073f5070be228
-SHA256: 9be821d6e0e695eaa4f05a218c94bc7a6797265cd81e150679c6af1d3e229505
+Filename: pool/trixie-stable/main/cockpit-apt_0.3.1-1_all.deb
+Size: 1334584
+MD5sum: 835c363645705d5db3665fe010ff2af5
+SHA1: 5c2954b33372e6678155010e518e575c7c79bade
+SHA256: f09e19ea7f6c0d745726970bdf9fb55fd8c5eb9447a471aa9904596ee070c73d
 Section: admin
 Priority: optional
-Homepage: https://github.com/hatlabs/cockpit-apt
+Homepage: https://github.com/halos-org/cockpit-apt
 Description: Modern APT package manager interface for Cockpit
  A web-based package manager interface for Cockpit that provides:
   - Browse packages by Debian section (games, web, development, etc.)
