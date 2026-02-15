@@ -3608,7 +3608,7 @@ Description: Base system metapackage for HaLOS
  of Raspberry Pi systems through a web interface.
 
 Package: halos-cockpit-config
-Version: 0.5.1-1
+Version: 0.5.2-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 59
@@ -3616,14 +3616,14 @@ Depends: cockpit, avahi-utils, xdg-utils
 Breaks: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Replaces: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Provides: cockpit-branding-halos, halos-cockpit-branding
-Filename: pool/trixie-unstable/main/halos-cockpit-config_0.5.1-1_all.deb
-Size: 22992
-MD5sum: 61d228d2aa08d075f3e3f54f2836fbbe
-SHA1: 8d0d60d9842208c9822dfc5a9a944402ceb3fec6
-SHA256: 82104b9db4d7f49fb38d645586c620ea5af08318967b9a1d39008f74efce4878
+Filename: pool/trixie-unstable/main/halos-cockpit-config_0.5.2-2_all.deb
+Size: 22904
+MD5sum: f25c6ab54957616590bbf1ee2178ebcc
+SHA1: 4b77e194043f654802736720d791a68fa8e71668
+SHA256: b2c7421a2363a3679d4111fa50e3e82e7d2d1415c19b893994ab4240589ab483
 Section: admin
 Priority: optional
-Homepage: https://github.com/halos-org/halos-distro
+Homepage: https://github.com/halos-org/halos
 Description: HaLOS Cockpit configuration and branding
  This package provides HaLOS-specific configuration for the Cockpit
  web interface, including branding (logo, CSS, favicon), Homarr dashboard
