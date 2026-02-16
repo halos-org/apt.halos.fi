@@ -5,10 +5,10 @@ Maintainer: Bubka <auto-converted@casaos.io>
 Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-2fauth-container_1.0.0_all.deb
-Size: 23868
-MD5sum: b6658d80860d1fb78981bd80839c721e
-SHA1: 00041574bf65732d32a2eb62be4bb5c84bb89986
-SHA256: c0bb902908f9a7ad1f6004304e5ed82b322f8b38d74803a7bb60f3315c816da7
+Size: 23860
+MD5sum: dd8e1f684b271b14325b6cb4519536db
+SHA1: d0bcdb46ee15dc95e59f9156863d0ca528b5610f
+SHA256: 1b053cd1d1f3e08606af0e2873bdd6fa003253c71a0817435b23629542b3b4ac
 Section: utils
 Priority: optional
 Description: A web app to manage your Two-Factor Authentication (2FA) accounts and...
@@ -24,10 +24,10 @@ Maintainer: ActualBudget <auto-converted@casaos.io>
 Installed-Size: 63
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-actualbudget-container_1.0.0_all.deb
-Size: 29384
-MD5sum: f72ffa45fd411644f3530a99610f4316
-SHA1: d1a3830618ec9c28bbb19c4a4bb1daa72b089066
-SHA256: 4b6e38730cd0831789419b28022ee0208d3887bbd21eed8237313f8c457abbd5
+Size: 29380
+MD5sum: f1ccd9558f5e106c7eb055c9e21cd3b4
+SHA1: 77cd2dc20d7d4742f6c3bf4ba97966015cf0936e
+SHA256: 7ddf54743024328dfaa1049b13857b0afa75a4670c969a7d459874735beaef87
 Section: misc
 Priority: optional
 Description: Privacy-first finance app with envelope budgeting and multi-device sync.
@@ -62,10 +62,10 @@ Maintainer: AdguardTeam <auto-converted@casaos.io>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-adguard-home-container_1.0.0_all.deb
-Size: 21494
-MD5sum: 6b65340bd4d01c773f4dbc33b6787db5
-SHA1: 6ba1f7e5e13ea7c38de4891f0e5fb3b5c496b0b3
-SHA256: a4ab4eda9cd1a434f9478443e3ab87fbb18275bf525458220a7cf80026414029
+Size: 21490
+MD5sum: ea39a7c8db46e9c9b1f9934c71b79568
+SHA1: 90305b3f2d82a15869d978aaf1b53f28a24ea339
+SHA256: bc561d7698e4937208d0fca0bf1476905ed672abf243b7a2c70c7b2bfc5edd30
 Section: net
 Priority: optional
 Description: Blocking ads & tracking Network-widly
@@ -83,10 +83,10 @@ Maintainer: Jakub Vrána <auto-converted@casaos.io>
 Installed-Size: 48
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-adminer-container_1.0.0_all.deb
-Size: 16608
-MD5sum: 6b7be44bc0aa134a79c841e54ebe4f2f
-SHA1: f9b892cee282306e309dc6159098a0e29d19c986
-SHA256: 9c2e39287d5c3f11aac19441de1b4f9405d1d37ce62aef7e103d53581ba4ecc4
+Size: 16604
+MD5sum: b833954360f9b4dd8891f7cf131eb119
+SHA1: 362d0bd3511171871ed4bdda1c35a33d63d5469a
+SHA256: c397db61cf8240274952654472225b40a78ce959c672d1c119fd3fc388a6cf1d
 Section: database
 Priority: optional
 Description: Database management in a single PHP file
@@ -101,9 +101,9 @@ Installed-Size: 71
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-albyhub-container_1.0.0_all.deb
 Size: 36540
-MD5sum: 16581e91acf6dbba5ba9f40d6360b7bb
-SHA1: 994113f1a38ee5f856f3520f29d813015438e31c
-SHA256: 44826a85dd70eb8a240a6846e69b6bfbb7315c2f1ceba1927b60fa8d14f1e9bd
+MD5sum: 727679f74b39684826498b32d73765a3
+SHA1: 2b80ad2b1073025f8886ba0ee2e8c2673d5a709e
+SHA256: 1a329019257cd9fcc06fab6085a93632557879b2442cd321dbe888c41682450e
 Section: misc
 Priority: optional
 Description: Self-custodial Bitcoin Lightning wallet with integrated node and app...
@@ -128,10 +128,10 @@ Maintainer: Xhofe <auto-converted@casaos.io>
 Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-alist-container_1.0.0_all.deb
-Size: 13290
-MD5sum: aa608027e84249ed0f5ab7b221cccef8
-SHA1: ed064eb560afb678b950916382b2bb2d1a6dfb0a
-SHA256: c44cc08d2771f009aac5d1889f6033e8b7570f4acaa7af175c17ef909b6e4567
+Size: 13282
+MD5sum: 3a6e08ba2edad0128ec9ffc40a9e9904
+SHA1: ad4b1f382d1b5ab3ab8e44837bb7068266e82856
+SHA256: a040208579eb4f22ac8b87da4a182e23cacde0a519a2f6622be92e756ae19da7
 Section: net
 Priority: optional
 Description: Mount your cloud drive on your home NAS
@@ -149,10 +149,10 @@ Maintainer: xjxjin <auto-converted@casaos.io>
 Installed-Size: 57
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-alist-sync-container_1.0.0_all.deb
-Size: 24760
-MD5sum: bd665b44462ed87dada6db337bf6f2d9
-SHA1: 767d1eed93eff101651a149e3613c82691b1f53e
-SHA256: 06f7f28ecee25d97941d35cc86c9356f26947bac6e0ef302e61298b064ee8d66
+Size: 24762
+MD5sum: 4fb61e3c6a69322bdb79029ab0b7d1be
+SHA1: 0fdfe74b742099cbce5072a6026bcf0e4520c32d
+SHA256: 8e5cba59aceaab25db54c814df38acd0fadc7dfe986227a8230df8a2a967fa7e
 Section: net
 Priority: optional
 Description: An Alist storage synchronization tool based on the Web interface.
@@ -166,10 +166,10 @@ Maintainer: LisonEvf <auto-converted@casaos.io>
 Installed-Size: 44
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-anaconda3-container_1.0.0_all.deb
-Size: 12106
-MD5sum: ae09c5fc928f45c6f62ae9f7505fc188
-SHA1: 6221fef346908203c125ef40ce2be4fcc544a751
-SHA256: 46099c0f267d0dfa2259b4ec06046ca579758585de615fbd371fd44764faf26e
+Size: 12098
+MD5sum: 0303f30b18c79a03cdee28346acba43d
+SHA1: 9de2f2eee43e2297054ef918825d752f5c9c25e4
+SHA256: 9fd9a9c9ad63159f2a427b63b4dae454ed4cf6aa02f721520d8ebc6f360b2a67
 Section: misc
 Priority: optional
 Description: Your machine learning Env work with Jupyter Lab
@@ -183,10 +183,10 @@ Maintainer: Mintplex Labs <auto-converted@casaos.io>
 Installed-Size: 48
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-anythingllm-container_1.0.0_all.deb
-Size: 15636
-MD5sum: 141288aa3c67f250a8b86425ba7590cf
-SHA1: 1c562096c04ceefc1e043d8216319410e8a422e7
-SHA256: bf5aea215a5c1e99f90aec7bc92d65e4807611ddbfe025b549e3ae2420c29d2b
+Size: 15630
+MD5sum: 40aace72ee46c0d361ac738c236fa1db
+SHA1: fd8341dbee34859e922d18922982bd84a95481f7
+SHA256: 43741142641042f8e178c20de842e761d085a674eaf89e4fc0abbe6917761b4f
 Section: comm
 Priority: optional
 Description: The all-in-one AI application.
@@ -200,10 +200,10 @@ Maintainer: ArchiveBox <auto-converted@casaos.io>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-archivebox-container_1.0.0_all.deb
-Size: 17210
-MD5sum: bec8af95d6a7adda148c7a50697181ee
-SHA1: cb9d1417f907de7961a594a27c933273762c980e
-SHA256: 6b772b74313840e662b7708ea9f809b46961b00aee8e032351422fb2c7302027
+Size: 17202
+MD5sum: 0b246da0058c69547d9869099f57c1c3
+SHA1: 29f3b344fe3ed5589cf0b08c10a6c4f29752b480
+SHA256: 9751775ffb6c67656a4113f61a1ac3575d3b09245c2b5b83a45c2116850691ca
 Section: utils
 Priority: optional
 Description: Self-hosted internet archiving solution
@@ -236,10 +236,10 @@ Maintainer: advplyr <auto-converted@casaos.io>
 Installed-Size: 173
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-audiobookshelf-container_1.0.0_all.deb
-Size: 140172
-MD5sum: 39056a42b35352adfbe80787d963b011
-SHA1: 49ac37dde4d4e582ce2f4be9321a73b660bdb5b3
-SHA256: 47b91f5b99f05ee6439e9c6286d4af9b2284c34a2e5634972ce36ff3f140f825
+Size: 140128
+MD5sum: 0160bbce408f13720da806dba70b8c5c
+SHA1: 5277a409ed598ff9bb50b5a4a486342837ada32e
+SHA256: 23695cab2c30ba11a76a10d4a4c667e9316e0c9197142132cefede94ee1f53a1
 Section: video
 Priority: optional
 Description: Audiobookshelf is a self-hosted audiobook and podcast server.
@@ -273,9 +273,9 @@ Installed-Size: 44
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-autobrr-container_1.0.0_all.deb
 Size: 11930
-MD5sum: ab64bf7ca0cd681275a9dc56e2267b5d
-SHA1: 97fb44f5a40c343d4a028ec5d38d647349e38694
-SHA256: b82b7176461a237985815e9862adb4039458490e18c83f666b2d7e24287db800
+MD5sum: 91f6c8aa5a4e24bdb1bfb534163d44ec
+SHA1: a1b59168337824a46fbd379751eb3411163db0c3
+SHA256: a0def1ac3c5e45e6d67b125b61f14db620706910ff8943b6f651869cc68eb6a8
 Section: video
 Priority: optional
 Description: Modern, easy to use download automation for torrents and usenet.
@@ -289,10 +289,10 @@ Maintainer: Sabnzbd Team <auto-converted@casaos.io>
 Installed-Size: 60
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-bazarr-container_1.0.0_all.deb
-Size: 28776
-MD5sum: 96d8843d4777602098b83c1e21aaf2dc
-SHA1: a69d01ac0ff690f56b1843f6e0c4789573f00d1c
-SHA256: 5c168a83399cfc4a668a28901d256e99c69baddba3a4af4cdaf9a00ca6083bb3
+Size: 28778
+MD5sum: 9224a62f509cd89cd21d5cbb04ff1306
+SHA1: b15e5d317cdebf888f0a353d733bde4f84807b5d
+SHA256: ecaedea47c1ed2272624ec198b3dde65a63bd14469209b578ca7d044f536ef9a
 Section: video
 Priority: optional
 Description: Letter generators for Sonarr and Radarr
@@ -306,10 +306,10 @@ Maintainer: daya0576 <auto-converted@casaos.io>
 Installed-Size: 51
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-beaverhabittracker-container_1.0.0_all.deb
-Size: 15700
-MD5sum: f25215a676605243e828f0777d36d07b
-SHA1: f562176311c27724aab1874ea1dc4e56aa51f525
-SHA256: 393fadae9ae0c5d978f727dabf2bacfaf86a462f08077d02614a7d8c804cc7a4
+Size: 15696
+MD5sum: 6afd1f9017298ee7c8a81e0877dec5de
+SHA1: 9e7924eee80d34356bea213a5c03fe643acadd16
+SHA256: 68e1356b74c7c9a699bf62c0d40f6ea59c0aee1755efd9faaa43ccc7baf12b6c
 Section: utils
 Priority: optional
 Description: A self-hosted, goal-free habit tracking tool.
@@ -338,10 +338,10 @@ Maintainer: amtoaer <auto-converted@casaos.io>
 Installed-Size: 36
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-bili-sync-container_1.0.0_all.deb
-Size: 4708
-MD5sum: 42f8b95cc0275c169927bf3897b66c89
-SHA1: 48dd2be7346317c9d1f97d9b9cf454ed639124b3
-SHA256: 4931c6f7533ffbfa422305dec130b83f09b7b06294b95b85bca238d0ff112821
+Size: 4702
+MD5sum: d2403dff5eb7cbbf7f198b5a600e1482
+SHA1: 280407a1bc913498b2ba3da4e998eb3c0f081699
+SHA256: cd8e8c2f88960f43d929ecab7fe4da8e6edf0bf6b43326aa5331d324be07bc28
 Section: video
 Priority: optional
 Description: bili-sync is a Bilibili synchronization tool written specifically for NAS...
@@ -357,10 +357,10 @@ Maintainer: linuxserver <auto-converted@casaos.io>
 Installed-Size: 53
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-calibre-web-container_1.0.0_all.deb
-Size: 19446
-MD5sum: faf7dc3a05e3d5008f33c78a7062db1c
-SHA1: 110bdeaf76dada2775d50d0afdc4ae68c77ac246
-SHA256: 0aca806c3739b080b22c69d539497106294a77f63b0015dd6e8ea950c2500bfd
+Size: 19444
+MD5sum: 84d5597ccc53e3f4dfc4560b1d49b5ad
+SHA1: 38a4adbcfee1d36f52e1c0800d46262f93a7aa45
+SHA256: cddedd4239bcb34710f78d06be19c223806359544b2e7ebb11fc81e9a3a3366e
 Section: video
 Priority: optional
 Description: Web app for browsing, reading and downloading eBooks stored in a Calibre...
@@ -376,10 +376,10 @@ Maintainer: Mckay Wrigley <auto-converted@casaos.io>
 Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-chatbot-ui-container_1.0.0_all.deb
-Size: 12504
-MD5sum: f841417580e57a15bece39f54b670852
-SHA1: d808ed735e9c1dcd82461f5cf5816ddfaf15ab1f
-SHA256: d5cb5b211547d69d59bc12fd297a9885499e5374687f6df12254c1fe64f97857
+Size: 12500
+MD5sum: 5e08e67bd9c1fc459a0d81505bcc87cb
+SHA1: 5711a7e7df1547d96305a4b4c619f58b7886440f
+SHA256: 64259cb24bd43269472a335039381cdd9f9c891d8dead10a01011c119ff9de08
 Section: comm
 Priority: optional
 Description: Open source chat UI for AI models
@@ -393,10 +393,10 @@ Maintainer: Yidadaa <auto-converted@casaos.io>
 Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-chatgpt-next-web-container_1.0.0_all.deb
-Size: 15158
-MD5sum: 4b1bead6fa2c653d1e19a15392d1ebe5
-SHA1: c8b6d54bb8aff3a1e395d14f0e7e9b41835439a4
-SHA256: 48ed434c108bf175a58fe424fb1c6c7ed4738c83a4ee01d14d23d9f5bf7a94c2
+Size: 15162
+MD5sum: e644a50b0dd71a1219da9146fcf8f649
+SHA1: 26d8c53c1f6bd51cd984d50749edebf10a8dca64
+SHA256: 416b3bd6165f55d664db0fdb149ef94b78dfa9692fd3b9e3d7572625776834bb
 Section: utils
 Priority: optional
 Description: A well-designed cross-platform ChatGPT UI.
@@ -410,10 +410,10 @@ Maintainer: dbeaver <auto-converted@casaos.io>
 Installed-Size: 49
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-cloudbeaver-container_1.0.0_all.deb
-Size: 16884
-MD5sum: ce14377dfce232ffae1c98691b23a2ab
-SHA1: 7ac0d3274637b9bce347018d42524df2cfa0493e
-SHA256: 752242f4b368e71cb753b082f8dec9f9b9830c410683c8e861c5360476f5008d
+Size: 16882
+MD5sum: 3e7b800581f4f33505927803464355cd
+SHA1: d00487be64c31d8b9378fe24761089dc7d475811
+SHA256: 7fc3d271694561ca036a4a65777b08319315554b7e840f40e9e28a821ddd8744
 Section: devel
 Priority: optional
 Description: Cloud Database Manager.
@@ -427,10 +427,10 @@ Maintainer: Cloudflare Inc. <auto-converted@casaos.io>
 Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-cloudflared-container_1.0.0_all.deb
-Size: 12428
-MD5sum: d361c4da9223b3d8b1a9fbe2043fd7f7
-SHA1: 00ef214666e6340b5e1da04955c89ec0fb5b23de
-SHA256: d6e16b69540349255e06f21250ae906775c23d0294a13686bada29036a1732f2
+Size: 12426
+MD5sum: e9826fc34a95a0e011e433650de09c6c
+SHA1: 24685f33eefa605818152b81aa93b4a9cec907c4
+SHA256: 2b7e905277322aaeaf24a4f2bccf6c7b24417420a93a869070c65b11ad62124d
 Section: devel
 Priority: optional
 Description: A tunneling daemon by Cloudflare that safely exposes your web servers into...
@@ -451,13 +451,13 @@ Tag: role::container-app, x-display-name::cloudflared
 Package: casaos-container-store
 Version: 0.1.2-1
 Architecture: all
-Maintainer: Hat Labs <info@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 19
 Filename: pool/trixie-unstable/main/casaos-container-store_0.1.2-1_all.deb
-Size: 3718
-MD5sum: c9729e5c5c3c4f9a656f291793a127f6
-SHA1: c431566ca8f1883d8c7b855c88e75723c9363200
-SHA256: dcde83ec86f153b989ae6b80d5845fc19bc735a361c718319bf01f392ec02f21
+Size: 3730
+MD5sum: efc75553096296d2f4c3c8d666bc44b3
+SHA1: a002d1baae8a6d346607419d2f79e422ff7e5cff
+SHA256: df9779d644652ebed2c76838f4c621ebb81340e73980f04bda65e9b387db4a1a
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/halos-imported-containers
@@ -483,10 +483,10 @@ Maintainer: c4illin <auto-converted@casaos.io>
 Installed-Size: 64
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-convertx-container_1.0.0_all.deb
-Size: 28792
-MD5sum: 97e1452bbe54b8df5855013c320fec8c
-SHA1: 7744f823765ac5aefea351ed63c5e15489f9f904
-SHA256: 8661a51dc7d41c717402d788f73fb2094def2abe499140295c9c8f82671683d5
+Size: 28788
+MD5sum: 1b02651a0d076737b6c17b95e6c4d994
+SHA1: 6daaa8e7bf1b901ab449e570718ef6e36bf3bda0
+SHA256: 0931954677cbfa680e1bfcea5dbe7ce546521a1f04f41816ce78795b0c5ffce1
 Section: utils
 Priority: optional
 Description: A versatile file conversion tool that supports multiple formats.
@@ -515,10 +515,10 @@ Maintainer: Crafty Team <auto-converted@casaos.io>
 Installed-Size: 44
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-crafty-container_1.0.0_all.deb
-Size: 10240
-MD5sum: 53fa59a201d338bbd087055309a88d78
-SHA1: 53ba0e531e92a4a1bfeb1f5db59276ecc66e5a68
-SHA256: ee35bfc00becd6db28110aca8e20dbfb489d37bf7a0bd6bab4ecbb72e39c9b0e
+Size: 10236
+MD5sum: 94dc8354687bead95b27a48e67106e7b
+SHA1: 5f1e5f0c7435b522ded8ce255f009ff53c45583b
+SHA256: 95f30efecd17cae24d9c70c79936535b4614b55de7c5a9041fd24c04ca0f11ae
 Section: games
 Priority: optional
 Description: Take control of your Minecraft servers.
@@ -532,10 +532,10 @@ Maintainer: balzack <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-databag-container_1.0.0_all.deb
-Size: 33990
-MD5sum: c1dad3842009010bb15bef5081312953
-SHA1: 4a2c78615fd114d9ac5fa904b1cbf34fe4f7044e
-SHA256: c191af74ebfbb5ddc07555733b1e4b384b6a9f23f141bbb434bbf521dc49b3bb
+Size: 33996
+MD5sum: 46a7d22a4896e14e838fbea6f1327816
+SHA1: 617bd23d566d43f5bb72df87a2197e7edfb8b84e
+SHA256: f29adde731a89c1830ad85a9c160fa7b8f3cfb691424b1a7908cc6763c92fcef
 Section: comm
 Priority: optional
 Description: Messenger for the Decentralized Web
@@ -550,9 +550,9 @@ Installed-Size: 51
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ddns-go-container_1.0.0_all.deb
 Size: 17862
-MD5sum: 6af9fed05617e52971ae29bb5a5e3fc0
-SHA1: 6e619a9a8d78af082f2cc26563559dd7f2d08e2d
-SHA256: 04e5f36ec1de47a84f69c2b5e933112f01eb5fe2fdfd86fc802df7da0d58cee4
+MD5sum: df402a814ddb8e36d17247e702bee670
+SHA1: 81e5c37771b554c5c66d98ea81e842e2cd027970
+SHA256: 7d6f3ec4089de5a70c1aca1fd2c326f55fe3f2af32b9ee14f3cc651e0baf6958
 Section: net
 Priority: optional
 Description: Simple and easy to use DDNS
@@ -568,10 +568,10 @@ Maintainer: qmcgaw <auto-converted@casaos.io>
 Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ddns-updater-container_1.0.0_all.deb
-Size: 20428
-MD5sum: 4c37a3dd600b1886d1ca0269c93fb48f
-SHA1: 37fc192a5176055cf07a3d01f930fe51c262f775
-SHA256: c6bce69340f0cef8ca23721995e7be2c1afadd5ed50eabe9341fd54e0157a651
+Size: 20432
+MD5sum: 4088d00fd132116c2613689a48504270
+SHA1: c9b18ce3d65424eff115dfa88fd92c6792a653f3
+SHA256: d64374fc4a1ad8d99c5de6e9510a64ed977960d9b78e5bd5ab7a789320ff4fbe
 Section: net
 Priority: optional
 Description: Simple and easy to use DDNS
@@ -585,10 +585,10 @@ Maintainer: Deluge Team <auto-converted@casaos.io>
 Installed-Size: 57
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-deluge-container_1.0.0_all.deb
-Size: 24748
-MD5sum: ff96ee49bf12046fcbb13081fe07f219
-SHA1: 3fe894361073093d45bc464f9af63bd97d8f3e20
-SHA256: da36ee8f29fd6b7350fd633ba24b48a0c27d455b7eff60b344909d3bf0d8727a
+Size: 24754
+MD5sum: 10febe2dbbef817abf709c1357bf238e
+SHA1: 3123dc17b773cab7440d6a12a87cf304ba82c249
+SHA256: 8009dcb60f5c11424be51d429d7e98fcf7abe9a8eb1e3fe254266c3edff9c56f
 Section: misc
 Priority: optional
 Description: A lightweight and free BitTorrent client.
@@ -602,10 +602,10 @@ Maintainer: LangGenius <auto-converted@casaos.io>
 Installed-Size: 139
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-dify-container_1.0.0_all.deb
-Size: 86590
-MD5sum: 8cb9b111aa5849fd5260018c64d7b5f7
-SHA1: bc1f422b44fe6b52db322d22a63166827df0d0e6
-SHA256: 276b12a8ab812581d57e22fd2607397fe712dc0aa494f44c6ef74531672a10e3
+Size: 86596
+MD5sum: b44df1dd5c25bc84cb700a844f3b49ce
+SHA1: 58961731b44bcb8283186898872c7b7837730ca3
+SHA256: 290c58c248563d3c1d8e0d0826f63950d3270f2576605a20e25731c9d251c1b1
 Section: comm
 Priority: optional
 Description: LLM App Development Platform
@@ -619,10 +619,10 @@ Maintainer: docmost <auto-converted@casaos.io>
 Installed-Size: 58
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-docmost-container_1.0.0_all.deb
-Size: 19468
-MD5sum: a052c172e991440a1a5ad43d7fb84f8a
-SHA1: 1024498e720be36bdabf8f36c07d372237fc353e
-SHA256: 9e602275b5d833dac1e3e59fec31d83a658634c5747888c686ba024a87adb8f1
+Size: 19460
+MD5sum: 871f5f84934d0f0c5235fb09d3c24ff9
+SHA1: 133dcfb708ed2b8c6da5fddabb5e6814361d4829
+SHA256: 0dab888d4ad7b10304c5dca87debf738afcb55129d415acf63f0226e218f5ccc
 Section: text
 Priority: optional
 Description: A modern wiki and knowledge base for teams
@@ -654,10 +654,10 @@ Maintainer: Henrique Sebastião <auto-converted@casaos.io>
 Installed-Size: 43
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-downtify-container_1.0.0_all.deb
-Size: 10590
-MD5sum: bb204e2f8394b0ed58806ea92a114270
-SHA1: 24c025a1b768e1d4b38feea4e1ea025cc82bc7a7
-SHA256: 77d2f805f438a8ee0dac8c794c522a85b3806f505168416955da7fcc2a3feeeb
+Size: 10586
+MD5sum: fcff3dedc20c09764a8b4fe5a099c02d
+SHA1: 13b54a11ea756a2ed339fa7ec8e8566c9e2c5d0e
+SHA256: e03ba60643be4b0de7ced88a39a5429e0b79ce064b43652387486e34a98bbb63
 Section: misc
 Priority: optional
 Description: Download Spotify music with album art and metadata
@@ -671,10 +671,10 @@ Maintainer: DuckDNS Team <auto-converted@casaos.io>
 Installed-Size: 46
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-duckdns-container_1.0.0_all.deb
-Size: 14132
-MD5sum: 1a93bc22144724381ba42aee7ee4ca03
-SHA1: a710eb3dbd5771cc338c78516771a973724399d5
-SHA256: b622ad6fce98b89c8b1b960a4de0fd1356fd3d458b75b42ece416ed5835d19f3
+Size: 14128
+MD5sum: 7d71f678d089f641def4df0868f64e7a
+SHA1: d8c8dcbec0c5d97172e6405db1be02c0caa0bf21
+SHA256: bc05594eb55c38ea51a5be57daee0ce4f6f6caabfac07ea1a9c57298fa981eb6
 Section: utils
 Priority: optional
 Description: Dynamic DNS for your domain, supporting both IPv4 and IPv6
@@ -689,9 +689,9 @@ Installed-Size: 42
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-duplicati-container_1.0.0_all.deb
 Size: 10116
-MD5sum: 4113b3ed478b44ea5b59d59cc2e707a0
-SHA1: 97ad18cae223ebc7d217078ad6880efd0dfea74a
-SHA256: 9ab0f97566c8cebffe3ed93386f1248be2fef3f36144c3be18727e7fa49512c8
+MD5sum: c433af0fe04687cc72c6a99db3844666
+SHA1: 12d62339086e93e06db30efdbd1a3cd8113e6b17
+SHA256: 4c4e670f37c15f498452aaf2434225ba503f19293231d89402e960ef3490440c
 Section: net
 Priority: optional
 Description: Store securely encrypted backups in the cloud!
@@ -705,10 +705,10 @@ Maintainer: linuxserver <auto-converted@casaos.io>
 Installed-Size: 57
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-emby-container_1.0.0_all.deb
-Size: 22552
-MD5sum: cb1b95b9eced8206efb69d7a0af9160d
-SHA1: f6bfa4363ca11a93ea671bdea97c249cce706736
-SHA256: a9b29f8dcff42bcd116ff6a83770a08a287293f01dc65295514557f6b71d7180
+Size: 22542
+MD5sum: d78797b6734075e7eaa39ec86da73a7c
+SHA1: e6f35304c5177c2271cc536e2e0e007d68cba64c
+SHA256: 179bb87d5954ab3c910e811174fffce6860fef8571b9b6bd971bfd1b2b115374
 Section: video
 Priority: optional
 Description: Emby brings together your personal videos, music, photos, and live television.
@@ -741,9 +741,9 @@ Installed-Size: 53
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-emby-nvidia-container_1.0.0_all.deb
 Size: 21152
-MD5sum: 59a4042ef860fded611027301b82ad48
-SHA1: 4ffcdc8bb91b6f1eced1207c011f2033027e6810
-SHA256: aea23ea4c6e8fd0ea763572ebdc756dd0fe709275bcd9c85f9d2a3ba17e23b72
+MD5sum: c037fc22a0e8547f3c590e21f4b44506
+SHA1: fa510500aea89b96e2baa4e710f6883104d75108
+SHA256: b3672528ccb41bff26b53222be853801ff16a8a0f6d70a7c3c43dbf3ecdbdacc
 Section: video
 Priority: optional
 Description: TAKE YOUR MEDIA ANYWHERE WITH EMBY
@@ -757,10 +757,10 @@ Maintainer: Embystart Team <auto-converted@casaos.io>
 Installed-Size: 62
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-embystat-container_1.0.0_all.deb
-Size: 28578
-MD5sum: a74655eb136d569c25f36fab446d7eb7
-SHA1: 0bd13e18e4f91c5dc43d46c59f4425ef6578d87d
-SHA256: 36cafa24420b3b010252e63602150a078850e36695ad9555981b5e4d0ed84a45
+Size: 28574
+MD5sum: e4873d46dcf4b4b2329bacf87fbb5bb6
+SHA1: 47218f77e2c17334112034119c5bc772fdcd0ab8
+SHA256: 63bd757a0599e33421e5b98886d340dfb9bb3fcf11803015aaafe77727b5b9d0
 Section: video
 Priority: optional
 Description: Calculate all kinds of statistics from your (local) Emby or Jellyfin server
@@ -774,10 +774,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 56
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-emulatorjs-container_1.0.0_all.deb
-Size: 23820
-MD5sum: dd0e15a9fdd13be84afe9e5686da935a
-SHA1: 9ee9a6565f6d6450cf4400fbdf4c7ca26fa87139
-SHA256: 5925f7f2cbe1a6884ec0c14b3bd7e7a4409e8f88d582536218457599d8833a72
+Size: 23822
+MD5sum: 8a0c6fef26b25c2a749e9484d9d7c7ae
+SHA1: 7a195096a605c01788ab8c00608d7b79b904b0f3
+SHA256: b141b446d858f3652b5e684ac42083b7a9d3cb4ed5b0d9047e4faa9ce286a61b
 Section: utils
 Priority: optional
 Description: CasaOS Container App for emulatorjs
@@ -791,10 +791,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 46
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-esphome-container_1.0.0_all.deb
-Size: 13934
-MD5sum: ac209dc9edd93a9267d1182a237d3fdb
-SHA1: 1ee096dab1a151c985dc67f341ce2c42f8be617a
-SHA256: 9f5a7f76636c226da119334883b7267d155acf1eeab79d3fc1989b5ad190fd29
+Size: 13936
+MD5sum: f104b54a412926224eeb27986af8750b
+SHA1: 42160e828c94c4a00c85591928d9b6794e94ce62
+SHA256: 354a0e8d164081a0cf4604644dd92baf160e873dbaeb6e5d7bafe0ede383dd24
 Section: misc
 Priority: optional
 Description: Home Automation systems
@@ -808,10 +808,10 @@ Maintainer: excalidraw <auto-converted@casaos.io>
 Installed-Size: 58
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-excalidraw-container_1.0.0_all.deb
-Size: 23660
-MD5sum: 875914c3454e4b3be1c9181bb14ef636
-SHA1: 742fb7685d2d0733dac6fac5d19821fc21fd33a0
-SHA256: 6e07b621e6a5d0708142bb75f4b82853bf15cf418ef9d7defc87b720eff6e97d
+Size: 23650
+MD5sum: 255ab2d5fc5062ac1393a9402b66f4bb
+SHA1: e2517631f3ddbdd57c135bba498da87c81e65870
+SHA256: 74ccb98f593f96744c27e69388bf7524fad1b3020f0b71ca627426af9e9e90d8
 Section: utils
 Priority: optional
 Description: Virtual whiteboard for sketching hand-drawn like diagrams
@@ -845,10 +845,10 @@ Maintainer: File Browser <auto-converted@casaos.io>
 Installed-Size: 59
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-filebrowser-container_1.0.0_all.deb
-Size: 27354
-MD5sum: 9e062842db86e536f121b3b9b80ef9bd
-SHA1: a2801761ef02449cbd874be6aa42205c966cda5b
-SHA256: 41a41f43e21ea9e13b03026adcd4b8778a6e662c102710b6633cd345cfeef449
+Size: 27356
+MD5sum: 6565e18d642bc5049a9ef04fc28cee8e
+SHA1: ae000dda1b1e174c2aa5402cb8428f965c9a401a
+SHA256: 5005ba525a78b690179bbe434c4bb2bfdb61b269d2398915fc4efff23b64c3fc
 Section: net
 Priority: optional
 Description: Upload, delete, preview, rename, edit and share your files.
@@ -863,9 +863,9 @@ Installed-Size: 43
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-filedrop-container_1.0.0_all.deb
 Size: 11138
-MD5sum: 4f5e27c3d0ed2712f9298bbbde44619c
-SHA1: 9dceb1952470ea1e135a2e7bba419d5fc531bf9f
-SHA256: d810ac893e954892fccf0c8a73e9eec8b47c4bc4a74d1bd527868030e30b015f
+MD5sum: 8a013ffe65847d04f5510790791c60d0
+SHA1: 934a233a0ec09658e5c73b2f58e8a700d0bb238a
+SHA256: 048a6dacec5bceb99d54670ed97d2073cb61fe75f8fbd1fb1278f95626a7a9dd
 Section: net
 Priority: optional
 Description: FileDrop is a free, open source file sharing service
@@ -879,10 +879,10 @@ Maintainer: FileFlows <auto-converted@casaos.io>
 Installed-Size: 46
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-fileflows-container_1.0.0_all.deb
-Size: 13722
-MD5sum: a221c28c9d79cec4cc83c397e30b524f
-SHA1: 18444826b34b4eccc56eed63f92ca9d25320371a
-SHA256: a61f5a878f4becfd40de3c9b0f2c466d4dd183bbaa1261e63db647addfb3db98
+Size: 13718
+MD5sum: f550dd5037d0e75adaf4c4a16e1f33b5
+SHA1: b2eb8c011537f5695defae634da1b9b0ca77e839
+SHA256: cc2513f2019d8c4bfcf33a19d7bf668f2cb515732157faa69fa9a8ed0766a637
 Section: video
 Priority: optional
 Description: File processing made easy!
@@ -898,10 +898,10 @@ Maintainer: Safe3 <auto-converted@casaos.io>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-firefly-container_1.0.0_all.deb
-Size: 20360
-MD5sum: fa977764572a4c0318f28b590a0ce50a
-SHA1: 2ff21be75bae418617c6c90c6c76c73104c9d065
-SHA256: 5b3363edd9ad73a0cbd0e958e38c278e6e3d58111d5bfda4d1b332991fbc50f7
+Size: 20344
+MD5sum: 218b1aa71c8b24e78220c39d9b5d4c48
+SHA1: 6b229c6702265c6a85c3182ea50aaa62094cfb57
+SHA256: 045676ed402f8b1c8eb9a848ef118fb16678ec4e2259d6d0d0ac52a86ccb8c54
 Section: net
 Priority: optional
 Description: Firefly, the easiest using of WireGuard VPN server, plus version of wg-easy.
@@ -915,10 +915,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 46
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-flaresolverr-container_1.0.0_all.deb
-Size: 14140
-MD5sum: 67f1f79e71a686ea928d74f069cb0373
-SHA1: aaa5f1831de0e13ba14e0de2d7c537435cfeb631
-SHA256: e88d15fbb67798da334e9362248c833acebdee82727be1177c24c0cc3217b45e
+Size: 14142
+MD5sum: 42d3050b4965882eb816c9eaf4ceb74a
+SHA1: ca5717966b06d800ff0428b0e72ffd3b65e736ce
+SHA256: 146b8e79d5b0b353e1ad213ed66a6fc1537bf15af2c2546178e88fda793b51e8
 Section: net
 Priority: optional
 Description: CasaOS Container App for flaresolverr
@@ -932,10 +932,10 @@ Maintainer: Flowise <auto-converted@casaos.io>
 Installed-Size: 56
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-flowise-container_1.0.0_all.deb
-Size: 18760
-MD5sum: 2c072fc029d12b2fd23d7ef49c933953
-SHA1: 196b56fc9f97cce30c15fcc2fa09dc36d32907f7
-SHA256: 9dd35daf9db7c91dd32f4e19646b089e1f55d355be9761b1d65e2d15fb70d0e6
+Size: 18766
+MD5sum: ffff044685d534b96b467d6f871450ec
+SHA1: ed7587b9bdad6a0d8f26e99ccde50ba899d76158
+SHA256: 9fb8b1baa947a3010c59a86ae7664c44df640a142c6627ae761c529c267a3ef8
 Section: devel
 Priority: optional
 Description: An open source generative AI development platform for building AI Agents and...
@@ -975,10 +975,10 @@ Maintainer: FreshRSS <auto-converted@casaos.io>
 Installed-Size: 49
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-freshrss-container_1.0.0_all.deb
-Size: 16946
-MD5sum: f6476d824ae09f4d9ed409a6e3f0529e
-SHA1: 248aa1ec69489492f9b1ea15c8f04d4ad1181ba2
-SHA256: 6e3e496e6ea1967e160714e65b0cc46c90e13bd9b63fbe884a27337bc10a98cf
+Size: 16950
+MD5sum: c734c8c6d498adb508fecb14634ad66f
+SHA1: e84ec22b45a9f88e24e335d2e5d4d42767b866be
+SHA256: d7ae8b6b489fd86dd87038f4f1574f6c7a6e743723b0acfe546038cea0dbadf4
 Section: utils
 Priority: optional
 Description: A free, self-hostable news aggregator…
@@ -992,10 +992,10 @@ Maintainer: iotserv <auto-converted@casaos.io>
 Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-gateway-go-container_1.0.0_all.deb
-Size: 20924
-MD5sum: 2593c3059edab48e01bb0414ee326f3a
-SHA1: a087b2073f567c1e4e8d0775d181f4d3b433a48e
-SHA256: 14956cd26a58fedf736881303ce00311239b2248ecc579c4bebb90954a31e535
+Size: 20930
+MD5sum: 95506464411deca36f8ce92590dee833
+SHA1: 11eff8a63df6afc6d5f2f7143b9dad1b325fa24c
+SHA256: ec0b5b9185dd373ebbdac3bafb2cdd195150db3c112aa16ac30d631f9558a1d2
 Section: net
 Priority: optional
 Description: A third-party client for casaos and zimaOS, remote access management interface
@@ -1013,10 +1013,10 @@ Maintainer: Gitea <auto-converted@casaos.io>
 Installed-Size: 71
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-gitea-container_1.0.0_all.deb
-Size: 35838
-MD5sum: e273dcd5fc2ef994fa6c56074c1058a7
-SHA1: 04a5c12aea96036e8659d5c4e3981ae98ba03eb1
-SHA256: 391177e8a2e3b66fa3521a5559a900418fbf9e8286802eccedfb412217dcda30
+Size: 35836
+MD5sum: 6219e5659a518929957bb2810fa76d15
+SHA1: a9b20af00dad8978e51f3bbae65f73f6d1f74f38
+SHA256: b09169f572b7f00b06ba2021068db01e2d689b403a1f266b0ec54989be3b17a7
 Section: devel
 Priority: optional
 Description: Self-hosted software development service
@@ -1061,9 +1061,9 @@ Installed-Size: 88
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-glances-container_1.0.0_all.deb
 Size: 53742
-MD5sum: 32507dc982a4714502d9399a85003565
-SHA1: 37f0c9c08b709e6677d0c213caf498c199e0cf51
-SHA256: f83e39ecec8581971f5e77363fd27d16cc3faa8a510c0c73532696be8cd7e445
+MD5sum: e01db7a2a2540b090e2f1436025348b0
+SHA1: 4739459c0a588f719634eb9a3bbb14b2731aa260
+SHA256: 529c6579abefb6b32fdf3593c2052b60c0ab5bef719db160835f643a0ad6c8dc
 Section: misc
 Priority: optional
 Description: Cross-platform monitoring tool.
@@ -1077,10 +1077,10 @@ Maintainer: GopeedLab <auto-converted@casaos.io>
 Installed-Size: 51
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-gopeed-container_1.0.0_all.deb
-Size: 15746
-MD5sum: 589f9a3d156e69190e1f386921b8908b
-SHA1: 1de12234312dd6e7788173bd7024324fe19c9959
-SHA256: 10cdd12c4a31b2753c83d8f41251d1c42937f6c56bc155c804248d400703fe9b
+Size: 15740
+MD5sum: d62eb6ce0144b9033054d504de601a64
+SHA1: 2e1b992bd6317f65fe5ce2ed6eaf9421d31e22a5
+SHA256: 5e891907c88b9f8ad6cdfd46672a78f6cd42802be9dcf236f59eeb9ce3fe04d4
 Section: utils
 Priority: optional
 Description: Open source, lightweight, native, supports (HTTP, BitTorrent, Magnet
@@ -1111,10 +1111,10 @@ Maintainer: grafana <auto-converted@casaos.io>
 Installed-Size: 62
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-grafana-container_1.0.0_all.deb
-Size: 29064
-MD5sum: 97afb4e50f73aa9e22292c68ce545338
-SHA1: 13922d5e1c3890a1744fe6c8a61c0c613bfc9169
-SHA256: cb43965321172d273e75a700a793f3ade1b2958a1e2540a323f2fa45625f139c
+Size: 29052
+MD5sum: f7548b49083682061e5be2d8b5062ca2
+SHA1: bd291be0eba4d26b9ef921d9acc4780cb2cb2c42
+SHA256: 415c8809df3b15a8c78c63fa9a0f01a2aaedf8ccde06d9aadc23b0f992f5c377
 Section: net
 Priority: optional
 Description: Grafana is a complete observability stack that allows you to monitor and...
@@ -1131,10 +1131,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 77
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-handbrake-container_1.0.0_all.deb
-Size: 45278
-MD5sum: 96b440262ce10d4260ab1f5ba478246b
-SHA1: 7d682f170a81f99f95b4a2b0552a5a3617326685
-SHA256: da2890a89ebd0f9117583504ad332b98503e3f9913727731214de489765411fc
+Size: 45268
+MD5sum: 300758408acace9a6c73cbc64fddc2d4
+SHA1: d04121a964d4c5fead62a5fa78d255abf14b00df
+SHA256: 8147375d817ba13225c494739398989a8a5a531f6d1f5490687d85759537415e
 Section: video
 Priority: optional
 Description: Liberate your videos and unleash infinite possibilities.
@@ -1148,10 +1148,10 @@ Maintainer: Stéphane Richin <auto-converted@casaos.io>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-holoplay-container_1.0.0_all.deb
-Size: 21438
-MD5sum: 11cc903612665c442054d6234e4c6b5c
-SHA1: 3cb29d447b2f2ecf1d97b0f714efdebc7b1a3fb0
-SHA256: d65835f3b4c0d450721be9a63bb42d992c966f7ae545f8f5f1c14988a16b0d79
+Size: 21434
+MD5sum: d4fa189b278bd4e38ddd202d716ee20a
+SHA1: 27c5ab86a8533e8e9f4555f7a003fd066f5d97fc
+SHA256: cf811df585b5d40ace2fedf6ab96a6b7e505a4092af3bbcdb38497e757e523d3
 Section: misc
 Priority: optional
 Description: A web app to listen Youtube audio source.
@@ -1165,10 +1165,10 @@ Maintainer: Home Assistant <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-homeassistant-container_1.0.0_all.deb
-Size: 33202
-MD5sum: c0738052ac3aa69e3e31e245a4a919e3
-SHA1: d0934a458d740d9c8086639d930a7f385fb8b8c7
-SHA256: d8fb2f2ff3ab252e2477dbc5e735c46d46856494b9639bde581ff2ae73b5f38c
+Size: 33198
+MD5sum: c52de78fc0c37c2d5dc8bcf693a79684
+SHA1: 5fbace9c15fd28d8605f7f012e9b9dc1c57410a1
+SHA256: e0869b803d8c61431e720a66fd819ee1625cfcc7f695223cc83494626f2c006a
 Section: misc
 Priority: optional
 Description: Open source home automation that puts local control and privacy first.
@@ -1203,10 +1203,10 @@ Maintainer: Homebridge <auto-converted@casaos.io>
 Installed-Size: 168
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-homebridge-container_1.0.0_all.deb
-Size: 138300
-MD5sum: d1387c3c879a86e215c3894859092f2d
-SHA1: 1c4c25fcaeb264eab8b3d92db3dc8ebda447a63b
-SHA256: 7c76f52b90fed3ad81e05254ae698283f7809dc3b52957d72cff01fd5689fc24
+Size: 138310
+MD5sum: 9e125747b0a3f6dcc049de5099efa421
+SHA1: b43c001c4a71f1abb9e4f32873afafa2478797a4
+SHA256: 34bcb1b37b68fb17f23b217a6b710317cf0da33d4a7af9c4159fbe8235f67083
 Section: misc
 Priority: optional
 Description: HomeKit support for the impatient.
@@ -1220,10 +1220,10 @@ Maintainer: gohugoio <auto-converted@casaos.io>
 Installed-Size: 51
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-hugo-container_1.0.0_all.deb
-Size: 15310
-MD5sum: bc76b4d9726294ebfdcc940af7fc96af
-SHA1: e03637ecf6a1136fbf0cd9802f207fac7c417dc5
-SHA256: 374e1bf2f09f7cf8bda18ec17ee22b9a4fa56a5df72934d8fccaea222d2bfcd1
+Size: 15304
+MD5sum: c5bfe057964aecef8fde604b96051d67
+SHA1: 5ffab0ff7b28cffc65774f5fe141e49cd0579655
+SHA256: 92c018cd2771a6782e1374817e78b9ea8cd9681fb1f1a578241253b1a02e90c3
 Section: devel
 Priority: optional
 Description: The world's fastest framework for building websites
@@ -1275,9 +1275,9 @@ Installed-Size: 57
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-icewhale-stable-diffusion-webui-container_1.0.0_all.deb
 Size: 23396
-MD5sum: 4ce6be9d27d33d598a48f070d4a29a92
-SHA1: cec6f13cbe17ca1f5aa55b445f5774840504f334
-SHA256: 1b195bd837dd0a780bed581203f1abb8e874546c89aefe5612031b012b75135d
+MD5sum: 03cde1eb8435974bc9cac0fdc4dcc065
+SHA1: 2d5ccb8c02d36a4a12004cf1467fd7caaecc7374
+SHA256: e80e5cbf0ae9360e35b6aaf1f5ab3cd1045b61cec12516a7f469c62a39e15dea
 Section: devel
 Priority: optional
 Description: An AI model used to generate images conditioned on text descriptions.
@@ -1291,10 +1291,10 @@ Maintainer: alextran1502 <auto-converted@casaos.io>
 Installed-Size: 51
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-immich-container_1.0.0_all.deb
-Size: 15928
-MD5sum: ab8f7081054b8076d89d3ce0c6657bdf
-SHA1: 04530b3a25462efe6ca7d819bced3d836628248b
-SHA256: e9488f9fef77c38dad5ae466b74ffc3c0d0915842a538eea6922f0722a6fc1ce
+Size: 15932
+MD5sum: ae07598a5dd65e02c4f89ef2dbc27769
+SHA1: 5db0ef31a71dec07bdad11c5df8aefbef0c7c25f
+SHA256: c111254db9cf868be4956f18a22f78c2721e66ea5313a8c98d7c0ecd898da2e2
 Section: misc
 Priority: optional
 Description: Self-hosted media management solution
@@ -1314,10 +1314,10 @@ Maintainer: Jackett <auto-converted@casaos.io>
 Installed-Size: 57
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-jackett-container_1.0.0_all.deb
-Size: 23440
-MD5sum: 37db436e306c72d354bc835701559800
-SHA1: 04a950f4c330b5a37c16912c8cc55006c64bfd74
-SHA256: b12a2e126ddd4919cdb7a38456a2285ad1e583ba8c9ef0e19af7e0642decd05a
+Size: 23436
+MD5sum: 11b48aa8d557697ff6ff3eb406a4164c
+SHA1: a153245770894accdf5c7de01aa5ce28a9d8f62d
+SHA256: f06b63436b094d9d6075bd72e826e9f705e54e39b62a4741c26688bcb863dc5e
 Section: net
 Priority: optional
 Description: Jackett works as a proxy server
@@ -1331,10 +1331,10 @@ Maintainer: jdownloader <auto-converted@casaos.io>
 Installed-Size: 76
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-jdownloader2-container_1.0.0_all.deb
-Size: 43074
-MD5sum: 97b800483b194845691de7949b66cdac
-SHA1: a8f24176f527218ef9564c5637c52e3dc2b75ee5
-SHA256: 3466eab884db189c2d824f04201fa9e9fe34301cf4e436d5c9d349bdaa078a53
+Size: 43066
+MD5sum: e74e5bfe3860a3b9fbe9c2729e4b6026
+SHA1: aa4272a61015dbcc7bc79f229cafe587a9fdc9fd
+SHA256: 86b35c31a7fcd2bc05bfb9f8a1622426be63f0eaeeeb916a89c52a9eef1213d8
 Section: utils
 Priority: optional
 Description: Free & open-source download management tool
@@ -1348,10 +1348,10 @@ Maintainer: Jellyfin <auto-converted@casaos.io>
 Installed-Size: 61
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-jellyfin-container_1.0.0_all.deb
-Size: 28940
-MD5sum: 4ba46de27ea736cdbccbdf1f41c0146c
-SHA1: db29ee339f13a84069e022c9084475b4967db6b0
-SHA256: 396b09b99dfd01e50dcb20116bff6c1113c223ffa0ccca5ad8a231f3e0718882
+Size: 28942
+MD5sum: b36819386cecea192fabe9c97b41deb3
+SHA1: d8971d74d9ff861653c5584f370016fa6ec5c4c1
+SHA256: 8756c9ca0ee074ad9ba1bb6dfd433c7b5538d546ced3789931f1c7a4b500da61
 Section: video
 Priority: optional
 Description: The personal Media System
@@ -1369,10 +1369,10 @@ Maintainer: Jellyfin <auto-converted@casaos.io>
 Installed-Size: 61
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-jellyfin-nvidia-container_1.0.0_all.deb
-Size: 28446
-MD5sum: 0322964703a942191500ee47868e3c87
-SHA1: 2e33e4859e34474ff25025facc25da938f754908
-SHA256: f37e079949b20d1ecfafe0f000f55b8cbd6e4fb99f63f6c07915cac577b42bd2
+Size: 28452
+MD5sum: 42fabdf57a09fba95ba9759a0c3a996a
+SHA1: 91e4e13263f8172e01475e1fa1782f5d4c9c64d8
+SHA256: 71ac7b54e9d0a2caa97cbd4449f01ea4c3f0cf6e6217f921b55c6c6768b03871
 Section: video
 Priority: optional
 Description: The personal Media System
@@ -1390,10 +1390,10 @@ Maintainer: bepp-boop <auto-converted@casaos.io>
 Installed-Size: 77
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-jenkins-container_1.0.0_all.deb
-Size: 45670
-MD5sum: 33b97b754f2ef50337e8ecb9f81f6850
-SHA1: c879cadb24f88d3cb7fb0da839e633c19349e6a0
-SHA256: b90b9819a36499260534a369814c5620182db1cfa14f5c01fbe4e00cca773c60
+Size: 45664
+MD5sum: 9ac32b92b060a93e1c08a4e42b009c8a
+SHA1: a2f1970dc95fb9f3b90831648e9a8a89b24bebfd
+SHA256: 6ee30dfcb2ac840431896f9ed06b93081867fcbca7e992bec033ee398c1ad61f
 Section: net
 Priority: optional
 Description: Jenkins Continuous Integration and Delivery server.
@@ -1407,10 +1407,10 @@ Maintainer: jvmilazz0 <auto-converted@casaos.io>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-kavita-container_1.0.0_all.deb
-Size: 17762
-MD5sum: d05fc64fcc1bb826711fd0f771c44a42
-SHA1: fe825c8b89a55010228392551fbdc69cb42ef562
-SHA256: 7311a34868085b1d8d0e1b91215de5c29fde9552549a1bacaed210a87c187762
+Size: 17754
+MD5sum: 291a59b971455fc1ee84cf79b451b153
+SHA1: e318972e641e6d423252a9424921dc3a8c908442
+SHA256: 8c1261c0ede34fe61b38e0d4bd62ef0edbec89a05f1b10066f71795bed60439a
 Section: video
 Priority: optional
 Description: Kavita is a free and open source web based Comic and Book Server.
@@ -1444,10 +1444,10 @@ Maintainer: gotson <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-komga-container_1.0.0_all.deb
-Size: 32588
-MD5sum: f62e814debc7f6f2977380fd6f6f0f54
-SHA1: 161d310d81482d0e065374f92f8ecc7f390f59ae
-SHA256: 76786ac662871085504395d13142f76b1dcb6a077ab732f79f0f39bbf131af59
+Size: 32590
+MD5sum: 589bbdf98bcbd448b6be83792687fdbe
+SHA1: 0625dbb12067930815993c1833e3221971ad0ce5
+SHA256: 3f7e4dacf87380585f4132ec7c02385e6ee395f51e3f4bc8946e2cc9ab4533f6
 Section: video
 Priority: optional
 Description: Komga is a media server for your comics, mangas, BDs, magazines and eBooks.
@@ -1485,10 +1485,10 @@ Maintainer: Yidadaa <auto-converted@casaos.io>
 Installed-Size: 40
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-label-studio-container_1.0.0_all.deb
-Size: 5790
-MD5sum: 539fdb6bea3be8ffc74fc563502e5070
-SHA1: 425b335f1192209d46cdcf7c9342c6c0a886c0e5
-SHA256: 12d31a667ed21b496057414c7a0cd51b8b628e5bd19ff607f16504752146abd2
+Size: 5788
+MD5sum: 280a3f74bceb8bd185d2788601b43b21
+SHA1: 991cd0d1b401cdc80f508660ae7838d4922d02e0
+SHA256: 5a55c2ec9d7bc82369bbf2346fad4146d58892d0eee0cb105b6469174f522ad9
 Section: misc
 Priority: optional
 Description: Label Studio is an open source data labeling tool.
@@ -1504,10 +1504,10 @@ Maintainer: langflowai <auto-converted@casaos.io>
 Installed-Size: 42
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-langflow-container_1.0.0_all.deb
-Size: 7824
-MD5sum: 6ea771e4f814574bd72e46abc47c4d3f
-SHA1: 8a251f19ce847c5ea846692f2b0d1f0991519841
-SHA256: c044d099d15a6b6021a30770be0cca8c74fae408d80a43ad87f9b9edd0347f21
+Size: 7822
+MD5sum: 95789b945804bb8824e4e16ac8542ecc
+SHA1: c700461e415cc394e5411832cad540b9704bc060
+SHA256: a88c4c8386765172430d4aca21e4e62a40d3a9156700d7cd208c3e933a410728
 Section: misc
 Priority: optional
 Description: Open-source UI for building and debugging multi-agent and RAG applications
@@ -1537,10 +1537,10 @@ Maintainer: Lazylibrarian Team <auto-converted@casaos.io>
 Installed-Size: 51
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-lazylibrarian-container_1.0.0_all.deb
-Size: 19698
-MD5sum: 8fc7a11aebe3a8c0326470bead192f8d
-SHA1: efe10692499a5896f553750e782e6038b0935a46
-SHA256: 6d2d210c0e84509d334cd6246dfa1d9057361eb64c87f8fe2fdca1e440bc95c8
+Size: 19688
+MD5sum: e7141d1f6b6dd86484f59dec8f3aef16
+SHA1: bb51c9d9c2bd01f12e2de63fce290732009fd6a4
+SHA256: 30c6be77f7e9337b99862e161cdc0c877f562f4d4b2879b36ce89a8d909ff5ed
 Section: misc
 Priority: optional
 Description: eBook Auto Downloader
@@ -1555,9 +1555,9 @@ Installed-Size: 84
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-librechat-container_1.0.0_all.deb
 Size: 40016
-MD5sum: 84cfb91f4867af33ea20124fbfddb746
-SHA1: c31ed80eb7a7ae6a9dbed4440b7742ff83a25759
-SHA256: 3c9a3df57042d69406776fa5bf1c680dcbf76cb2743bbe3ff29f2dea29d5c79f
+MD5sum: 8f17e5c1ea418f1ac658d808a88ff898
+SHA1: d565ce7ff0796e229a98aab252c2a064ee9906c9
+SHA256: a4b134b231aab4bddfd90b31aac2e06f3002f367f97f9d773d642dcaab471dbe
 Section: misc
 Priority: optional
 Description: A full-featured, open-source AI chat interface
@@ -1588,10 +1588,10 @@ Maintainer: lidarr Team <auto-converted@casaos.io>
 Installed-Size: 65
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-lidarr-container_1.0.0_all.deb
-Size: 31360
-MD5sum: 5666028777dd09a94e80a390ae6c246f
-SHA1: 50bc9d7d4ae91a234adce58bf795ce76a7fdc840
-SHA256: b84a5856ec90c2202397dd24565c58924b63be034e6d966a80b2e69a2c11fbdc
+Size: 31362
+MD5sum: ddf03738f8c8bf2ae3ad68baa9519b77
+SHA1: e696a7801c4dc258d492617d481eb09ae4c9fa41
+SHA256: 34bf5bccc51e0eec30b50b6bac799ee127930ebc8805faaed01f8552d6d444ba
 Section: misc
 Priority: optional
 Description: Music collection manager for Usenet and BitTorrent users
@@ -1605,10 +1605,10 @@ Maintainer: hiyouga <auto-converted@casaos.io>
 Installed-Size: 73
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-llama-factory-nvidia-container_1.0.0_all.deb
-Size: 39220
-MD5sum: 5a0072491cd27efa03957c1bbf10b098
-SHA1: 46b14ccaa365834978ebae3381f6636ec9600421
-SHA256: 66f476b8370bca775284d48989ecaeb740799823b79349de339d3623cb2b72e2
+Size: 39222
+MD5sum: 073a0d38a49bd2e8e3d68874ef1c49e1
+SHA1: 0ddfcc4ab0bfd7a4af9438cda6d822b05d93a3fa
+SHA256: a439698829943b6fd44c959d9f534da94d24b94a502adaef98136f3f27844583
 Section: misc
 Priority: optional
 Description: Einheitliche LLM-Feinabstimmung mit 100+ Modellen
@@ -1638,9 +1638,9 @@ Installed-Size: 43
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-lucky-container_1.0.0_all.deb
 Size: 11382
-MD5sum: bd9b7139ea9d69736464285175580647
-SHA1: 040022a373fb7209d4e6cd436f6a6758babc4dff
-SHA256: cdb5513fa0bda791d289f7057b601cdb6095bd199fb3d8427c5ff7ff51a8491c
+MD5sum: 062a49f3efe926d23fb7a3ef114a1b2d
+SHA1: 1deba6e7166efe750d992e77ecb6b83541c868e1
+SHA256: 23c96701cb9c457efc75429c93ad4b099f57432fceee592ee88761cc6544641e
 Section: net
 Priority: optional
 Description: Powerful networking tool
@@ -1654,10 +1654,10 @@ Maintainer: LMS-Community <auto-converted@casaos.io>
 Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-lyrionmusicserver-container_1.0.0_all.deb
-Size: 18010
-MD5sum: 534dd0f08f7e36f51bbef00905839f62
-SHA1: 14abdedf15ecf81c310383806d86b2003d82ec32
-SHA256: 5d158fc49db14c35b50bcfa8fb08f84d0a981c65c5254791db1fb2fa8cb61b9a
+Size: 18002
+MD5sum: 82579c9eadd5ef70e6763edeeebbf805
+SHA1: 2eae5e12fc664857f3e47141b106a8e783628557
+SHA256: 8009769e855ad194c50e5a0ec5bd3f7d8748e6564a320df8e6649b08f29443d3
 Section: video
 Priority: optional
 Description: Lyrion Music Server is a streaming audio server for Squeezebox audio players.
@@ -1686,10 +1686,10 @@ Maintainer: MariaDB Foundation <auto-converted@casaos.io>
 Installed-Size: 52
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-mariadb-container_1.0.0_all.deb
-Size: 17270
-MD5sum: 31f8948254bbd8487f75a42859da4bc1
-SHA1: d7b1b17ee6ed76cf8e2c1977ac5c4b245d7c8742
-SHA256: 2308e1d39b70e310d7b880fdc4aba4a24e937991b840e615782f667153c2e2f1
+Size: 17266
+MD5sum: 9774d5b14fafd1adbfd6e14acc00405a
+SHA1: 09072a54bb9d0ded1e1cc85165b620a1e5873e28
+SHA256: d3c181530ae75f2f6d9b1220e552e87d49cfa68d5e4506334aa4f80436112bc2
 Section: devel
 Priority: optional
 Description: MariaDB Server is one of the most popular database servers in the world.
@@ -1707,10 +1707,10 @@ Maintainer: maybe-finance <auto-converted@casaos.io>
 Installed-Size: 62
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-maybe-container_1.0.0_all.deb
-Size: 22656
-MD5sum: 4e0762d0946697a36a2e839e247fa2d7
-SHA1: 081fcb5d29f267bc2b2f0ea970f92d2263e5bbf5
-SHA256: 2044104c0ec99ec80ec3e52b9ab4b774a3eb36dd240c5d0f2085bb0fc29f8c21
+Size: 22662
+MD5sum: 613a63a475e45f5a97bfe1505a599e22
+SHA1: f674f56e4decf8eda83cb3818ead59fb727282ec
+SHA256: a336c393bed023153bf9fb8511205824ad21b89c552001438a402ac539139180
 Section: misc
 Priority: optional
 Description: Personal finance management application
@@ -1742,10 +1742,10 @@ Maintainer: pyMedusa (https://github.com/pymedusa) <auto-converted@casaos.io>
 Installed-Size: 40
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-medusa-container_1.0.0_all.deb
-Size: 6612
-MD5sum: f8e4a569a50d3bbd353072602b80534c
-SHA1: 726fc0b5322617e00563420a18d0d7bf5c2bb7f4
-SHA256: f2699b7b733530e101d58f53dcdee5fc8bfb272a8a7205897352b2e90bcfc344
+Size: 6608
+MD5sum: eb7e208b7df4be1f1d8307e5424f3765
+SHA1: 36dba6484c5a45baa2981d22c179d290fc3290fc
+SHA256: d8af069a36b5cbe852ab14fe4cb153cd756f9c6703ea2aab3c48f7e3925691d8
 Section: video
 Priority: optional
 Description: CasaOS Container App for medusa
@@ -1759,10 +1759,10 @@ Maintainer: usememos Team <auto-converted@casaos.io>
 Installed-Size: 383
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-memos-container_1.0.0_all.deb
-Size: 357090
-MD5sum: a4d9bebff7483c43fd84162339b9e87c
-SHA1: 278bc17557676454aecd46b9e9b79ebb33d0beeb
-SHA256: 1ee615bba471e5625eff383115886ad81ce18d52171cb8696974a16c6db3ce1b
+Size: 357082
+MD5sum: 00b0da3e6c1454bfef1d9a6a13e5c00f
+SHA1: 11ca56b47debe0ab9a5bb131e6855a9c2ac88161
+SHA256: 7ad4f512156aced7e74577790c9ee7c38593fd136b920c1bbc3cd98abab6faab
 Section: text
 Priority: optional
 Description: Memos is a lightweight, self-hosted memo hub. Open Source and Free forever.
@@ -1780,10 +1780,10 @@ Maintainer: hexparrot <auto-converted@casaos.io>
 Installed-Size: 83
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-mineos-node-container_1.0.0_all.deb
-Size: 51524
-MD5sum: 2d73c59e7a31741673545926d75cee18
-SHA1: e7dd6352c29b5f2f296e1e55ac2f98fe53b52abe
-SHA256: b022c874954d379f9e2ca8180b004852069f7ad8f5547c5c1d4774f188f81232
+Size: 51528
+MD5sum: 5b360f077fb32177c1bf06ba67139862
+SHA1: bc59a7e27d2c1e1fb7be7e27e7854fecea6c0205
+SHA256: 339d4eb0653ba6048af500187befc0983407f9ba9505e72ef713f14f22c4fa8c
 Section: games
 Priority: optional
 Description: Free and easy to use Minecraft server management tool.
@@ -1797,10 +1797,10 @@ Maintainer: monica <auto-converted@casaos.io>
 Installed-Size: 61
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-monica-container_1.0.0_all.deb
-Size: 24332
-MD5sum: beba7c55de375106636c61f49328b14b
-SHA1: 9f2862457ad7f00663a0c51488ddff80a798862f
-SHA256: 968eda76c1df5e8a3a4bbc35a9378bacdf0e1f1e8d2892f5ab55b034563c64fd
+Size: 24334
+MD5sum: d5286e68e7ca90835ec15d7ecf038a35
+SHA1: 1fd7dcf2c5dbd2208af4df4c31c2ff7e3a53aa54
+SHA256: 6f27fe841402a6d508f2b506453ea1563d66818b991f815f0b48a9a13f46ed40
 Section: utils
 Priority: optional
 Description: A Personal Relationship Management tool to help you document your social life.
@@ -1832,10 +1832,10 @@ Maintainer: Motioneye <auto-converted@casaos.io>
 Installed-Size: 53
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-motioneye-container_1.0.0_all.deb
-Size: 21084
-MD5sum: b16c41d4b982d0c1e0533185e0299e8d
-SHA1: 80ce9c1fa09e71ce3d36877f4e824a65c7724cd3
-SHA256: 754866e948a6e124c5764167cd1b691726edb52ff5b929d5719aeea19f75e3ca
+Size: 21082
+MD5sum: 3bbfcdec3abe606e0ab8644ca5561ff0
+SHA1: d27cb97fe3da1ed3ff14e4b29625a915a4959c92
+SHA256: e6f1c9fabb9943c7b82457aad8e1d8483e6e75a34358196b58d4208f2636d2a4
 Section: utils
 Priority: optional
 Description: A web frontend for the motion daemon.
@@ -1849,10 +1849,10 @@ Maintainer: Mylar3 Team <auto-converted@casaos.io>
 Installed-Size: 75
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-mylar3-container_1.0.0_all.deb
-Size: 41746
-MD5sum: 2eeb66ce3c64bb5aec27df57cf2fdd7d
-SHA1: 97dda73ca2ea7cf918e3ad63c2f670ce1cfee3ab
-SHA256: afad1fb65e46c403aeb79eda5e119d6e361a5f4b7ce7626d418e7e6032561216
+Size: 41754
+MD5sum: a4462551fe99108537911397f1eba682
+SHA1: 98a0adaa77677a7ded7640f6091b3885dff6dbdd
+SHA256: 19d2f080562a5c6e0353c48bfb889524960484a4aef6a462193de26c09d52a0b
 Section: misc
 Priority: optional
 Description: Automatic comic book (cbr/cbz) downloader
@@ -1866,10 +1866,10 @@ Maintainer: Mathias Wagner <auto-converted@casaos.io>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-myspeed-container_1.0.0_all.deb
-Size: 21792
-MD5sum: bf7b7eb1908565e05b65f1a6740e060f
-SHA1: c3ce04b779dfb729c0e2204d66e183c8ce1a6a38
-SHA256: dab2c1f3a50d0ac168c7ac37da5acd8b3d8681a8eec62357c36d2afeb00576db
+Size: 21790
+MD5sum: db8ccf43d527385e655ef7d9a5d40459
+SHA1: 28b55d6fb9653ff3ff584fe62f9eb7bce1bcfaa7
+SHA256: 9487e6559cf64f8a772fd8e2640e1ffb7c9832f5b097ed68fa730e2fca0bb277
 Section: utils
 Priority: optional
 Description: Analysis software that shows your internet speed for up to 30 days.
@@ -1883,10 +1883,10 @@ Maintainer: n8n <auto-converted@casaos.io>
 Installed-Size: 48
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-n8n-container_1.0.0_all.deb
-Size: 14584
-MD5sum: 53f760e1d1825b9edc2c790a95c2bd66
-SHA1: 7dbf6c40f10af9709571739abb38ea5b26ef6c74
-SHA256: 145f49b24e385031c0e03fe55fe45945fe9622d34c776c83fea211ab68748a91
+Size: 14576
+MD5sum: 6e0cddd591f4f910603c74f23aae5467
+SHA1: d6743391cfbef20ec8d79763751c39a2a608c894
+SHA256: ce2ad6d354e6de0b7c937bd905bc9cc2286bf13e010ff3301532779bcc8af9ab
 Section: utils
 Priority: optional
 Description: Workflow automation tool
@@ -1911,10 +1911,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-navidrome-container_1.0.0_all.deb
-Size: 22554
-MD5sum: a08376e08e4395cb163973ec52d26e95
-SHA1: 2b0baa081da025c27806210f440a9c8aea3cc0ea
-SHA256: 5b0d0c4741e748326e7e088b23a0541827def3b255c63562385c856aadb8441e
+Size: 22558
+MD5sum: 0c9bdb7f6c438d8476fe360579bd5784
+SHA1: 25c90b44523fd6ff006f5f5329d26d40ca860e85
+SHA256: 0c7efdd76cc64c120ef0032efa3ac82c0386769f68b0aec4a7fef2bb7d7cbb0f
 Section: video
 Priority: optional
 Description: Music Collection and Streaming Server
@@ -1928,10 +1928,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 44
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-netdata-container_1.0.0_all.deb
-Size: 8960
-MD5sum: b5a3398d692f9e3f148413ca5c0cc214
-SHA1: f2a8de08ece0dc4968fe23c50e5b7cbd32147bd0
-SHA256: b6a11ec3cea3155371427cf7f2648f6c1828566e19387f68e4fd7e0d66fb088a
+Size: 8956
+MD5sum: 9571d71e1a2559e55a86d456a1b2a202
+SHA1: aca7a2533b9743cd9dfae3d087d45ea5069506a1
+SHA256: 1e5778d2dada925399765bb5257adf2b6ac5ab202cbb2b21b4b13579c9707813
 Section: utils
 Priority: optional
 Description: Real-time Performance Monitoring
@@ -1945,10 +1945,10 @@ Maintainer: Nextcloud <auto-converted@casaos.io>
 Installed-Size: 57
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-nextcloud-container_1.0.0_all.deb
-Size: 23418
-MD5sum: 0ca3196596ce84e3b26bd2d5272f9e7b
-SHA1: c092c272bfbe7ed78be7e209d7ea2e2be1b286ba
-SHA256: bfb14d16ba1e955ac3b1da768c344708d08af997bdcc8a790e7fb005b7d7fe38
+Size: 23414
+MD5sum: aeeeac503ed7d162f6075dfff832b368
+SHA1: f025a72ded7ce2386f103e2ee247dae601e2aef3
+SHA256: 359484e25e2042e9d709c9492080bb7b1791525d638ba150e89953f15a53b3c6
 Section: net
 Priority: optional
 Description: Content collaboration platform
@@ -1966,10 +1966,10 @@ Maintainer: Nginx Proxy Manager <auto-converted@casaos.io>
 Installed-Size: 76
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-nginxproxymanager-container_1.0.0_all.deb
-Size: 44328
-MD5sum: d9934230e811b269a49419c8553e804e
-SHA1: 0b552a0435f834e72aa5fcba49f3426d6a530213
-SHA256: 866f15b8e7d13b9884cea1e89284a96ff26ae765fc85ee6e41e6de98740aa1e0
+Size: 44330
+MD5sum: 7a2cda1922477b0268df5ea9360f6d64
+SHA1: a75557f12119765ed2ec459d34027af542501dd6
+SHA256: c335eceb6eb8048723be8b7de9afbc95d040bddd992490952e159d3c05bca29d
 Section: net
 Priority: optional
 Description: Managing Nginx proxy hosts with a simple, powerful interface.
@@ -1984,9 +1984,9 @@ Installed-Size: 50
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-node-red-container_1.0.0_all.deb
 Size: 15150
-MD5sum: 22edb344f80810f9a0a800d6f92f5795
-SHA1: 270252eb973d2a1f6bf60fc7b6b492c9add2e02c
-SHA256: 41d1c2450fee5dcbc0364e3766f5bc383ad3433595584f79a4cef7084eb31ae3
+MD5sum: 46709665e6c0f309265f482eae1fcf97
+SHA1: 8884efff69a9b30da54b029da81e92d71a4bd458
+SHA256: 40782aded6919391d7295c19e61f89a66b65dba4c099f19daa9a63b94d4047d5
 Section: devel
 Priority: optional
 Description: Low-code programming for event-driven applications
@@ -2018,10 +2018,10 @@ Maintainer: Nzbget Team <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-nzbget-container_1.0.0_all.deb
-Size: 35826
-MD5sum: 9b25ef5439f3d0d2dee4b6c98a76907f
-SHA1: d785b22b524b91eb7c519fc6ec89180d72d2d283
-SHA256: 196310de9a8b319e44f34551c0b7663ca121c87b67ba65786631fa6ad24dc68d
+Size: 35822
+MD5sum: 1ae7ee1c54ef3bcf8b2a7a9bebfe1720
+SHA1: f3041e4f1b563e3bb81868f142523b97812e4f99
+SHA256: c130120d0678b3ff6c24d1b4f3e42c3b815a89fc0c0a2cd22b0cfea834c47f71
 Section: misc
 Priority: optional
 Description: Efficient Usenet downloader
@@ -2035,10 +2035,10 @@ Maintainer: linuxserver <auto-converted@casaos.io>
 Installed-Size: 81
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-obsidian-container_1.0.0_all.deb
-Size: 46192
-MD5sum: 63fda3d550ab027e60589fbae286b51d
-SHA1: 711114c652c2747c535ac8ff875277ecb88895e0
-SHA256: d36e1ad015750c6ccb1867c6fed5e67311fec06f2afbafcb24dd2643a418ec8f
+Size: 46188
+MD5sum: 8b4927246dcdc314c561f31001c6c7e6
+SHA1: 3432db37fd35b2abf615fc1f0bc7c72b93b62ec5
+SHA256: 147c2af6d9549ba1df7eba0418144d41319230a95c526a688e20521b75e2f5c2
 Section: text
 Priority: optional
 Description: Obsidian is a knowledge management app for creating, linking
@@ -2072,9 +2072,9 @@ Installed-Size: 81
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ollama-container_1.0.0_all.deb
 Size: 46666
-MD5sum: 6b0545a8d8a4745bad10436968bbdd27
-SHA1: d931c721ab60b5c78c5785691ee565a509e9f7fc
-SHA256: 8a091c520bba4dc597540caf85bbfce58487c205c7c04874e98f98767a564eab
+MD5sum: 0827f13312c0ef66c629b02aa3006cef
+SHA1: a75417fdaa18bfa77e6e3c76a5ee8213e30c06c5
+SHA256: b435fa6ac4367d6981defe682fc34a6fe7aedfcfcd63042d3fbfd35b2d181945
 Section: comm
 Priority: optional
 Description: Get up and running with large language models locally
@@ -2125,10 +2125,10 @@ Maintainer: ollama <auto-converted@casaos.io>
 Installed-Size: 81
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ollama-nvidia-container_1.0.0_all.deb
-Size: 46680
-MD5sum: 14cd800f96eae5da8580d06cef56398a
-SHA1: c56e41d325bf9a8a8640471306f71d90e6173d78
-SHA256: e3d1613f64c83cd3da31f8d45f01b652881c754068222d0c0bf9d160208c606a
+Size: 46674
+MD5sum: acd1e471299c964846f4287cf6775b11
+SHA1: 0893ace71ec4deec11faa1c4d4bcf37668a90f73
+SHA256: 7137aed42a5e57e70ea29e936dac66e89e67ffe856c5f8cc93e19a17bd848da8
 Section: comm
 Priority: optional
 Description: Get up and running with large language models locally
@@ -2179,10 +2179,10 @@ Maintainer: Sabnzbd Team <auto-converted@casaos.io>
 Installed-Size: 66
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ombi-container_1.0.0_all.deb
-Size: 34384
-MD5sum: f16d71998cf1834b3ccc89923d3a9fc2
-SHA1: b05a6a7337c11f1988dc7fff0aa2a837d83c67de
-SHA256: 7aa65a5542c929573fab0e3208f657284693f9bc3454ca7331a4c9143b880ab3
+Size: 34386
+MD5sum: 37bd854d29870b418a4b09583f1688fd
+SHA1: 0abaca31b3b04378b6b33cbe5777f589ee63eb50
+SHA256: 110b8dae20777e61562873f27bf42a4ad00971006f42207db779c44578d82e1b
 Section: video
 Priority: optional
 Description: Friendly media request tool, automatically syncs with your media servers!
@@ -2196,10 +2196,10 @@ Maintainer: Tim J. Baek <auto-converted@casaos.io>
 Installed-Size: 52
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-open-webui-ollama-container_1.0.0_all.deb
-Size: 17922
-MD5sum: fd0a52a5296112323949c9d1e0b15e67
-SHA1: ff7bddd4c588f94134d12d0a5cfbe13f4a6d05e6
-SHA256: d20fda26e198f404f47baa3070883212540dc4664e22b3035a302136793a8472
+Size: 17926
+MD5sum: 01d16bbd1136f477f8f4dc724fab365e
+SHA1: fa504b8679747dbaa33b6307f53c90fc433a5737
+SHA256: c23a3e4f2f9f41a85fcafe3effcec44bbe6343acb48efb82127e57d8bb9062ee
 Section: comm
 Priority: optional
 Description: User-friendly WebUI for LLMs (Formerly Ollama WebUI)
@@ -2232,10 +2232,10 @@ Maintainer: openHAB <auto-converted@casaos.io>
 Installed-Size: 49
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-openhab-container_1.0.0_all.deb
-Size: 15914
-MD5sum: 15f7a7897a89fcd662d2816134fde03b
-SHA1: c0485b314ade238c99b1f80e7318dbb6700ed78c
-SHA256: 1641d738eec80dae3add68d1ddc8b942c86cfd4b4511b3af27211f2412725859
+Size: 15916
+MD5sum: 88d157275f9b60e105b24b12398fb66b
+SHA1: ca9c2316977bee6cd6b5dc5f716746477419c15b
+SHA256: 6df4d00457472e5ea166d3cee352d2006311a5d506adc2e45ba86934bbc479a0
 Section: misc
 Priority: optional
 Description: Empowering the smart home
@@ -2249,10 +2249,10 @@ Maintainer: All-Hands-AI <auto-converted@casaos.io>
 Installed-Size: 45
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-openhands-container_1.0.0_all.deb
-Size: 11250
-MD5sum: 6574809961d102abe917d2b741126db1
-SHA1: 1a84dc571759f270f6e65b2eecf8272cc654f5d4
-SHA256: 3cdce865472264c1fe5568b076791de30b12c4ad9e3798ce5a949d7b42a01ec3
+Size: 11236
+MD5sum: 85cb8e1f785366c2b7ee53d91e729c71
+SHA1: e4341e2b087659c89bd1a5b55883414994583fed
+SHA256: 4bdc6165f33584a1b57ab1a8fc859a5f37c46b8788cc554a6a0bbb07551340b5
 Section: misc
 Priority: optional
 Description: Open-source AI-powered coding assistant
@@ -2279,10 +2279,10 @@ Maintainer: OpenSpeedTest <auto-converted@casaos.io>
 Installed-Size: 58
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-openspeedtest-container_1.0.0_all.deb
-Size: 27210
-MD5sum: 604e72419f7de8065dedfe7447423ddc
-SHA1: 6e3fc74bd6cf0b2572a470b32fec5dbda478e1a2
-SHA256: 60ae38a0f2e4570ddb6d034baeb1ee3cb7f151b11fa4dc8607075392b97a16bb
+Size: 27212
+MD5sum: f89125a81a304f86884f6b4ee8e1374e
+SHA1: e1f9f4ad2bd40c91318917d38bc87be135772afd
+SHA256: 0dfac8aa136a2069c297815c02814bf9cf17bb9193787895a02865291d4cb3d6
 Section: utils
 Priority: optional
 Description: HTML5 Network Speed Test Server.
@@ -2296,10 +2296,10 @@ Maintainer: LinuxServer.io <auto-converted@casaos.io>
 Installed-Size: 51
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-overseerr-container_1.0.0_all.deb
-Size: 18664
-MD5sum: f81f57b78d5098b5ba2aaa8f5c5605e5
-SHA1: a64003eb95a1ef3c2df32b61694c53e2bf43ad92
-SHA256: f20b17b832a3fdba6f3e2d7e6e4648cd0b3ab07eb0ab7e21c493c528fed39812
+Size: 18656
+MD5sum: 4bc8fbbcd2479b3dd99f438218c43d2e
+SHA1: 5c253dfc1faa190cec8274c262a3e26ac16da81d
+SHA256: 6a913332201eed5cab06371c96aed381ea4e2c50ae058cca127c501093c59e14
 Section: video
 Priority: optional
 Description: Overseerr is a request management and media discovery tool built to work...
@@ -2315,10 +2315,10 @@ Maintainer: mrmn2 <auto-converted@casaos.io>
 Installed-Size: 109
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-pdfding-container_1.0.0_all.deb
-Size: 66060
-MD5sum: ab932587a5c52077559b973c037464b8
-SHA1: 72d6fa072bc7ebcf3e4459e13a82ec2532e6fdba
-SHA256: bf551a323ee4041b9c3cee94fe4f2b9360165e7be16f718b637302e1e1489fcc
+Size: 66056
+MD5sum: 6b95692e3a3c12ba7abafbc038df0b49
+SHA1: 2a701146a43b9ff83818136fdf1a8e624e19fe0c
+SHA256: eac6c0ed856b8ed858b450dedce1c2807a79d2d7520cfdd5dc01cafecd14c29a
 Section: text
 Priority: optional
 Description: Selfhosted PDF manager, viewer and editor
@@ -2336,10 +2336,10 @@ Maintainer: Petio Team <auto-converted@casaos.io>
 Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-petio-container_1.0.0_all.deb
-Size: 13592
-MD5sum: 8e7e01cefc83ae53c3d48a9afacc89db
-SHA1: 85d77e76ad3977045a73e8a9ac33732fb26480c2
-SHA256: eda28e8014f3e7b078265aded5d58471686112e6a0027ccc5d16a6c97aaceebc
+Size: 13594
+MD5sum: 45664ba045e8164cf77107e874845930
+SHA1: 76e4de4657cb35c20a550941d838125bea1e2d5d
+SHA256: 87851a6377266039092b63f83daa964c788360b2bf808e56f40c3cc457dc6210
 Section: video
 Priority: optional
 Description: A third party companion app available to Plex server owners to allow their...
@@ -2357,10 +2357,10 @@ Maintainer: PhotoPrism <auto-converted@casaos.io>
 Installed-Size: 71
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-photoprism-container_1.0.0_all.deb
-Size: 39022
-MD5sum: cfb96edc80d30755ec7caa6401707de7
-SHA1: 385c359da8b85f6cc1c928a65c169818505224bf
-SHA256: c9fbb4e0752b88bbbe3a900879dad1c5ffb6a8ba3685db2c5fc11799e3394b7d
+Size: 39016
+MD5sum: d39862ad064fcb629ff9a25cc6a9c635
+SHA1: e15ef7fec11883f21c20155f398d5632be20a2e3
+SHA256: 68118b01a64c7653ba8f03c3a615dcdc75d1ae9304603d001464ffa29d7f88a6
 Section: misc
 Priority: optional
 Description: Browse Your Life in Images
@@ -2380,10 +2380,10 @@ Maintainer: Pi-hole <auto-converted@casaos.io>
 Installed-Size: 61
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-pihole-container_1.0.0_all.deb
-Size: 26924
-MD5sum: 4d2b0d8c97d9921d816b9109c3ee8c9d
-SHA1: 989d1a0abe55708b074b7adb68156038b4aa4e77
-SHA256: e7c42d1aa56e37839a319038b79b904d23e00272a69309661b48330b3cff19d5
+Size: 26918
+MD5sum: 13b3bcaa905aed1fbcd92aff2c036ef7
+SHA1: beaca15fc6f6e715916ae32ba8cd3b54629eddcc
+SHA256: 19d1719263952d5c4f7de5d5781831d5a9bd3a407c9d5d5618479d8726001ead
 Section: net
 Priority: optional
 Description: Network-wide Ad Blocking
@@ -2414,10 +2414,10 @@ Maintainer: kieraneglin <auto-converted@casaos.io>
 Installed-Size: 66
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-pinchflat-container_1.0.0_all.deb
-Size: 33444
-MD5sum: 233ecec8e55823c19102bd13e4910e0d
-SHA1: 4734122da66258171b9afd552d6fc68c237d89b7
-SHA256: 394314970910aa8cfea0ba7c7b1164b9fc65c5bfcd079476133f50b4d27cd94b
+Size: 33456
+MD5sum: 6d2086f967e50e4fe37aee4dfe48e3ec
+SHA1: 5e425489ea8ebb204637a784b84ac06e04b90836
+SHA256: 501eb396c926ee462717a644623765b89759b545cd2ff9d03ed3b746a39e3a2e
 Section: video
 Priority: optional
 Description: Your next YouTube media manager
@@ -2450,10 +2450,10 @@ Maintainer: Patrick Lorio <auto-converted@casaos.io>
 Installed-Size: 72
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-playit-agent-container_1.0.0_all.deb
-Size: 40994
-MD5sum: 84c961c766bfb7fa4a36e4a7d0983472
-SHA1: 691ebce1d2e13b04e46beab0bf23d9ff1656347f
-SHA256: 4e5ab2dd7fc86f64229fca7b33d8aba417eea354d20c6e5ba741f35721aa1ce9
+Size: 40988
+MD5sum: e989e06762fb2afb94b497b7f676b551
+SHA1: b6ccbdb0852521a0525d6264cb41225a5a3160e1
+SHA256: 9592c930c467b7a33ddbb35e116f5a91fd41fce6deb76a3d8ce49d251302c28f
 Section: utils
 Priority: optional
 Description: A free reverse proxy for tunneling services (not self-hosted).
@@ -2467,10 +2467,10 @@ Maintainer: Plex <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-plex-container_1.0.0_all.deb
-Size: 35732
-MD5sum: 6bdaf7f0f1273ed8165344ba53787116
-SHA1: fcfa42a9a1d03f1ae94b0a0ac158b83eec660658
-SHA256: 3842b6f34179535269f8f4f6e90993766358fee80296a74605f3c66a3a084386
+Size: 35722
+MD5sum: e0e2c1adc636d50bf74d38311939640f
+SHA1: a48fe75f091d85b41131f1edf6c6ae8855e93c79
+SHA256: 3b080ee550a9354d3eaf3c586d294540273c96820ca520012d550bad4fdabfd3
 Section: video
 Priority: optional
 Description: Stream Movies & TV Shows
@@ -2486,10 +2486,10 @@ Maintainer: Plex <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-plex-nvidia-container_1.0.0_all.deb
-Size: 35824
-MD5sum: 62f7d98f64784bcc46fecabb40255fd2
-SHA1: ff95afea239e6b1136e33b37ba9f61cc09eeb60c
-SHA256: bace3aa78873e358e98ed6e6e7d93158183f002059b943740373026fd08e9bcc
+Size: 35822
+MD5sum: b24a0cdbdce078bd7f0930332a92b6cc
+SHA1: e5543447bf5726feee558178cbe5deb690f23cbd
+SHA256: 053069c4abf2bd29c59767ab3d503a6ed1e18259ac9ca9765b5a9b70cc240ed8
 Section: video
 Priority: optional
 Description: Stream Movies & TV Shows
@@ -2505,10 +2505,10 @@ Maintainer: Gani Georgiev <auto-converted@casaos.io>
 Installed-Size: 45
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-pocketbase-container_1.0.0_all.deb
-Size: 11360
-MD5sum: 1d213ccdfaca628f5ac7996588366a0a
-SHA1: 82d88268f70066dcb85fb5c3a95c301c43d077e6
-SHA256: d82c89c8429d2acb854c9566b98f5541410147a10970bc86f116fe7a84a445df
+Size: 11352
+MD5sum: e6350fe198433b5120e65ecae0194079
+SHA1: a47c271ec1e5db3c547db30a1d7c0ac35bf64410
+SHA256: 6d376d1e63ebabd077f399768d8c420e8dc1a3a516bd887d19355de59a803c9f
 Section: devel
 Priority: optional
 Description: Open Source realtime backend in 1 file
@@ -2522,10 +2522,10 @@ Maintainer: Portainer <auto-converted@casaos.io>
 Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-portainer-container_1.0.0_all.deb
-Size: 13008
-MD5sum: abcca56bcbbaf1fb85a62907b15235cc
-SHA1: 55a4cfd08f00817f71c1ba99cf2deda319c5c8ae
-SHA256: 7a994c8df8d881894e573c1de78023820bf54a17152ffdc4758286153c7f522d
+Size: 13000
+MD5sum: 9edfb775bae7a9aecb60e703a7149132
+SHA1: 6f5ea42c5265a53b7f9459ea5e107674aa0b1b42
+SHA256: 21d01f2a41b79ce8acdb668050fd34bfe93eba2baa769e9f5c9b9bfe6254c838
 Section: utils
 Priority: optional
 Description: Lightweight Docker management UI
@@ -2554,10 +2554,10 @@ Maintainer: PostgreSQL Global Dev't Group <auto-converted@casaos.io>
 Installed-Size: 59
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-postgresql-container_1.0.0_all.deb
-Size: 25206
-MD5sum: b6ff9a835dbc5838af5aaf1332d6dcba
-SHA1: abcd72a5b59ce4a0f6eebca24fe2f129adb49049
-SHA256: c749e9b884e406eba3581c2a728fca0b0a8d8ad78d7133f449dd80743c563709
+Size: 25200
+MD5sum: 2f6dd818871c090818c9aacc714b2f42
+SHA1: 9eb1b77ba304f4cad59135b0de9d71ea852129f2
+SHA256: bc6fde6710d7adaae5784f094989d4b3f0670d78a0155cb37cb4b88973b29daa
 Section: devel
 Priority: optional
 Description: PostgreSQL is an advanced, enterprise-class, and open-source relational...
@@ -2577,10 +2577,10 @@ Maintainer: Prowlarr Team <auto-converted@casaos.io>
 Installed-Size: 69
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-prowlarr-container_1.0.0_all.deb
-Size: 37104
-MD5sum: 807ba1ae12f5f2d2324a06cbb7e4698c
-SHA1: 16914e2606037870c7bb5cf3d82ea08d0906d6fd
-SHA256: bc4afa6dfa37c8ea660c302e69273939618716004a65a8f5f55704223f52f7c5
+Size: 37110
+MD5sum: e73502aac51aa8c2b57ad2a619af411d
+SHA1: b16301bfb29fd5adef50d84f68c145e45e430d32
+SHA256: a6468405798217c00acd2e0ece9527166be8832e84e1c71b3862366dc7641b16
 Section: misc
 Priority: optional
 Description: Integration of various PVR applications
@@ -2594,10 +2594,10 @@ Maintainer: linuxserver <auto-converted@casaos.io>
 Installed-Size: 48
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-pyload-container_1.0.0_all.deb
-Size: 16298
-MD5sum: e03ab80fec59a05a9dcf6594b3c236c8
-SHA1: 5c9d253650ed2c5679aee0c43cca310d3744e5c7
-SHA256: 5a0a38d218ce6ac5eb6f67f05b1cf553fcbe33d3acef8de592496eada3d64f5c
+Size: 16302
+MD5sum: 689b2ff37881e804e56b7911a4dd1aeb
+SHA1: 81e42d9f24e7830a68e4dbbf56d6687521e4eb35
+SHA256: 6386df5a6b53b7df392799f3903d3d4cf787e82b27048511649853da531e5cbc
 Section: misc
 Priority: optional
 Description: Free Downloader Manager.
@@ -2611,10 +2611,10 @@ Maintainer: qBittorrent <auto-converted@casaos.io>
 Installed-Size: 67
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-qbittorrent-container_1.0.0_all.deb
-Size: 35114
-MD5sum: fa276edc18ba84c1f449f84ab2660498
-SHA1: 5cf801e68026cf53b61ba6efb513d385ead1530e
-SHA256: 71483bbce52e4105f2ec3ae9b5d330ca3777c67024a6fa2701c5fcfb1fb384ca
+Size: 35106
+MD5sum: 905f40f837b71b064bfe0474732348a1
+SHA1: 8e2c24d421c09d4ad0da2fa931fe8c2ba03abf23
+SHA256: 6acaa6fd729e4058c9cdc282510b6cc02e2ee791d675faffb429d2f92c4d6b6b
 Section: misc
 Priority: optional
 Description: P2P bittorrent download
@@ -2632,10 +2632,10 @@ Maintainer: Radarr <auto-converted@casaos.io>
 Installed-Size: 59
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-radarr-container_1.0.0_all.deb
-Size: 25654
-MD5sum: 0de757ef09f14dcdee0adce5f0112658
-SHA1: 688f8b6927d7f8e7ddbf09aecaa86cb1c9137757
-SHA256: e8a299a9baebb5d10f76a3c25efd3350210630f34d1776a0123ce934eee900b8
+Size: 25640
+MD5sum: 0e3671d10f2f26eceb07c895fd831acf
+SHA1: 5495a4bdaf286598cd55c1b570f1eb9ea47a5e53
+SHA256: 5eae1bb49230d9c3e6f0dd6177c30be02c2b903231b50d5fb35bc165b1e0eb38
 Section: video
 Priority: optional
 Description: The movie collection manager for Usenet and BitTorrent users
@@ -2649,10 +2649,10 @@ Maintainer: RagFlow <auto-converted@casaos.io>
 Installed-Size: 99
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ragflow-container_1.0.0_all.deb
-Size: 54594
-MD5sum: a44198ca15c59dd2ddb63723f4565894
-SHA1: 303dc9edd23ca62399fd8d3239267c9e7f2fb754
-SHA256: 20db0c61adcf72dcd6b5393639000668278584f8f657e29f5044922cd3c0a4c4
+Size: 54596
+MD5sum: 51dc2ff2fd96e458d5a12bd3dc1d1f74
+SHA1: 997da894cb85e20dd314b166589e881dde3e5203
+SHA256: 7bdfee3eb62a32cce938f06ed1f1863b1de38cc9413566bb65c76d544724fd4d
 Section: misc
 Priority: optional
 Description: RagFlow ist eine Open-Source-RAG-Engine, die auf tiefem...
@@ -2685,10 +2685,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 113
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-rdtclient-container_1.0.0_all.deb
-Size: 82730
-MD5sum: ef9c4053a95e54ad6afacf237420d766
-SHA1: 5c61cafa7d0be10769cf767cfa4ac9e8f7919490
-SHA256: f707a2bcf9c2e668bc7e5f70b54272df9a0770de817dafd8571a79bfb267835d
+Size: 82728
+MD5sum: 2ae9cf598201f9a7090f30f6b38e3c37
+SHA1: 0f319a0de469a334d8e3cc370348ab8433e38275
+SHA256: b83893324f1f68a54651f6d7cde7e24f80a6c7eb769773709f7839dad328b1a8
 Section: misc
 Priority: optional
 Description: CasaOS Container App for rdtclient
@@ -2702,10 +2702,10 @@ Maintainer: Readarr Team <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-readarr-container_1.0.0_all.deb
-Size: 35670
-MD5sum: 695f439a4b4e494cfb91e730ab487abe
-SHA1: f932d9e51e304ec1c20778e668aedc82bfe3c4a0
-SHA256: a2f5e27506ce4197ac7ee81e4b920fd5c1560051884d0abc4a255c0339d768ba
+Size: 35672
+MD5sum: 0ff4fa5fdfabac38857d006c3aa7f807
+SHA1: 82c9fce1b1b326fcd4be76060678488cac33ebb2
+SHA256: d23551113d16fe44031cf80876367dc1401ade36a21fb2da3bbca0ced03f28d2
 Section: video
 Priority: optional
 Description: Ebook and audiobook collection manager for Usenet and BitTorrent users.
@@ -2719,10 +2719,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 53
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-resilio-sync-container_1.0.0_all.deb
-Size: 18900
-MD5sum: c949ca61b1102443d68fd49675f6e39d
-SHA1: 3feded79d5d03099145c95d8e39b04992d2c1648
-SHA256: d9817ac85c615e4465e8b1a137db11179800413a0bf8d7f50ceba7e4e24cf71a
+Size: 18852
+MD5sum: c1a417427b9c0b915972bbdda55e0066
+SHA1: bfa98250f47f8a13a3d1f0cebd23b57591fa613b
+SHA256: ff1d97cfdace07922ab1fbf33430b940980e5dfe14be7dc48e07f7593815e454
 Section: misc
 Priority: optional
 Description: Unleash the power of seamless file synchronization.
@@ -2737,9 +2737,9 @@ Installed-Size: 46
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-retroarch-container_1.0.0_all.deb
 Size: 12038
-MD5sum: e17934de7db4eb26c154a795b3522325
-SHA1: c468e4be5360ffb2120535056a79be315f4887fb
-SHA256: bbf63bdce185fc45a29fffbf5a28c4a999bda7ec3b035a549f3ffed916aa1a9f
+MD5sum: f64de451e88577aab1eb5a2b290bc278
+SHA1: 64d584046fb72e46337a5349d147c4ac043b93f6
+SHA256: 64ab91b6f6eb52d12c86db256016b20b3757da68872b64478af234e6328a61a3
 Section: games
 Priority: optional
 Description: Online retro games emulator
@@ -2772,10 +2772,10 @@ Maintainer: rommapp <auto-converted@casaos.io>
 Installed-Size: 95
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-romm-container_1.0.0_all.deb
-Size: 56604
-MD5sum: 69cf045faa25def8a27997c3525a1e26
-SHA1: 3b93438944e877d7a464da8daa7f76a556689935
-SHA256: f7e5fbe4dfe344f306c61e4997df4ac0a62f0bb3492ab539e7209bdfee4e4c3a
+Size: 56610
+MD5sum: 73a85bcca94200bbd83a0908a5046fc7
+SHA1: 2bd5e523b4730b80ee412536bc16b0cf8efd1d4b
+SHA256: 11a507f8da11fd4649db7c49b824fe15b9e76d2e6a34ba40377d2d1476ff12d3
 Section: games
 Priority: optional
 Description: RomM is a self-hosted ROM manager for managing and playing game collections.
@@ -2809,10 +2809,10 @@ Maintainer: Sabnzbd Team <auto-converted@casaos.io>
 Installed-Size: 43
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-sabnzbd-container_1.0.0_all.deb
-Size: 8850
-MD5sum: 4123c70537334496a24e5414085566bc
-SHA1: e6c478529142167b49087ad6a75ed05c173f40a3
-SHA256: 5303c205172fd389b4bee9c237dfec0c2e42e02f20432f8aceecb8fcf83fb35a
+Size: 8852
+MD5sum: e4694943208233498b0ad8c0eacba784
+SHA1: 93061a9315a59259e23ac8a3170e061ac98f1bb5
+SHA256: 15fdd6f917ba75e6f8efc09fc16930a9a729c812aee0816dbc8f788353ed4933
 Section: video
 Priority: optional
 Description: Free and easy binary newsreader
@@ -2826,10 +2826,10 @@ Maintainer: Sickchill Team <auto-converted@casaos.io>
 Installed-Size: 75
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-sickchill-container_1.0.0_all.deb
-Size: 43096
-MD5sum: 047f2100fa25e6526710005c0842842f
-SHA1: 1bed0736ea1fa954493011a083b4dfa3db0ed698
-SHA256: 5fb739fb9f801c2698c264252400923ad30b76f54fbcc457bbcb28b6a70e8e39
+Size: 43098
+MD5sum: 95131633cecc11b77b26ea37f2b4621a
+SHA1: 6e15edfb023df4e5a4b67a570f47326c94e1776e
+SHA256: 3c2f3f29c8008ea51a08dc33172d7e186e0a627291da66ccc18233203d6e73c3
 Section: video
 Priority: optional
 Description: Automatic video library manager for TV Shows
@@ -2844,9 +2844,9 @@ Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-siyuan-note-container_1.0.0_all.deb
 Size: 11940
-MD5sum: 72073a4e4131302f69e47ca65ffe4253
-SHA1: 387292431884229f7429112266934162094f02e1
-SHA256: 11fdfde6a99ccede87d210422e1c83890f345cfb83b102ffbaac7051badfaa8b
+MD5sum: 976ad505524e6f480f005b939f3cd8c4
+SHA1: 0b491d0f3372ab259805c5453e0beb7328c4549c
+SHA256: 7ade275d7dbc971aab1eae35a9650d31f3d8d75c1ca55db09e348e3ecedcfdad
 Section: text
 Priority: optional
 Description: Private personal knowledge management
@@ -2865,9 +2865,9 @@ Installed-Size: 49
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-smokeping-container_1.0.0_all.deb
 Size: 17404
-MD5sum: 0c1358291532dd18fbfd44462dc196bf
-SHA1: 7c8b4e377b8da24a354c6145f5d6ce45716156d1
-SHA256: 709387e22e26f2de69c9ad9b9f466a2519ad86fbd8e2cbf71fd756facdfb5607
+MD5sum: 0b9d5453792dd77a5334e671b4b742e1
+SHA1: e94506822b4ef04314c1b94c59acc0f55b1486cd
+SHA256: de42a93fe3d6d7aaadc6888946f02a38b86ad21fa3b57d3d293c7b219508374a
 Section: net
 Priority: optional
 Description: Free open source network performance monitoring tool
@@ -2881,10 +2881,10 @@ Maintainer: Unknown <auto-converted@casaos.io>
 Installed-Size: 96
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-snapdrop-container_1.0.0_all.deb
-Size: 64406
-MD5sum: abe28b2568bf78169e775114cc3b1ed1
-SHA1: acac36a883fd80ccac17f65441785124b6e0262c
-SHA256: d200500b9d5f944ceed26788b09e27a14dfac3cb43188d91e0ceb33e6acc29b0
+Size: 64398
+MD5sum: e0a5c73e871be562a6fe36ce8ba21ffb
+SHA1: 0f998ba9ba5e3c55c65830613c3aed8d00ee2711
+SHA256: 63f38cdb2c636e0ce0510318b14d4b5df27fb2a55fa81627da30d4bb35b61b52
 Section: utils
 Priority: optional
 Description: Cross-platform file sharing made easy.
@@ -2898,10 +2898,10 @@ Maintainer: Sonarr <auto-converted@casaos.io>
 Installed-Size: 65
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-sonarr-container_1.0.0_all.deb
-Size: 33060
-MD5sum: 495362a02c476c9fed8ec500a00b0fda
-SHA1: a67bba5b6ee9837ab367dfd4a22157dba0c2dad6
-SHA256: 753830c507ed7a8bb72297e8cb39042a7a4115c85611c829a318595e6396abf2
+Size: 33058
+MD5sum: 7ae13dea46c11a1fb5028ceb83eb0205
+SHA1: 782354f6d5605b0fdbedf2a9451b27086637fced
+SHA256: d95492fe32c0a7e07b742fff967d1de956a4a4284faf768a804c5af1d3b7be6b
 Section: video
 Priority: optional
 Description: The PVR for Usenet and BitTorrent users
@@ -2915,10 +2915,10 @@ Maintainer: Andreas Tsarida / Stremio <auto-converted@casaos.io>
 Installed-Size: 47
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-stremio-container_1.0.0_all.deb
-Size: 13690
-MD5sum: 019dc730aabcf76105356a173482a922
-SHA1: 1a334138a7619bcb46bc2fc732083a4e7c62b728
-SHA256: 733eb5cb2fb910be83ea1e37bb826ecd0df0857b3f6c85f4e3c02fffb5093a03
+Size: 13714
+MD5sum: c69b3a4d44081fbf4f0507f49def2331
+SHA1: 674bed04e68eb1cf47f912b6c8f6d522bc5f8fc4
+SHA256: c81fbecd3d043f702d635a258b881d3d85e91907a6723979dab7db716ac17f3c
 Section: video
 Priority: optional
 Description: Stremio is a modern media center that gives you the freedom to watch...
@@ -2934,10 +2934,10 @@ Maintainer: we-promise <auto-converted@casaos.io>
 Installed-Size: 115
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-sure-container_1.0.0_all.deb
-Size: 77380
-MD5sum: 2d499bb239d749a67694e8949c9ed41d
-SHA1: e3e7d2f1a4499873f1cb023cd6613447cd6437a4
-SHA256: b36ca5b75b65b1f3aee1efdef8a9b736cbfac97740932125ed04173e83ab0c1c
+Size: 77386
+MD5sum: 0eb8cfa1be223368330a6e0e4075a74b
+SHA1: 7da2f9b011a1967c211ebe85fe20c0bd4d64d0a1
+SHA256: 41f224962fd88b6f39c8ee52a76a484288e7b2657889384768f41168cf230632
 Section: misc
 Priority: optional
 Description: Personal finance management application
@@ -2969,10 +2969,10 @@ Maintainer: SwingMX <auto-converted@casaos.io>
 Installed-Size: 48
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-swingmusic-container_1.0.0_all.deb
-Size: 14554
-MD5sum: 8083cdbfec67593da50e511c568e5758
-SHA1: 3def37deccce768e07b4e0494c2a8d8a62b2b773
-SHA256: bfc25a72290f244d8ac912d69c52901f14e649050a730a4b7dcb47c27d75f7ef
+Size: 14556
+MD5sum: e74124388d95babd414e935438527c09
+SHA1: 55b27754edcd802c68547fbe8c7b3e35b6f14f5d
+SHA256: 6f424902a9d4f4f3b7e0fed3049b1b0094f41ecdcb8dc22df681e7af6e88fbd0
 Section: video
 Priority: optional
 Description: Swing Music is a beautifully designed, self-hosted music streaming server.
@@ -2992,10 +2992,10 @@ Maintainer: Syncthing <auto-converted@casaos.io>
 Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-syncthing-container_1.0.0_all.deb
-Size: 35096
-MD5sum: 3ee7ab0e441f0ec0439dcec77fdb3df4
-SHA1: 298cc0238e9e41cf9f2c6442b1dc341e4a988b47
-SHA256: 7a988b8587d0844d618a1ae8e408a90aa91fb4189f9d13a7383efaff934ae564
+Size: 35102
+MD5sum: 4af076502d6f206224ebbe838ebb94c9
+SHA1: f4b659258d0eb50fed324d8ba968a244574e6322
+SHA256: 2c7a167ebd6e8236aa198ad9f9b2891cc73996869566167d8e895b31c19d015f
 Section: admin
 Priority: optional
 Description: Open decentralized file synchronization
@@ -3019,10 +3019,10 @@ Maintainer: Tailscale Inc. <auto-converted@casaos.io>
 Installed-Size: 57
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-tailscale-container_1.0.0_all.deb
-Size: 21546
-MD5sum: e0dc5d145dead84a2f6838359e6127ad
-SHA1: 95f9e08925fa3d349f8b261e39fdac3b211ffc9e
-SHA256: 9c51cd9a9487a3208840cb8b54e18a6f5a1c8983e6fe6ed955843e4df12ae6e4
+Size: 21542
+MD5sum: a552cca21b94aba2754b4e00b73dd8a4
+SHA1: 77fd675bf3c2ea6a24e811921bf600a79a787d64
+SHA256: 8bfd4aea5eb431e589be198aa888be186a276daa6a1c678ae6a16d97ee4cbacf
 Section: net
 Priority: optional
 Description: Connect your devices and users together in your own secure virtual private...
@@ -3057,10 +3057,10 @@ Maintainer: TaskingAI Team <auto-converted@casaos.io>
 Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-taskingai-container_1.0.0_all.deb
-Size: 14968
-MD5sum: 93c3e2f26926dd42fb4d7aaf66eb6d49
-SHA1: ac0c9cabc5218ce7fd509607073fe881aec8e12f
-SHA256: a7edab25190293aada96f278e14e11a26c33a0c68db4b86ea78d5a545d347720
+Size: 14960
+MD5sum: f8469ab20b2004efc4aa27045ff4f886
+SHA1: 2773f1f21eeb0d80754cb102354f267b057dece9
+SHA256: a0c84268a0595998c940e78fba7a1fb09017a9f0ff8b2828731de4df5c4a9bc0
 Section: comm
 Priority: optional
 Description: The developer-friendly cloud platform for building and running LLM agents...
@@ -3076,10 +3076,10 @@ Maintainer: Tautulli Team <auto-converted@casaos.io>
 Installed-Size: 45
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-tautulli-container_1.0.0_all.deb
-Size: 13154
-MD5sum: 0c1858e1bfee2a69ac5985fd2d1f4e68
-SHA1: eb0f034ef2d4e698ca1e4be94433079ee349dac9
-SHA256: 5a47830d23ad0caf3ca8d895faa580f1a5a34de9b4f82364e74c5bf4151eb92b
+Size: 13150
+MD5sum: d0e7bad6a5ad53272b8c976f5a625f1d
+SHA1: 0bc7f3c3066733790df000e2a9d4a6b3582d0986
+SHA256: add750b4b2b3f6d0a6c95bc2fd7c42b0f0c0e3d6ce7f404612a2e231ca2c3c08
 Section: video
 Priority: optional
 Description: Monitor your Plex Media Server and much more.
@@ -3094,9 +3094,9 @@ Installed-Size: 43
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-threadfin-container_1.0.0_all.deb
 Size: 11008
-MD5sum: 6da0e86777971e407b57fe0913c8b414
-SHA1: a5f5e3199e07a637a32d7e9f270605462debd2f5
-SHA256: 5aeb589332fd693c2b4687528af9a43307fac8b89ede72ccdebb6ac0a97dc957
+MD5sum: 9e7bc998abc091380b9021b5eefb3d0c
+SHA1: dcccbed37c9016dc82a12cc052cb86e83121d07e
+SHA256: de895d1132b128e16c1f194b0a49fc2e857e23e4c249f165b45fdabed48ea300
 Section: utils
 Priority: optional
 Description: M3U proxy server
@@ -3110,10 +3110,10 @@ Maintainer: Transmission <auto-converted@casaos.io>
 Installed-Size: 74
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-transmission-container_1.0.0_all.deb
-Size: 40220
-MD5sum: be89261f02326b04f177dff0318d4c68
-SHA1: cb9b8c4442549e8b7043cf25f7bdc0ab0ef22727
-SHA256: a8eff0f411c9d838b817cb09f68828a90832f79ee2cfbb4f1b74d3b3c5bf3d1f
+Size: 40218
+MD5sum: 406802b18253e7b48f3fd17bfd3fad99
+SHA1: 76d5e4f19ba34f2e1f3d7798ec7b9a3ca0e11609
+SHA256: a6d494cdb53010423a389718c2bee457eb7724864f3b52d1cd8a222b9cfdd07a
 Section: misc
 Priority: optional
 Description: Transmission is a cross-platform BitTorrent client
@@ -3129,10 +3129,10 @@ Maintainer: Cp0204 <auto-converted@casaos.io>
 Installed-Size: 42
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ttydbridge-container_1.0.0_all.deb
-Size: 10176
-MD5sum: 2f71818090e3a9b87a713c98c56fab32
-SHA1: 9ac3737d48915abdaa3f8d19bb37de4bac4b8692
-SHA256: fcda0721615766b7190be207e7771f17094e37a8df1a04d976db7604ed7cc684
+Size: 10170
+MD5sum: 326ea6c5a88900c067e597b589b2b986
+SHA1: 5af8a42a8af7e5a73b181a76a57236a33c06d3b8
+SHA256: a7520d760354321b2f31bd09c6bdd276d1be3ad138bf7f5ac9f85c9fc10dd821
 Section: devel
 Priority: optional
 Description: Easy access to the host terminal in web
@@ -3146,10 +3146,10 @@ Maintainer: LinuxServer.io <auto-converted@casaos.io>
 Installed-Size: 70
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-unifi-controller-container_1.0.0_all.deb
-Size: 36120
-MD5sum: 91306f93a8f0f7b342d41a761bf34ad7
-SHA1: 917ed0522d13ab277b047feb999e9fa237f967e4
-SHA256: 79b799ffedee65379689e217bc49e98fbdf4b40d2394aa2d01302606a05fec87
+Size: 36110
+MD5sum: becfad8db70b4e0a752337af416db403
+SHA1: 4fa5ac17acd82769d668ea627ac342efab204b67
+SHA256: 6a39ac5597936ad6b04d8442103e7a6a7d5d2e96395c1058d5126aae9d0cab48
 Section: net
 Priority: optional
 Description: The Unifi-controller software is a powerful, enterprise wireless software...
@@ -3165,10 +3165,10 @@ Maintainer: Ubiquiti and Linuxserver.io <auto-converted@casaos.io>
 Installed-Size: 71
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-unifi-network-application-container_1.0.0_all.deb
-Size: 36680
-MD5sum: 44e8afea1e6ad30db88232b153045202
-SHA1: 8c705f4d8906ca2e248a91d1c123da653d4e27f3
-SHA256: 16efc67544efa54d1e33fa442c1c0b31888395089b967d7a699bdaf4fb8ffb59
+Size: 36682
+MD5sum: be4a62d5231a61ee364c6a900cafeead
+SHA1: f0634a5c30e41f901e9909121e2c4e70daa86105
+SHA256: 708e7bf5a51bebf96cbb149ceb5e62ec4bb5957845952ffd369cdbf2f619f7f7
 Section: net
 Priority: optional
 Description: The Unifi network application software is a powerful
@@ -3192,9 +3192,9 @@ Installed-Size: 52
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-uptimekuma-container_1.0.0_all.deb
 Size: 17388
-MD5sum: c7dbe53dfa8584ccae412a51206972ec
-SHA1: ace133179ea98951d93441f7f9ad58b586787d5e
-SHA256: 580b73e8d63ac02b3357aabe610fa5affef23f431a7cf331a09ec2c560dbf50c
+MD5sum: 7ef799b435745833ffcf7463503d2728
+SHA1: d69e77fca090b81a84c5637b43b4db71b0fe6b52
+SHA256: 4cab7584404d723551195313bb1f8e923984d1b9a1d678a3b8c5694a01f3a6ef
 Section: net
 Priority: optional
 Description: A fancy monitoring tool
@@ -3227,9 +3227,9 @@ Installed-Size: 78
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-v2raya-container_1.0.0_all.deb
 Size: 43606
-MD5sum: 3c0a1150394109ebdb46256f77ffddc8
-SHA1: 014cb693e3c078a311570312a7f0b9f21a568d02
-SHA256: e829b37b0a2344c15945c09c8689b5e2cbdcdc047981de192a29e62aaee89f89
+MD5sum: f24f29cd97bdcd1a8fe7a59175780231
+SHA1: 6e414817864691a77ac8e645f8274bec6bb0047d
+SHA256: 60ec72db7367788ab27a325f960452ef5b5aa3060ed9cc07c7d66845e92ed783
 Section: net
 Priority: optional
 Description: A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan
@@ -3261,10 +3261,10 @@ Maintainer: Daniel García <auto-converted@casaos.io>
 Installed-Size: 56
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-vaultwarden-container_1.0.0_all.deb
-Size: 24682
-MD5sum: e121b835e328f21c0d8b8ffcbe2dbbb2
-SHA1: 307820aff876b4128731bb0b51d94b4b9ec09ced
-SHA256: 929ef977fd5a79730ec544f03deed6ff9912a3fa001312747ff56cb78610b758
+Size: 24680
+MD5sum: 02ddcdba77a2a8d4f962986a3684c73a
+SHA1: 3d9b9a78beef8e78850385d6d5cf8ce81c3f4223
+SHA256: 383600059451876121cbd212b5db5405202fa835c25f344e519bca9a803e7d5d
 Section: utils
 Priority: optional
 Description: A self-hosted Bitwarden server
@@ -3278,10 +3278,10 @@ Maintainer: Red Hat <auto-converted@casaos.io>
 Installed-Size: 48
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-virt-manager-container_1.0.0_all.deb
-Size: 16096
-MD5sum: 128fe7b2e67d2e0406b6316062911071
-SHA1: ff714e4103b236a9764d19536ff4548a1936151b
-SHA256: 9427b4e2604beed6ae6e9712be7ad18dd8a8b8e4c67ffedab636c98b45f868b7
+Size: 16092
+MD5sum: 983089c49aabebb6c7d9691f0ecc3a57
+SHA1: 35927dc2973d0e266695c7fd3375db0bd4c36b44
+SHA256: dd8725ded3eca4760174e860c37489cfd4ae6d28a5e4c1b407b35140226a0337
 Section: utils
 Priority: optional
 Description: A GTK Broadway web UI for libvirt and virt-manager.
@@ -3296,9 +3296,9 @@ Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-vocechat-container_1.0.0_all.deb
 Size: 20442
-MD5sum: fe60cd1967add157acb41ff0d4ad67fb
-SHA1: 812c2c45da23e95b85dcdd36f83c0602757f448c
-SHA256: ec8b833b12102c3a51d491aaa5f6fcec6bd2d944e94146333dd8bceb6443368f
+MD5sum: 785e631fa9e21492f1f35bbc1036f89e
+SHA1: f3e08481e2f7c328d81d5045b55e1374d72c1817
+SHA256: 4610c9ebec7ab8c6d022ee245bd4341f71fd7748cbf8a63195ef8cf9029a03e4
 Section: comm
 Priority: optional
 Description: Have a Private Social Space Hosted on Your Site
@@ -3316,10 +3316,10 @@ Maintainer: wallabag <auto-converted@casaos.io>
 Installed-Size: 61
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-wallabag-container_1.0.0_all.deb
-Size: 26652
-MD5sum: 1f41b0882a76df58152c3394f27b0f4a
-SHA1: 12d490c55bcd0974bbaa34e1562c012802817059
-SHA256: f8933efb88f3b3f64fcfc2ac981b945a29f5055efbc28fece70d0d8d66abbfc8
+Size: 26650
+MD5sum: 3df7e54a2a933e7a6ad966d79aff1e81
+SHA1: b9696a5238e2cd3beae955568350024063bd2562
+SHA256: 27c3f495405b98276919cff8ef5f099638b50b9678fbd27fb51eeba2ef0bdea5
 Section: text
 Priority: optional
 Description: Save and classify articles. Read them later. Freely.
@@ -3353,10 +3353,10 @@ Maintainer: CasaOS Team <auto-converted@casaos.io>
 Installed-Size: 42
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-webdav-container_1.0.0_all.deb
-Size: 10046
-MD5sum: f7f13077843ff4194b102a21427ce334
-SHA1: 53331f513007c92e7008073c0c46045cb90453a1
-SHA256: 6f043a648b11e515be52f18885f5485ee3ea0722f429cfccbfb0cfa44e5ec8fd
+Size: 10034
+MD5sum: ddd97aadd73b58097349a4089f4acb4c
+SHA1: c4403454c33951ce2c8dfc251df605e6051c3551
+SHA256: 350433b3978780240f4bf3581649df8e6f5388ef1bfbd6c349562f0f130419e9
 Section: utils
 Priority: optional
 Description: A web-based file sharing and management protocol
@@ -3370,10 +3370,10 @@ Maintainer: WeejeWel <auto-converted@casaos.io>
 Installed-Size: 50
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-wg-easy-container_1.0.0_all.deb
-Size: 15318
-MD5sum: a0a54fea9a75225d7d46c602aa987178
-SHA1: c91c17ac8774f6565539a7d7151a60b8d7b2453c
-SHA256: 9a07420518a9f1f4c1d338b199f1a55c383eef185a89f1f57bafd649df2d5cc8
+Size: 15312
+MD5sum: 18342c9c683bb78302608a2cc7b3aa95
+SHA1: b9ac33e8d13a27cda5f0633683d2a11d30f6b079
+SHA256: 19db88bfc57db9e0adc2ff11204551c3686edab3f91f235d34c401926f70c77d
 Section: net
 Priority: optional
 Description: WEB UI to manage WireGuard VPN.
@@ -3387,10 +3387,10 @@ Maintainer: sinamics <auto-converted@casaos.io>
 Installed-Size: 94
 Depends: docker-compose | docker-compose-plugin
 Filename: pool/trixie-unstable/main/casaos-ztnet-container_1.0.0_all.deb
-Size: 50626
-MD5sum: ce2f668980fd165fc713d9c7be79d386
-SHA1: e6b3ca2eb569208614aa7b2ffd0767c76c34dd26
-SHA256: a8b1b6da499f154df75fc7f2eae718642ef6890f44c275e33e89638007aba913
+Size: 50634
+MD5sum: 9a287d83a1218e8bf2c33e9129a0aa1f
+SHA1: 1b84ab9084f0ce158bd9263b39276f512568b282
+SHA256: 8d61715d632cdda92d6aff89a2232518d0f60000fa01e475ae7ef08b0546c052
 Section: net
 Priority: optional
 Description: Self-hosted ZeroTier network controller with web UI for centralized management.
@@ -3630,19 +3630,19 @@ Description: HaLOS Cockpit configuration and branding
  integration, and mDNS subdomain advertisement for cockpit.{hostname}.local.
 
 Package: halos-core-containers
-Version: 0.2.4-2
+Version: 0.2.4-3
 Architecture: all
-Maintainer: Hat Labs <info@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 126
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), halos-homarr-branding
 Recommends: halos-cockpit-config
 Conflicts: halos-reverse-proxy
 Provides: halos-reverse-proxy
-Filename: pool/trixie-unstable/main/halos-core-containers_0.2.4-2_all.deb
-Size: 46390
-MD5sum: c743d25ee56b93c64713f4daa85cc7a3
-SHA1: 500fed50398fc84af32aba7b9e54e9b9b928c156
-SHA256: 2fe0f7eef3f7e8df37ada297c933c336e73426eeb1ab203d5be7f532ed53fdea
+Filename: pool/trixie-unstable/main/halos-core-containers_0.2.4-3_all.deb
+Size: 46492
+MD5sum: bfff82da610e07e990fbf0a2d37d958c
+SHA1: d6f945def0f9ce0d4ac69d79a4f857e40c24a4c9
+SHA256: bd6bcd73f7823f195d506bbcae6aa1baad201247f5689b465fe6b3895120cfe3
 Section: web
 Priority: optional
 Homepage: https://github.com/halos-org/halos-core-containers
@@ -3707,18 +3707,18 @@ Description: HaLOS marine system metapackage
  components for boat and vessel management.
 
 Package: halos-mdns-publisher
-Version: 0.2.4-2
+Version: 0.2.5-1
 Architecture: arm64
-Maintainer: Hat Labs Ltd <info@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Depends: avahi-daemon, avahi-utils, libnss-mdns, libc6
 Recommends: docker.io | docker-ce
 Conflicts: halos-mdns-publisher-container
 Replaces: halos-mdns-publisher-container
-Filename: pool/trixie-unstable/main/halos-mdns-publisher_0.2.4-2_arm64.deb
-Size: 1179000
-MD5sum: c8e0c8e0e7c5cfd2a0ff86f362971141
-SHA1: 57e1ac6d584a1379f8ff7131ed6c013510f21aae
-SHA256: 20e9287164425b78552a8259f395951769c1e38e2ee32aedd2503d0a819e36ce
+Filename: pool/trixie-unstable/main/halos-mdns-publisher_0.2.5-1_arm64.deb
+Size: 1179400
+MD5sum: fc05a08ac1de1362fa91af0496ff7863
+SHA1: 1c2600c2ecd21230ddd09378255f76aa424e7d27
+SHA256: ff9734626215655e24c90f47ba2e725536a5839849fe8bf73ba983de56d354df
 Section: admin
 Priority: optional
 Description: HaLOS mDNS subdomain publisher and resolver
@@ -3758,14 +3758,14 @@ Description: Homarr dashboard adapter for HaLOS
 Package: marine-avnav-container
 Version: 20251028-11
 Architecture: all
-Maintainer: Hat Labs <support@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 108
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-11_all.deb
-Size: 66922
-MD5sum: 572a0fb3aaea3f7ff69794f2d66517ae
-SHA1: 1d43edf210f711010b2e7c849648620800420347
-SHA256: 87b77213b0445d40c4b67b13557007e3458c40561ea2b19593df9c8626194b0b
+Size: 66934
+MD5sum: 2d345b068600e2fa781d801d03addc9b
+SHA1: 29f8bf48baabbf47f0eef6a0ebc11d7f33283e50
+SHA256: 7d3b6b3b950b2f93a627177a9dd9a7a220849f84ceba43802637e9b65eb120a5
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -3787,13 +3787,13 @@ Tag: role::container-app, field::marine, field::navigation, field::geography, ca
 Package: marine-container-store
 Version: 0.3.0-1
 Architecture: all
-Maintainer: Hat Labs <info@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 17
 Filename: pool/trixie-unstable/main/marine-container-store_0.3.0-1_all.deb
-Size: 3108
-MD5sum: 12666a77a244f1c3c781d7ab4ae10027
-SHA1: 9a8064f34d383e89e87a8faf754e3e3841151822
-SHA256: 3ec871ff52366be3cea1521d1724df1842ade40d2b15b6387c87c9f8f3ef0cd0
+Size: 3116
+MD5sum: 2f04b2fb993239f52e1f029e97c97c06
+SHA1: ca9c7c541a2e805c887bca382713c218325b8597
+SHA256: e6f42127919d74ea98ba0ca08f7484dccd71a8ff00d18d6741ccd1bbcb7e0778
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/halos-marine-containers
@@ -3812,15 +3812,15 @@ Tag: role::container-store
 Package: marine-grafana-container
 Version: 12.3.3-1
 Architecture: all
-Maintainer: Hat Labs <support@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Recommends: marine-influxdb-container
 Filename: pool/trixie-unstable/main/marine-grafana-container_12.3.3-1_all.deb
-Size: 9106
-MD5sum: 1266111e43c8c829588b9038c1ddaee1
-SHA1: 47d7e66ff30d45b97fcfa6c15773d44e01652f63
-SHA256: f03beca1380bef39949154ead793d151444e06049a8c983655622fd44f78209f
+Size: 9134
+MD5sum: 1a28265065a5d32822350e73d560f47b
+SHA1: dc74944e4e881c5e26951b4fb08cbe0f6b49448d
+SHA256: d9bf5b46450d9bde916e561cc8db16f88474d414ca4036c7a00bba8633366891
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -3840,14 +3840,14 @@ Tag: role::container-app, field::marine, category::visualization, category::moni
 Package: marine-influxdb-container
 Version: 2.8.0-1
 Architecture: all
-Maintainer: Hat Labs <support@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 50
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Filename: pool/trixie-unstable/main/marine-influxdb-container_2.8.0-1_all.deb
-Size: 7552
-MD5sum: 9dd0f7a120646e31f63d7b5e7de2032a
-SHA1: 2badf16f7a3360ec1683b068b2a69a21648fb934
-SHA256: 954c3aac583124c2a9874c35b944dd9e45f6bcfb4d612b2fba6921f09bcb8bd2
+Size: 7566
+MD5sum: c9b9ff1cb86e9ef048f4c63f5e9c9e70
+SHA1: 52b089341a7b77c57ea22c33899eaca1e1939493
+SHA256: f566f65e8cf477a19890f078c138015ad0bad4097d4b72dcccedc06aa90aa1ce
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -3867,14 +3867,14 @@ Tag: role::container-app, field::marine, category::monitoring, interface::web, u
 Package: marine-opencpn-container
 Version: 5.12.4-9
 Architecture: all
-Maintainer: Hat Labs <support@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 52
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-9_all.deb
-Size: 12632
-MD5sum: 25aa9312768a8827064d71b5f73212e6
-SHA1: 995fa3699771c5f4df429601b8098d35b382a2ae
-SHA256: 9439037fb5602da2caa01453865e145916662d7ca16d1e64dc7305abb112abda
+Size: 12638
+MD5sum: d828a0ce545035bb10cb8dd92bcae1ca
+SHA1: 22d0b6d2d78e00b35a4afdebdbd8c1a6134b61f4
+SHA256: f6eba9ba3632cf70410bb66514603e5559160c83a120a0d8b9e037573c788749
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -3895,14 +3895,14 @@ Tag: role::container-app, field::marine, field::navigation, field::geography, ca
 Package: marine-signalk-server-container
 Version: 2.22.0-4
 Architecture: all
-Maintainer: Hat Labs <support@hatlabs.fi>
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.22.0-4_all.deb
-Size: 9686
-MD5sum: fafedd59b1214cd258565f16caccce1e
-SHA1: c34f24fe5abd0ac8d8296f59e73eeec26590bf77
-SHA256: 5e9f07328ad945e2f96a327e7d974149051a47ec8d923c8e3429b3a3d45f6470
+Size: 9692
+MD5sum: cfe75a6dc96b2bfbc6c7e651d725a312
+SHA1: b0aa40327c86d9eb77937c5dfbc94677b9410a0b
+SHA256: 92d361f3066d18fa864cdf7b4943eebc223944e2908a11bd2152dd66cd7ca30c
 Section: net
 Priority: optional
 Homepage: https://signalk.org/

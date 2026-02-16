@@ -26,19 +26,19 @@ Description: Modern APT package manager interface for Cockpit
  and Ubuntu systems.
 
 Package: cockpit-authelia-users
-Version: 0.2.1-1
+Version: 0.2.2-2
 Architecture: all
 Maintainer: Hat Labs <info@hatlabs.fi>
 Installed-Size: 13071
 Depends: python3, cockpit (>= 276), python3-yaml, python3-argon2
-Filename: pool/trixie-stable/main/cockpit-authelia-users_0.2.1-1_all.deb
-Size: 1270588
-MD5sum: 769dc017df0c6e559a89af0c4e7edad3
-SHA1: 1cb4af306f5b98db1a74a9f4d28b68ce3f2c9380
-SHA256: ddf05c731031a834338666bbcf9c78afe786d027e31503a988b9006e4c94a411
+Filename: pool/trixie-stable/main/cockpit-authelia-users_0.2.2-2_all.deb
+Size: 1270548
+MD5sum: 37de6a0a997798977f4a1130641f2296
+SHA1: af7c837e1d7c626c66851da3df3d6f075ca3ee2c
+SHA256: 3e6147c2fc03e630c9f338cd0ead54eca17e0fd9db51d818ae6207e175a26fc3
 Section: admin
 Priority: optional
-Homepage: https://github.com/hatlabs/cockpit-authelia-users
+Homepage: https://github.com/halos-org/cockpit-authelia-users
 Description: Cockpit plugin for Authelia user management
  A web-based user management interface for Authelia that provides:
   - List, create, edit, and delete Authelia users
@@ -50,19 +50,19 @@ Description: Cockpit plugin for Authelia user management
  Authelia users through Cockpit's web interface.
 
 Package: cockpit-container-apps
-Version: 0.1.1-3
+Version: 0.1.2-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12944
 Depends: python3-yaml, python3:any, cockpit (>= 276), python3-apt
-Filename: pool/trixie-stable/main/cockpit-container-apps_0.1.1-3_all.deb
-Size: 1270096
-MD5sum: 81fd118de86174371eb01ef9cc667f3e
-SHA1: b58b08b75e75a823752458831fc69540bead35e8
-SHA256: dddac806e400c30a14562969e49ce3660bdc36e787f9b1ed40200939199769f2
+Filename: pool/trixie-stable/main/cockpit-container-apps_0.1.2-2_all.deb
+Size: 1270104
+MD5sum: b30397678c175656278d05c27be8635e
+SHA1: e4b972ed3a764a09af1a8b59674030630f12fca7
+SHA256: 04ce26488a5056c7ebb8551ea2d467ccb270b953327d1d30277f7fd88dcdeeb6
 Section: admin
 Priority: optional
-Homepage: https://github.com/hatlabs/cockpit-container-apps
+Homepage: https://github.com/halos-org/cockpit-container-apps
 Description: Container app management interface for Cockpit
  A web-based container app manager interface for Cockpit that provides:
   - Browse container apps by store and category
@@ -77,17 +77,17 @@ Description: Container app management interface for Cockpit
  distribution.
 
 Package: cockpit-dockermanager
-Version: 1.0.7.3-2
+Version: 1.0.7.4-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 76
 Depends: cockpit (>= 200)
 Recommends: docker.io | docker-ce
-Filename: pool/trixie-stable/main/cockpit-dockermanager_1.0.7.3-2_all.deb
-Size: 17352
-MD5sum: df3a97c06ad9b72631a1754c9a353864
-SHA1: a7bc4bd7bc394880ab7b6e2b91e14ba4fff1901c
-SHA256: 759768e31233510298bd6ba9cfa7cf38dd30a818c12a4b8f02d80e7843717267
+Filename: pool/trixie-stable/main/cockpit-dockermanager_1.0.7.4-1_all.deb
+Size: 17384
+MD5sum: 8610ae1f1b1436a7701b0db579bd38f8
+SHA1: a6b28deca790bcaee40ff173734ef0b4da6d1e95
+SHA256: 6fa35ca646ac0d30ff13a160a70747ac43626bb4c8211d7f4f1c02ae1aecd2cd
 Section: admin
 Priority: optional
 Homepage: https://github.com/chrisjbawden/cockpit-dockermanager
@@ -161,19 +161,19 @@ Description: Generate Debian packages from container application definitions
  ready for building with dpkg-buildpackage.
 
 Package: halos
-Version: 0.2.10-1
+Version: 0.3.0-4
 Architecture: all
 Maintainer: Hat Labs <info@hatlabs.fi>
 Installed-Size: 12
 Depends: cockpit, cockpit-networkmanager, cockpit-networkmanager-halos, cockpit-storaged, cockpit-apt, cockpit-authelia-users, cockpit-dockermanager, cockpit-container-apps, halos-cockpit-config, docker.io (>= 20.10) | docker-ce (>= 20.10), docker-compose | docker-compose-plugin, docker-cli, halos-core-containers, homarr-container-adapter, halos-mdns-publisher
-Filename: pool/trixie-stable/main/halos_0.2.10-1_all.deb
-Size: 2518
-MD5sum: f0eac7bb41e00afa40caa2aa7ef3a25c
-SHA1: 2b9dd14a4ad9a4b0bbb48229b0659f33a1b490cd
-SHA256: bebb6b4442d91327d3f1550ebb359c0f1fbb64473e25ae7ed92bf11bf130a7ec
+Filename: pool/trixie-stable/main/halos_0.3.0-4_all.deb
+Size: 2386
+MD5sum: d71d12ec4e6fff1ea48edb8aa64373a1
+SHA1: b332d6775fbcda15458deae9873a71b14d871f1c
+SHA256: 731bff7af0da2d2f335ed802edfb6f93fd51468c49f55e6875edab87ea16d1f0
 Section: metapackages
 Priority: optional
-Homepage: https://github.com/hatlabs/halos-metapackages
+Homepage: https://github.com/halos-org/halos-metapackages
 Description: Base system metapackage for HaLOS
  This metapackage installs the base HaLOS system, providing web-based
  Raspberry Pi management through Cockpit.
@@ -192,7 +192,7 @@ Description: Base system metapackage for HaLOS
  of Raspberry Pi systems through a web interface.
 
 Package: halos-cockpit-config
-Version: 0.5.0-3
+Version: 0.5.2-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 59
@@ -200,21 +200,21 @@ Depends: cockpit, avahi-utils, xdg-utils
 Breaks: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Replaces: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Provides: cockpit-branding-halos, halos-cockpit-branding
-Filename: pool/trixie-stable/main/halos-cockpit-config_0.5.0-3_all.deb
-Size: 22820
-MD5sum: 83e6fd5082c43f8509f81989e1696aa2
-SHA1: abc5fd55751489864772020ffa2d18e83a977988
-SHA256: 9d1269a883f39f2dae7374a88e4c3dbf0811810f9be219e6131adf893b2c7a1b
+Filename: pool/trixie-stable/main/halos-cockpit-config_0.5.2-1_all.deb
+Size: 22940
+MD5sum: 427a3567d3a666d0a14f0b05da9d85f8
+SHA1: 40f4c217acadae4c3bef87fd095f8cf7ef2b6ffa
+SHA256: 5a7f23f168b258056568698513358f8d7517d1f63fd24e6af4c3e6d2551d56f2
 Section: admin
 Priority: optional
-Homepage: https://github.com/hatlabs/halos-distro
+Homepage: https://github.com/halos-org/halos
 Description: HaLOS Cockpit configuration and branding
  This package provides HaLOS-specific configuration for the Cockpit
  web interface, including branding (logo, CSS, favicon), Homarr dashboard
  integration, and mDNS subdomain advertisement for cockpit.{hostname}.local.
 
 Package: halos-core-containers
-Version: 0.2.3-1
+Version: 0.2.4-2
 Architecture: all
 Maintainer: Hat Labs <info@hatlabs.fi>
 Installed-Size: 126
@@ -222,14 +222,14 @@ Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-c
 Recommends: halos-cockpit-config
 Conflicts: halos-reverse-proxy
 Provides: halos-reverse-proxy
-Filename: pool/trixie-stable/main/halos-core-containers_0.2.3-1_all.deb
-Size: 46396
-MD5sum: 508131a6fcf9193945a7650b36cc4167
-SHA1: 907e1bdf6cb8b40bbf27ed3b4fa7e8244398db65
-SHA256: 519bf628b102799ac1800415fafeccf68269b166488578b2b92f298cdd4c634e
+Filename: pool/trixie-stable/main/halos-core-containers_0.2.4-2_all.deb
+Size: 46390
+MD5sum: c743d25ee56b93c64713f4daa85cc7a3
+SHA1: 500fed50398fc84af32aba7b9e54e9b9b928c156
+SHA256: 2fe0f7eef3f7e8df37ada297c933c336e73426eeb1ab203d5be7f532ed53fdea
 Section: web
 Priority: optional
-Homepage: https://github.com/hatlabs/halos-core-containers
+Homepage: https://github.com/halos-org/halos-core-containers
 Description: Core infrastructure stack (Traefik, Authelia, Homarr)
  HaLOS core infrastructure providing the foundational web services:
  .
@@ -243,20 +243,20 @@ Description: Core infrastructure stack (Traefik, Authelia, Homarr)
 Tag: role::container-app, field::core, category::infrastructure, interface::web
 
 Package: halos-homarr-branding
-Version: 0.2.2-1
+Version: 0.2.4-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 757
 Depends: xdg-utils
 Recommends: halos-core-containers | halos-homarr-container
-Filename: pool/trixie-stable/main/halos-homarr-branding_0.2.2-1_all.deb
-Size: 398350
-MD5sum: 1a8d3caa07e4f09fc0792e501cd4668d
-SHA1: b2be90f0f00d1f3e178b530813e641fd930d8b4b
-SHA256: 9ffa8744bf7c45fd308db7ce4081e3ccd871000aa8212d3644fb82dc094a8632
+Filename: pool/trixie-stable/main/halos-homarr-branding_0.2.4-1_all.deb
+Size: 398188
+MD5sum: 60bcb8d81ff36438355395309ed430e5
+SHA1: 0194efd1653d6811373550b67fe2f8b30acd56d4
+SHA256: dfe7e9fe1a4bddd2c92932e1940473dd53b536e9ff6d20c2591669bbca2ef237
 Section: admin
 Priority: optional
-Homepage: https://github.com/hatlabs/halos-distro
+Homepage: https://github.com/halos-org/halos
 Description: HaLOS branding and default configuration for Homarr dashboard
  This package provides the Hat Labs "HaLOS" branding configuration for
  the Homarr dashboard, including default theme colors, admin credentials,
@@ -265,19 +265,19 @@ Description: HaLOS branding and default configuration for Homarr dashboard
  branding.
 
 Package: halos-marine
-Version: 0.2.10-1
+Version: 0.3.0-4
 Architecture: all
 Maintainer: Hat Labs <info@hatlabs.fi>
 Installed-Size: 12
-Depends: halos (>= 0.2.10-1), gpsd, marine-container-store, marine-signalk-server-container
-Filename: pool/trixie-stable/main/halos-marine_0.2.10-1_all.deb
-Size: 2350
-MD5sum: f4eabb745d3972311051fdaebc2bafab
-SHA1: ec2847ad4a2e706ba07876045bed2f4de8665092
-SHA256: f807be9d02d77231230afdc42db0f270dbe817152fb00ccdb914ea2374216615
+Depends: halos (>= 0.3.0-4), gpsd, marine-container-store, marine-signalk-server-container
+Filename: pool/trixie-stable/main/halos-marine_0.3.0-4_all.deb
+Size: 2226
+MD5sum: b15c65711e35ad717fb1029cc50b5ec6
+SHA1: 5d2e95ee78148930331d9580301c5612d859d327
+SHA256: 9e95dc0d8a6f8d4687e27450d6b4df8920cd445afa8ed24c887c7d65618fb427
 Section: metapackages
 Priority: optional
-Homepage: https://github.com/hatlabs/halos-metapackages
+Homepage: https://github.com/halos-org/halos-metapackages
 Description: HaLOS marine system metapackage
  This metapackage extends the base HaLOS system with marine navigation
  and monitoring software.
