@@ -6,37 +6,37 @@ Version: 1.0
 Architectures: arm64 armhf all
 Components: main
 Description: HaLOS packages for Debian Trixie (stable)
-Date: Mon, 16 Feb 2026 16:47:55 +0000
-Date: Mon, 16 Feb 2026 16:47:55 +0000
+Date: Mon, 16 Feb 2026 16:48:22 +0000
+Date: Mon, 16 Feb 2026 16:48:22 +0000
 MD5Sum:
- 2320017bbf9a86a667b15791f6874d4c              272 Release
+ f298116e16f3e618556aa7fe80765b6c              272 Release
  beea76f1ba17c08de86db5028747095f            19623 main/binary-all/Packages
- 8e971233a2a9d50561154f73be6d39f6             6446 main/binary-all/Packages.gz
- 8f00750bd84ce7dd7a8e37eac00c9016            21598 main/binary-arm64/Packages
- 2bc4cf5f57ef25f4f1407beb8fcd2717             7085 main/binary-arm64/Packages.gz
+ b4aa7c87172e84a6b69edae25cc26096             6446 main/binary-all/Packages.gz
+ cf8714d40983532d87f7c9d71a198a9a            21604 main/binary-arm64/Packages
+ 3366439ab5bc80b2a2d356d1bd9141ad             7072 main/binary-arm64/Packages.gz
  beea76f1ba17c08de86db5028747095f            19623 main/binary-armhf/Packages
- 8e971233a2a9d50561154f73be6d39f6             6446 main/binary-armhf/Packages.gz
+ b4aa7c87172e84a6b69edae25cc26096             6446 main/binary-armhf/Packages.gz
 SHA1:
- 99037cc859d47fdb9bc566b79dbb7ec2d1c540c2              272 Release
+ 04b7b335d692de0088986536536f47e92a539e84              272 Release
  d90799d898ee689d0b09475324aa20bf451917ac            19623 main/binary-all/Packages
- 8e90db3dd433251b58137850e38397c12d4d6fbb             6446 main/binary-all/Packages.gz
- 3178572b47785956552e33b159dce0fea265da31            21598 main/binary-arm64/Packages
- fa0e00d7955e97baacc2dd020c2164abe56b5022             7085 main/binary-arm64/Packages.gz
+ bdbc90ee640c94ea14488847de5fedc496fd6e28             6446 main/binary-all/Packages.gz
+ 53082df2adad340cbf112f947c940a54cd22bfe4            21604 main/binary-arm64/Packages
+ 08af44ee4b62512efb002bd3df91355fc4df0920             7072 main/binary-arm64/Packages.gz
  d90799d898ee689d0b09475324aa20bf451917ac            19623 main/binary-armhf/Packages
- 8e90db3dd433251b58137850e38397c12d4d6fbb             6446 main/binary-armhf/Packages.gz
+ bdbc90ee640c94ea14488847de5fedc496fd6e28             6446 main/binary-armhf/Packages.gz
 SHA256:
- 0f14b0257178f0209718c55c85615a83fecbabd5f3d61786993a0ee29eccee3a              272 Release
+ c8ae0033a13a00560dade9270830f423cda99f3db1167a3968edf1ede103697a              272 Release
  e273faa43cdb5a8170e12083e50bf45b3b972026bb60891fbd9646e7c65fb880            19623 main/binary-all/Packages
- 54491b1b57c30b18a4b8910d229d7660b5ffe86eb8fca92b34921a599f78ad8b             6446 main/binary-all/Packages.gz
- 845dbf8eeb5bb03c1ea3ba49934aec9783348d3dbd9364b28f9f1ab22f0ffa95            21598 main/binary-arm64/Packages
- 18927db70e970de1f1d8a5ef5fcd7f31c1479ddb41088b9e2662f177af88045c             7085 main/binary-arm64/Packages.gz
+ b646068d0cdcf0cafa8d900e3dc6ddf7b306ec61968db21ffc8d056bac15bbb3             6446 main/binary-all/Packages.gz
+ cfc98869f5a22553facd7cccd966f6e90533faa0bab016b1941efb9e521e1cab            21604 main/binary-arm64/Packages
+ 3565ddb1e8f8857bf8bb2672c4514cfb79744b38a159dadbffd94074aa72c218             7072 main/binary-arm64/Packages.gz
  e273faa43cdb5a8170e12083e50bf45b3b972026bb60891fbd9646e7c65fb880            19623 main/binary-armhf/Packages
- 54491b1b57c30b18a4b8910d229d7660b5ffe86eb8fca92b34921a599f78ad8b             6446 main/binary-armhf/Packages.gz
+ b646068d0cdcf0cafa8d900e3dc6ddf7b306ec61968db21ffc8d056bac15bbb3             6446 main/binary-armhf/Packages.gz
 SHA512:
- 78c0fc69a6780dbadc81cdb50743f8c809026a86cb5b019d80656e3ee60c7d53e9ee093829891ecf85f5ce8133007e596f31da73529ffe2df1146abbccfe6f59              272 Release
+ b00bd5e3e549e67175718d83612cc2c9095668f4fcf1da36f062845f032cb676605f4c4f9aa907cf743fed875ca7f74e9c411e6b22b1c858c32ce48cf514037f              272 Release
  e80050e3f70373e92bf55b138f86c1825b4fd763fb12bf695e23fd36e5368728abcb626c2b1f11b3fae8117c735086f26e255258f7d9a94fbca543ae6e48d99d            19623 main/binary-all/Packages
- 77cc5647274c80d241ff60c8da6da83f625429a38d4608af10797fb21db26c57ed69bdfae7d6a9a2d7d16762c0b12f58951fa1d7d550b46855d4c9bf6ef2ca94             6446 main/binary-all/Packages.gz
- 840c8b0af64d171f4d468dffb19e724b73399c56bd45f29ef807fb63046a816bf5c4ebfa1caa300808df6dfa0815d1a4522e5bbae29e17d5000bf9b0e5c05deb            21598 main/binary-arm64/Packages
- 88d0e30cb2209b785836eeb36e100fa3970b6dc25503c0a36b40e5045c9df05a28a190aec95d15f95a7ba632a155a26d66c34daac6f15dbf96d6e715880c5cf7             7085 main/binary-arm64/Packages.gz
+ a5e2a26c807407f685a476cc9cf5b92a3724192f135ab4f8cc0e6723bc5ff660b2eb23216dd89e7109b98581733202069acd6c36d6502aea2908b66aaae719d6             6446 main/binary-all/Packages.gz
+ b1c23c4b63431ac40d324a1f599d1c4d16c7a07dab90c1874d94789f6c92cba3ed169075ecfd0f45a8f51148fdc9f4f60cfe6581960599056dee52b45fa9a56d            21604 main/binary-arm64/Packages
+ ff5fa62c8d248026c1d28578504dc7ea0de8097c6d14af9dcbc496968017ff7bd7f517b57fbdc6eec354026ceb6969e839780b0de44ffb9506efbc59d82edfb9             7072 main/binary-arm64/Packages.gz
  e80050e3f70373e92bf55b138f86c1825b4fd763fb12bf695e23fd36e5368728abcb626c2b1f11b3fae8117c735086f26e255258f7d9a94fbca543ae6e48d99d            19623 main/binary-armhf/Packages
- 77cc5647274c80d241ff60c8da6da83f625429a38d4608af10797fb21db26c57ed69bdfae7d6a9a2d7d16762c0b12f58951fa1d7d550b46855d4c9bf6ef2ca94             6446 main/binary-armhf/Packages.gz
+ a5e2a26c807407f685a476cc9cf5b92a3724192f135ab4f8cc0e6723bc5ff660b2eb23216dd89e7109b98581733202069acd6c36d6502aea2908b66aaae719d6             6446 main/binary-armhf/Packages.gz
