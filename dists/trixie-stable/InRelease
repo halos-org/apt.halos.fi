@@ -9,53 +9,53 @@ Version: 1.0
 Architectures: arm64 armhf all
 Components: main
 Description: HaLOS packages for Debian Trixie (stable)
-Date: Mon, 16 Feb 2026 16:47:27 +0000
-Date: Mon, 16 Feb 2026 16:47:27 +0000
+Date: Mon, 16 Feb 2026 16:47:55 +0000
+Date: Mon, 16 Feb 2026 16:47:55 +0000
 MD5Sum:
- aae7dbed2f176ab96ab6a818cdd2fce1              272 Release
+ 2320017bbf9a86a667b15791f6874d4c              272 Release
  beea76f1ba17c08de86db5028747095f            19623 main/binary-all/Packages
- 70b3453839ddd29d0c2c7a4bdb120f7d             6446 main/binary-all/Packages.gz
- ada2619c04d914edda1358164ebde5b1            21592 main/binary-arm64/Packages
- c52c07a897adf93b0496ff91ef20148c             7073 main/binary-arm64/Packages.gz
+ 8e971233a2a9d50561154f73be6d39f6             6446 main/binary-all/Packages.gz
+ 8f00750bd84ce7dd7a8e37eac00c9016            21598 main/binary-arm64/Packages
+ 2bc4cf5f57ef25f4f1407beb8fcd2717             7085 main/binary-arm64/Packages.gz
  beea76f1ba17c08de86db5028747095f            19623 main/binary-armhf/Packages
- 70b3453839ddd29d0c2c7a4bdb120f7d             6446 main/binary-armhf/Packages.gz
+ 8e971233a2a9d50561154f73be6d39f6             6446 main/binary-armhf/Packages.gz
 SHA1:
- ce78bd673d3010bb5119afbcde74788e3c86bfa8              272 Release
+ 99037cc859d47fdb9bc566b79dbb7ec2d1c540c2              272 Release
  d90799d898ee689d0b09475324aa20bf451917ac            19623 main/binary-all/Packages
- 324c471a394d7d82cf9e57576f9657f61ac3d49c             6446 main/binary-all/Packages.gz
- dd4876c68497ea869df51feb2f718c7583777add            21592 main/binary-arm64/Packages
- 3fdbc6208801765ac1a0f8df36468dbbf6cc7163             7073 main/binary-arm64/Packages.gz
+ 8e90db3dd433251b58137850e38397c12d4d6fbb             6446 main/binary-all/Packages.gz
+ 3178572b47785956552e33b159dce0fea265da31            21598 main/binary-arm64/Packages
+ fa0e00d7955e97baacc2dd020c2164abe56b5022             7085 main/binary-arm64/Packages.gz
  d90799d898ee689d0b09475324aa20bf451917ac            19623 main/binary-armhf/Packages
- 324c471a394d7d82cf9e57576f9657f61ac3d49c             6446 main/binary-armhf/Packages.gz
+ 8e90db3dd433251b58137850e38397c12d4d6fbb             6446 main/binary-armhf/Packages.gz
 SHA256:
- f73b11568f14efa3e4522af39f79f89c5bd78b0c30b96ec84a86148ce0db03cf              272 Release
+ 0f14b0257178f0209718c55c85615a83fecbabd5f3d61786993a0ee29eccee3a              272 Release
  e273faa43cdb5a8170e12083e50bf45b3b972026bb60891fbd9646e7c65fb880            19623 main/binary-all/Packages
- 32380ea67465263b22876f80ac47bbcb9d5d64c934ffe0ebff24e8e68fa8f54a             6446 main/binary-all/Packages.gz
- ac84b0ac492ff18ca50026d85124cb71f73655232738f114e32a0bda91e92966            21592 main/binary-arm64/Packages
- 8c6290fc1af3b17b21a6bcb6723c6287fc920c6994e43af1f9415107ad27d41d             7073 main/binary-arm64/Packages.gz
+ 54491b1b57c30b18a4b8910d229d7660b5ffe86eb8fca92b34921a599f78ad8b             6446 main/binary-all/Packages.gz
+ 845dbf8eeb5bb03c1ea3ba49934aec9783348d3dbd9364b28f9f1ab22f0ffa95            21598 main/binary-arm64/Packages
+ 18927db70e970de1f1d8a5ef5fcd7f31c1479ddb41088b9e2662f177af88045c             7085 main/binary-arm64/Packages.gz
  e273faa43cdb5a8170e12083e50bf45b3b972026bb60891fbd9646e7c65fb880            19623 main/binary-armhf/Packages
- 32380ea67465263b22876f80ac47bbcb9d5d64c934ffe0ebff24e8e68fa8f54a             6446 main/binary-armhf/Packages.gz
+ 54491b1b57c30b18a4b8910d229d7660b5ffe86eb8fca92b34921a599f78ad8b             6446 main/binary-armhf/Packages.gz
 SHA512:
- daacbe831f1828f42ff59a26979556b86b76a32af3742771bc0699d269fa24fbb2f5038ef4b6fd8d1ca4e3cfdba376434a8de1432d46b624abf28eb8a98acbb4              272 Release
+ 78c0fc69a6780dbadc81cdb50743f8c809026a86cb5b019d80656e3ee60c7d53e9ee093829891ecf85f5ce8133007e596f31da73529ffe2df1146abbccfe6f59              272 Release
  e80050e3f70373e92bf55b138f86c1825b4fd763fb12bf695e23fd36e5368728abcb626c2b1f11b3fae8117c735086f26e255258f7d9a94fbca543ae6e48d99d            19623 main/binary-all/Packages
- c1564e3cda5cf85615ae0b7a160f287f18400174065e3ef37de54609bc5a0da506c54c9a3351d77728ff6c347bb61f080201145046e2a7ab40415cf83bc8382e             6446 main/binary-all/Packages.gz
- cb1f5c7fd6c61530718d4b9880b87b826b85ce8b59b4d51322b6076a6ca20d4922729948affb020ca2969c3323e8593a2f13590dea5c992dcc7ba8da562482d3            21592 main/binary-arm64/Packages
- 552f59937eaf06096e31bd5cddf8f28acba7ec6ed79f0a5e23b6f4575d108d6adf289689a75373aaab8ae4be39d28d47461ea1c37aadc0ad692876a0d5c79393             7073 main/binary-arm64/Packages.gz
+ 77cc5647274c80d241ff60c8da6da83f625429a38d4608af10797fb21db26c57ed69bdfae7d6a9a2d7d16762c0b12f58951fa1d7d550b46855d4c9bf6ef2ca94             6446 main/binary-all/Packages.gz
+ 840c8b0af64d171f4d468dffb19e724b73399c56bd45f29ef807fb63046a816bf5c4ebfa1caa300808df6dfa0815d1a4522e5bbae29e17d5000bf9b0e5c05deb            21598 main/binary-arm64/Packages
+ 88d0e30cb2209b785836eeb36e100fa3970b6dc25503c0a36b40e5045c9df05a28a190aec95d15f95a7ba632a155a26d66c34daac6f15dbf96d6e715880c5cf7             7085 main/binary-arm64/Packages.gz
  e80050e3f70373e92bf55b138f86c1825b4fd763fb12bf695e23fd36e5368728abcb626c2b1f11b3fae8117c735086f26e255258f7d9a94fbca543ae6e48d99d            19623 main/binary-armhf/Packages
- c1564e3cda5cf85615ae0b7a160f287f18400174065e3ef37de54609bc5a0da506c54c9a3351d77728ff6c347bb61f080201145046e2a7ab40415cf83bc8382e             6446 main/binary-armhf/Packages.gz
+ 77cc5647274c80d241ff60c8da6da83f625429a38d4608af10797fb21db26c57ed69bdfae7d6a9a2d7d16762c0b12f58951fa1d7d550b46855d4c9bf6ef2ca94             6446 main/binary-armhf/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEH2GMqrO28WWsWO+8sYNYWfeMehIFAmmTSh8ACgkQsYNYWfeM
-ehIP1BAApTxWFaUxr06EBIHsab6Ceeea8Qxop8r4Q0Ngd0rUgQ/zWgab/jGgjPDW
-UerQKuUHSa1PO4B1/3iahcRGZbU5H3o+hmcP2+oK8MK5jPRocOkf6d5dypgQ3ukE
-qRAMAaCopNyI7zCP3Ju/1wPxXFhCkV/hUDWZDrjljRNajicwCCqxwh0O7/OfBCnr
-sIQBDa3ArLR/CjFZNh+LPRbXGDxPfnV4M+XeOR+sJUCAZWFoyivvnt7fi1XJddYu
-753GwW0Tqst9lcB589wNT+CKJfn5opOiPqV3ogwuCJqvqZF2ufwWEscWmr4kBV0C
-qZN93OACLEIhZgJ+COqCKGZDGrCpUmAR0/FlucBoIPrAhy36JslJ4PZymjJkxaML
-+zcPo2g3RC96wjaj2vo5e+aoosYI29EYcI5bry1JOLZg2Yp+uIKl+EbiYEAC+0x1
-rJBXeRybisIbsEqRkjRNIvnkT/yngV1Mu324X3iWdMGYS5XcCF2/5vAQvBo8LaTd
-YjehmB3Mhdsd53X2dKy60HddDnSdhkXyZZPiKHyRZipkGSucp4oymxZGLq1GXqOY
-QrD/CTIz5H7b93HKw5fS8earP4fdUh53lMhIpl3yLvUa1iz+OVUk98LrCbBvlLIK
-tWp9VIFsIYYg/qagJNUaz2izA/thP+0fKARUvQm7XIA/T/u+zus=
-=u/tj
+iQIzBAEBCgAdFiEEH2GMqrO28WWsWO+8sYNYWfeMehIFAmmTSjsACgkQsYNYWfeM
+ehItARAAuRh/LDnc+hVUeFe6fWeT7VkWP0pR79ebmbYTUDII8ddJQXFZrsTDzmdh
+/YV3jx9EObxgugmbLD7UIf0FvRfSq3Lq/LohUAET0SvInhSDeZzSAuTJzjI48Hht
+3Vi3NkLOFvwz754fysLMS0PVdhj1ClKo/lLlJp4FvkmIiIsWCQcB5fPoq9bHKW9f
+32Dm13X2WIJqpYAtvrFTxAEElkbh5OQISvUjrKrEiJ9xvEnzHdtHQ2n8PmhAy4Nk
+RgfGuCajuMpAXKUEMadpm24jZsxwYsWkwNbBHphzsjrQ4Dd15vmiU1+fvtIH3mYw
+8v2aFkyXv1o0JCrCL7G0zK4P2hBAyhIkZyr/8+EtS6HDPrpVFnXaGKKZdOz8LGRJ
+QVgsSKuDlcq//+6M/83dm5LMi/0B+V14sCsrnqOE5atzIElif9oqqjypUDfDNGed
+BXvwL7Yfhv32d8qzOVS6SsL8hHCHQAK1G1+I3NZfA8PU90xTZv2F4UCKx4BpT5NF
+C5I+A/MbS+1six1J/eqC35qW4J1BISna2soapZe/ZXsaAScBIkgyb7dN3lwQyLvx
+dLGVzVwJORqYBraq7PkchETJT5brMvasXRzQGs2XRwDoCOnUDUuGA04WKgn5tw/X
+VTGwIMNKC+Im33opmkjQZ2x3aNAlNXquyKm10AAfn+5J68wOyxg=
+=7IqI
 -----END PGP SIGNATURE-----
