@@ -161,16 +161,16 @@ Description: Generate Debian packages from container application definitions
  ready for building with dpkg-buildpackage.
 
 Package: halos
-Version: 0.3.1-1
+Version: 0.3.2-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
-Depends: cockpit, cockpit-networkmanager, cockpit-networkmanager-halos, cockpit-storaged, cockpit-apt, cockpit-authelia-users, cockpit-dockermanager, cockpit-container-apps, halos-cockpit-config, docker.io (>= 20.10) | docker-ce (>= 20.10), docker-compose | docker-compose-plugin, docker-cli, halos-core-containers, homarr-container-adapter, halos-mdns-publisher
-Filename: pool/trixie-stable/main/halos_0.3.1-1_all.deb
-Size: 2382
-MD5sum: ababc0e3badaa6e068fcf948a4865db0
-SHA1: 2bc1fe985133198552e7fd6758d6bdca16598628
-SHA256: 6edbd081459a2420567afa16a2cda2ec2f53d64a722275327726f27cb5d79b58
+Depends: cockpit, cockpit-networkmanager, cockpit-networkmanager-halos, cockpit-storaged, cockpit-apt, cockpit-authelia-users, cockpit-container-apps, halos-cockpit-config, docker.io (>= 20.10) | docker-ce (>= 20.10), docker-compose | docker-compose-plugin, docker-cli, halos-core-containers, homarr-container-adapter, halos-mdns-publisher
+Filename: pool/trixie-stable/main/halos_0.3.2-1_all.deb
+Size: 2400
+MD5sum: a84e1c01902cfd14d618d87455d415d3
+SHA1: 3d1323e00c9aec70365d454e741c0ab8cc2465be
+SHA256: 2465109bc6c7b69e2ea26b475624d1b0fc4f1e4ac25fe6b61d058f9a07fe56ff
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -265,16 +265,16 @@ Description: HaLOS branding and default configuration for Homarr dashboard
  branding.
 
 Package: halos-marine
-Version: 0.3.1-1
+Version: 0.3.2-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
-Depends: halos (>= 0.3.1-1), gpsd, marine-container-store, marine-signalk-server-container
-Filename: pool/trixie-stable/main/halos-marine_0.3.1-1_all.deb
-Size: 2226
-MD5sum: b7b6a50bcae6c102cadfe3e496363339
-SHA1: c2cfb281523a672170b93beccb06e9cffc6f9022
-SHA256: a4424428ac873cdc34bb3533d933a82264b40c883419edf912a427dbae89f7d9
+Depends: halos (>= 0.3.2-1), gpsd, marine-container-store, marine-signalk-server-container
+Filename: pool/trixie-stable/main/halos-marine_0.3.2-1_all.deb
+Size: 2244
+MD5sum: d0d2158f91dbacbb51f08b1638667934
+SHA1: 3df035bf0ece63ccd0a27a9fcd7752ce536b6381
+SHA256: ddac27b8fb6cf59777b9beed1374cfc7a893879e42f36ac848bcee5d997be2b0
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
