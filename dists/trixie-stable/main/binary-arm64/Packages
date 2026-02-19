@@ -131,19 +131,19 @@ Description: Cockpit NetworkManager module with WiFi support for HaLOS
  with WiFi features under development for potential upstream contribution.
 
 Package: container-packaging-tools
-Version: 0.5.0-7
+Version: 0.5.3-1
 Architecture: all
-Maintainer: Hat Labs <info@hatlabs.fi>
-Installed-Size: 363
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 365
 Depends: python3-jinja2, python3-pil, python3-pydantic (>= 2.0), python3-requests, python3-yaml, python3:any, dpkg-dev
-Filename: pool/trixie-stable/main/container-packaging-tools_0.5.0-7_all.deb
-Size: 68648
-MD5sum: 73137c089c5777978ffb28d2373e752b
-SHA1: a6efc5bef4667a5a224066609b2c2bb8b17ea4c8
-SHA256: ece696b50577006138da2c6ff6153cd4d92cc2a24af56960d85f05784c0b92aa
+Filename: pool/trixie-stable/main/container-packaging-tools_0.5.3-1_all.deb
+Size: 69172
+MD5sum: 79e6f3c5bf6d3c7af9ee78c8d2a4d264
+SHA1: c8e313877303acd066edf7ccd72b1fa32f755527
+SHA256: ba601d8ed4c9a9efedf4b218db609b56b00d691b68d7b9948479d9ae6caad9f7
 Section: devel
 Priority: optional
-Homepage: https://github.com/hatlabs/container-packaging-tools
+Homepage: https://github.com/halos-org/container-packaging-tools
 Description: Generate Debian packages from container application definitions
  container-packaging-tools is a command-line tool that converts simple
  container app definitions into full-fledged Debian packages. It eliminates
