@@ -3762,10 +3762,10 @@ Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 108
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-12_all.deb
-Size: 66948
-MD5sum: f7da54ff282ebb4363addfbf718cc26f
-SHA1: d44ed3d6ce53bb6296e3238f3fa035e8c3d4cd58
-SHA256: e0e928bc9001d55cd158f4380f3a664eb57a5637b3d21b45fa5d7201d69e1819
+Size: 66944
+MD5sum: 7cb96a9ed39eefbb3390131c0ec29d8b
+SHA1: 7f9a09ed3a23e4bf767deb064147518859dbd35a
+SHA256: bda233c88f4a70d9f627c44b52150df2d087c28f45040e6963d5b9524c3354ab
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -3817,10 +3817,10 @@ Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Recommends: marine-influxdb-container
 Filename: pool/trixie-unstable/main/marine-grafana-container_12.3.3-2_all.deb
-Size: 9124
-MD5sum: 163d5d25d44ad491a4067259c41d5cd3
-SHA1: 1146c1edf7c128fa64c2f40ddc7af8612fc79af7
-SHA256: d920a2907aef5bb9d7e887028e5d1eccce62ff452e9cf8d154480ef1bec54424
+Size: 9130
+MD5sum: e68d84abfca85941cd89002eb8ffaed3
+SHA1: d70f42b0e13acfba09f8a2af99dd313fdd2c069f
+SHA256: 125807e77a1484373a35320af285882a087dae846bd5ed501f30db612ac8dd78
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -3844,10 +3844,10 @@ Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 50
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Filename: pool/trixie-unstable/main/marine-influxdb-container_2.8.0-2_all.deb
-Size: 7570
-MD5sum: 7e61ba95aa259e39612c3b4586546a03
-SHA1: 9e6001f59234cdb6d90010dac8554a0657fc4a0a
-SHA256: dac1f4d66fb6c693afa06817897353d7cd3b795633ec3fb5de77922769286fc6
+Size: 7572
+MD5sum: 3c01570d02f54163475216b134819c89
+SHA1: d3dc08baabc4d1e1dd9bd8e4152e01bfa5c1bd54
+SHA256: 72452e6f597929c8b770d36196dcd8636f1d154c6188776783cec1b7c24570ce
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -3865,16 +3865,16 @@ Description: Time-series database for marine data logging
 Tag: role::container-app, field::marine, category::monitoring, interface::web, use::organizing, works-with::logfile, x-display-name::InfluxDB
 
 Package: marine-opencpn-container
-Version: 5.12.4-10
+Version: 5.12.4-11
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 52
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
-Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-10_all.deb
-Size: 12642
-MD5sum: 59c03a134d54ef8b9cd40c4f2fcc6bc4
-SHA1: 93e83d82bdcfacb3a0e34a84d300b58887f0ddb2
-SHA256: 17419377459fbac568371a647575f1751c68f04ea8bacd5c3cab764812c814e3
+Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-11_all.deb
+Size: 12672
+MD5sum: 1a2520299fceb4d6cb66d1134c4d1d96
+SHA1: 7612f54f45ce1a2e3c691a146941addc59963606
+SHA256: df0901f861647fd866b7364686d8551b14d8b4c687bbb6e0e356a540d22c2060
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -3890,7 +3890,7 @@ Description: Open source chart plotter and navigation software
  - Weather routing and GRIB file support
  - Extensive plugin system
  - Route and waypoint management
-Tag: role::container-app, field::marine, field::navigation, field::geography, category::navigation, category::chartplotters, scope::application, interface::web, use::routing, works-with::maps, x-display-name::OpenCPN
+Tag: role::container-app, field::marine, field::navigation, field::geography, category::navigation, category::chartplotters, scope::application, interface::web, use::routing, works-with::maps, status::experimental, x-display-name::OpenCPN
 
 Package: marine-signalk-server-container
 Version: 2.22.1-3
@@ -3900,9 +3900,9 @@ Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.22.1-3_all.deb
 Size: 9574
-MD5sum: 94f9daa1f0fedefd002478c235a37086
-SHA1: 1c94cb5353d3eba1af8ab9a8a2a7caab0d13981b
-SHA256: 36588c6fad085bb9b2f2ec154c84f29f9344145eb4a32e66149bc54aaf27c050
+MD5sum: bdff909305d5c83d6aebe599bedf523c
+SHA1: fc5df94b5e50b727f944b19696b3ae5b76f05b02
+SHA256: 9f6b7117d8b355484b69c2b444bf693a1b5e2aa089a0fa82c6df5ebcaf218f63
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
