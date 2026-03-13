@@ -3725,16 +3725,16 @@ Description: transitional package (mDNS publisher removed)
  halos-mdns-publisher service. It can be safely removed.
 
 Package: marine-avnav-container
-Version: 20251028-13
+Version: 20251028-14
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 108
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
-Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-13_all.deb
-Size: 66954
-MD5sum: 925ed4fadd3674fd085426214d0ac290
-SHA1: dfbf13e360350d9a478701ca1a31618f5122bc93
-SHA256: 9e31df0b4a68ef04b21657fcf49f2c6b58facf557579c54bc5e48394158f0c05
+Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-14_all.deb
+Size: 66848
+MD5sum: 7c91f0c168d3e845849cddbe94e27e33
+SHA1: 0779c350662ca4ed9e35d436ad8239a2c0d8fe2f
+SHA256: da26ea03ad2b23f5898d09f322a1a9fd9d90cfec8d42a71415fc1b9e92463c84
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -3786,10 +3786,10 @@ Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Recommends: marine-influxdb-container
 Filename: pool/trixie-unstable/main/marine-grafana-container_12.4.1-1_all.deb
-Size: 9294
-MD5sum: e7329ac254d1aca80ef8e386c37c3278
-SHA1: cd0fc9f5398180ecf6124e23b11c84c55a192077
-SHA256: c75526704a79ae67c1ff3ab314cdd6ee939d9972e7f7d0dd0bc4f1edb821cf12
+Size: 9288
+MD5sum: 559fa014aa56092e073590a5e6f67e62
+SHA1: 886f97f3e4bf91080aa72bb69163f78a89e662e8
+SHA256: 4a5b749bbfd102d00c818b3e7d67d4aa7842f0bc6499abec5bf9f20d564ddc79
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -3807,16 +3807,16 @@ Description: Data visualization and monitoring platform
 Tag: role::container-app, field::marine, category::visualization, category::monitoring, interface::web, use::monitoring, works-with::logfile, x-display-name::Grafana
 
 Package: marine-influxdb-container
-Version: 2.8.0-3
+Version: 2.8.0-4
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 50
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
-Filename: pool/trixie-unstable/main/marine-influxdb-container_2.8.0-3_all.deb
-Size: 7556
-MD5sum: 0c20c1cb8a55d6ce0a771e6b072e7108
-SHA1: 2e53a2f503d17c8d77ff322176e02c32e82c9a5d
-SHA256: 9ea54824ac33f001d6c4e91670ec2782f1112c32803f1a2cedc21fbec3f3bc34
+Filename: pool/trixie-unstable/main/marine-influxdb-container_2.8.0-4_all.deb
+Size: 7486
+MD5sum: 27fa0326ad0f741374810e8d826ace15
+SHA1: 0a1653670dd9a553ce008a48368fef7a962bcc2e
+SHA256: 033af7a7b6b87f70a913fea33ebacd737b6a0a61fc5946eed32721b9fed901a9
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -3834,16 +3834,16 @@ Description: Time-series database for marine data logging
 Tag: role::container-app, field::marine, category::monitoring, interface::web, use::organizing, works-with::logfile, x-display-name::InfluxDB
 
 Package: marine-opencpn-container
-Version: 5.12.4-13
+Version: 5.12.4-14
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 52
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
-Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-13_all.deb
-Size: 12686
-MD5sum: bf8873b6e86aa311aeb3a87658bb734c
-SHA1: e38363d6c51a94cc92c6ec3600b97697ef6be906
-SHA256: 319d95c8394e6b7ff2959b5bbe1f84c81f9c2eeab09087723a5b04d5af84d38a
+Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-14_all.deb
+Size: 12490
+MD5sum: ab615a9463c87b8f837620224072423a
+SHA1: eb2cd2005a067ea8adf2dc788329fc1f6d37196a
+SHA256: b0460b924ddb6f60d93576e5250fa3840e6f0fd567de66ffb3cf8fb9589c5edf
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -3868,10 +3868,10 @@ Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 58
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.22.1-8_all.deb
-Size: 10076
-MD5sum: 50d5dfb04701f74b2a53e94b70261781
-SHA1: be2657d1fec5937857003a6cfb31da95dfa1bcde
-SHA256: 59ef241dcf6bb439247eb78b9dcce926cb6185d1e45bd051f612ddf0502b9d19
+Size: 10078
+MD5sum: 54dc4663bffeb3be5699fdebd09c6542
+SHA1: 9fd9302ec566dcfe079296bcd8e985a0516e6e0a
+SHA256: 9b2ee49bdfbd78834abbfe115e72177571b480f37d066255496bb59428c42b10
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
