@@ -291,6 +291,23 @@ Description: HaLOS marine system metapackage
  This package depends on the halos base metapackage and adds marine-specific
  components for boat and vessel management.
 
+Package: halos-mdns-publisher
+Version: 1.0.0-1
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 15
+Filename: pool/trixie-stable/main/halos-mdns-publisher_1.0.0-1_all.deb
+Size: 2858
+MD5sum: d95cbee6521b7db099452fc37a56e9c7
+SHA1: 95fc97a4e77aa5eb5e7257d5e9dc79cad43253d6
+SHA256: 2222ab9af5f9ce53530f8b847353e19f1dace5b11410eba8272da82716a11a6e
+Section: oldlibs
+Priority: optional
+Homepage: https://github.com/halos-org/halos-mdns-publisher
+Description: transitional package (mDNS publisher removed)
+ This is a transitional dummy package that cleans up the old
+ halos-mdns-publisher service. It can be safely removed.
+
 Package: marine-avnav-container
 Version: 20251028-13
 Architecture: all
