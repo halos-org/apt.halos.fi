@@ -3835,16 +3835,16 @@ Description: transitional package (mDNS publisher removed)
  halos-mdns-publisher service. It can be safely removed.
 
 Package: halos-ublox-config
-Version: 0.1.0-2
+Version: 0.1.0-3
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 25
 Depends: gpsd-clients
-Filename: pool/trixie-unstable/main/halos-ublox-config_0.1.0-2_all.deb
-Size: 4590
-MD5sum: e88aa6bb2c6b024c59217ef901841702
-SHA1: d35b938b7137104dda858c41f7076c49cf97a4da
-SHA256: 7606481f1744628caeba39a407c3a3b5e26fd5fc41136ebebf0cbd4429b258cf
+Filename: pool/trixie-unstable/main/halos-ublox-config_0.1.0-3_all.deb
+Size: 4500
+MD5sum: 8ecf777b2460bc5ad0a975ba8577925f
+SHA1: e47164e451731f655e740b5dcd40af4bf61a7a6e
+SHA256: da1b53e7651ddfc01c7f4d04e3c418913425da5cc6202a2bb77056e1dbafc39a
 Section: misc
 Priority: optional
 Homepage: https://github.com/halos-org/halos-ublox-config
