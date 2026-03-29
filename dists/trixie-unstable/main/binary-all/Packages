@@ -3724,6 +3724,31 @@ Description: transitional package (mDNS publisher removed)
  This is a transitional dummy package that cleans up the old
  halos-mdns-publisher service. It can be safely removed.
 
+Package: halos-ublox-config
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 25
+Depends: gpsd-clients
+Filename: pool/trixie-unstable/main/halos-ublox-config_0.1.0-1_all.deb
+Size: 4564
+MD5sum: 20cfc1752a8693d49a345e3d103570b6
+SHA1: 43223966854bacdf46ef8baa8fbcce9a79a489b0
+SHA256: 4b8340493ee0a480dcbcde48b8b194b936d4db1199eb9907133ff7991c654e3c
+Section: misc
+Priority: optional
+Homepage: https://github.com/halos-org/halos-ublox-config
+Description: u-blox GNSS receiver auto-configuration for marine use
+ Configures u-blox GNSS receivers connected via UART for marine use.
+ Runs on every boot to ensure correct configuration, since ROM-based
+ u-blox modules (such as the MAX-M8Q) cannot persist settings without
+ a backup battery.
+ .
+ Configuration applied:
+  * 10 Hz update rate (100 ms measurement interval)
+  * Sea dynamic model (optimized for marine navigation)
+  * 115200 bps baud rate
+
 Package: marine-avnav-container
 Version: 20251028-14
 Architecture: all
