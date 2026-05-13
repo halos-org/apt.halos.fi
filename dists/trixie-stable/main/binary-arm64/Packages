@@ -444,15 +444,15 @@ Description: u-blox GNSS receiver auto-configuration for marine use
   * 115200 bps baud rate
 
 Package: homarr-container-adapter
-Version: 0.4.5-1
+Version: 0.4.7-2
 Architecture: arm64
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Depends: halos-homarr-branding
-Filename: pool/trixie-stable/main/homarr-container-adapter_0.4.5-1_arm64.deb
-Size: 1836168
-MD5sum: 1206f25042caf5ab12ffc03f6ad27cbb
-SHA1: 0f0f6141cf33ecbe6c5b564c6983d62ca8fc98ea
-SHA256: 8a9d8ffafc1adae99aa5ccceaf2f74c355096104c639949bb4460c5aeb5b22f6
+Filename: pool/trixie-stable/main/homarr-container-adapter_0.4.7-2_arm64.deb
+Size: 1845200
+MD5sum: cdd567af031a5d01bf7f1c77e1e8d29d
+SHA1: dd3d0f387a1f0c14b9274274e30951d183ec039f
+SHA256: 0c34dcfb2848e36f5b683adef7408d7513f7a9b44eeae79c8e1e66f9fb1ff58f
 Description: Homarr dashboard adapter for HaLOS
  Adapter service that handles first-boot setup and container
  auto-discovery for the Homarr dashboard.
