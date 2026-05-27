@@ -3680,19 +3680,19 @@ Description: HaLOS desktop variant metapackage
  (generic) or halos-halpi-desktop-branding (HALPI2).
 
 Package: halos-desktop-branding
-Version: 0.1.0-1
+Version: 0.1.1-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 1725
+Installed-Size: 1667
 Depends: rpd-common
 Conflicts: halos-desktop-wallpaper
 Replaces: halos-desktop-wallpaper
 Provides: halos-desktop-wallpaper
-Filename: pool/trixie-unstable/main/halos-desktop-branding_0.1.0-1_all.deb
-Size: 1646092
-MD5sum: 414c1f6a70e5c6c85051d1e943e40464
-SHA1: 13daf335714c4e3513e0713dc91ff5f7098da399
-SHA256: c6dfb7e5db928015ae119d59513c1aa5e88ac681e968dd243f5b3ff505d93603
+Filename: pool/trixie-unstable/main/halos-desktop-branding_0.1.1-1_all.deb
+Size: 1585728
+MD5sum: 94878766511627f5aa703e2788ac5a36
+SHA1: 258d8c4511455f53f0569bfb8044b1006a7f542f
+SHA256: a7c9a5fff0f2e04bb678aae266a9ec82985ce31e881eb9e7ac54f41ebd641641
 Section: x11
 Priority: optional
 Homepage: https://github.com/halos-org/halos-desktop-branding
