@@ -261,6 +261,34 @@ Description: HaLOS desktop variant metapackage
  This metapackage marks a HaLOS installation as a desktop variant.
  Future desktop-specific packages will be added as dependencies.
 
+Package: halos-desktop-branding
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Matti Airas <matti.airas@hatlabs.fi>
+Installed-Size: 1725
+Depends: rpd-common
+Conflicts: halos-desktop-wallpaper
+Replaces: halos-desktop-wallpaper
+Provides: halos-desktop-wallpaper
+Filename: pool/trixie-stable/main/halos-desktop-branding_0.1.0-1_all.deb
+Size: 1646092
+MD5sum: 414c1f6a70e5c6c85051d1e943e40464
+SHA1: 13daf335714c4e3513e0713dc91ff5f7098da399
+SHA256: c6dfb7e5db928015ae119d59513c1aa5e88ac681e968dd243f5b3ff505d93603
+Section: x11
+Priority: optional
+Homepage: https://github.com/halos-org/halos-desktop-branding
+Description: HaLOS branded default desktop wallpaper
+ This package provides the HaLOS-branded default desktop wallpaper for
+ HaLOS desktop variants, overriding the upstream Raspberry Pi OS default
+ (shipped via the rpd-common package) using dpkg-divert on the pcmanfm
+ system-wide desktop-items conffiles. Per-user wallpaper choices take
+ precedence over this default.
+ .
+ Exclusivity with HALPI2-specific branding is enforced via the virtual
+ package halos-desktop-wallpaper: only one provider can be installed
+ at a time.
+
 Package: halos-desktop-marine
 Version: 0.3.5-1
 Architecture: all
