@@ -804,8 +804,8 @@
                             <div class="install-cmd">sudo apt install halos-desktop</div>
                         </div>
                         <div class="package-item">
-                            <h4>halos-desktop-branding <span class="version">v0.1.1-1</span> <span class="arch-badge">all</span></h4>
-                            <p class="description">HaLOS branded default desktop wallpaper This package provides the HaLOS-branded default desktop wallpaper for HaLOS desktop variants, overriding the upstream Raspberry Pi OS default (shipped via the rpd-common package) using dpkg-divert on the pcmanfm system-wide desktop-items conffiles. Per-user wallpaper choices take precedence over this default. . Exclusivity with HALPI2-specific branding is enforced via the virtual package halos-desktop-wallpaper: only one provider can be installed at a time.</p>
+                            <h4>halos-desktop-branding <span class="version">v0.1.1-2</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">HaLOS branded default desktop wallpaper This package provides the HaLOS-branded default desktop wallpaper for HaLOS desktop variants. It ships pcmanfm system-wide desktop-items conffiles that override the upstream Raspberry Pi OS defaults at /etc/xdg/pcmanfm/default/. Per-user wallpaper choices in ~/.config/pcmanfm/ take precedence over this default. . File ownership at the canonical paths is taken from rpd-common via Replaces:; rpd-common stays installed and its other files are unaffected. Exclusivity with HALPI2-specific branding is enforced via the virtual package halos-desktop-wallpaper: only one provider can be installed at a time.</p>
                             <div class="install-cmd">sudo apt install halos-desktop-branding</div>
                         </div>
                         <div class="package-item">
@@ -909,7 +909,7 @@
         </div>
 
         <footer>
-            <p>Last updated: 2026-05-27 16:53:59 UTC</p>
+            <p>Last updated: 2026-05-27 18:01:25 UTC</p>
             <p><a href="index.html">Back to all distributions</a></p>
         </footer>
     </div>

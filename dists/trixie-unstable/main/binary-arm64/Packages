@@ -3680,32 +3680,34 @@ Description: HaLOS desktop variant metapackage
  (generic) or halos-halpi-desktop-branding (HALPI2).
 
 Package: halos-desktop-branding
-Version: 0.1.1-1
+Version: 0.1.1-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 1667
 Depends: rpd-common
 Conflicts: halos-desktop-wallpaper
-Replaces: halos-desktop-wallpaper
+Replaces: halos-desktop-wallpaper, rpd-common
 Provides: halos-desktop-wallpaper
-Filename: pool/trixie-unstable/main/halos-desktop-branding_0.1.1-1_all.deb
-Size: 1585728
-MD5sum: 94878766511627f5aa703e2788ac5a36
-SHA1: 258d8c4511455f53f0569bfb8044b1006a7f542f
-SHA256: a7c9a5fff0f2e04bb678aae266a9ec82985ce31e881eb9e7ac54f41ebd641641
+Filename: pool/trixie-unstable/main/halos-desktop-branding_0.1.1-2_all.deb
+Size: 1585894
+MD5sum: 0c28323d4c613b6c7d8e7a0071824347
+SHA1: ad786174e63e2dc514f9e6b3745529bfc750a4d8
+SHA256: 9a68cdb781e7e80f1d8901d93800821fadb5bd4012528daee98efa7d5c32b247
 Section: x11
 Priority: optional
 Homepage: https://github.com/halos-org/halos-desktop-branding
 Description: HaLOS branded default desktop wallpaper
  This package provides the HaLOS-branded default desktop wallpaper for
- HaLOS desktop variants, overriding the upstream Raspberry Pi OS default
- (shipped via the rpd-common package) using dpkg-divert on the pcmanfm
- system-wide desktop-items conffiles. Per-user wallpaper choices take
- precedence over this default.
+ HaLOS desktop variants. It ships pcmanfm system-wide desktop-items
+ conffiles that override the upstream Raspberry Pi OS defaults at
+ /etc/xdg/pcmanfm/default/. Per-user wallpaper choices in
+ ~/.config/pcmanfm/ take precedence over this default.
  .
- Exclusivity with HALPI2-specific branding is enforced via the virtual
- package halos-desktop-wallpaper: only one provider can be installed
- at a time.
+ File ownership at the canonical paths is taken from rpd-common via
+ Replaces:; rpd-common stays installed and its other files are
+ unaffected. Exclusivity with HALPI2-specific branding is enforced
+ via the virtual package halos-desktop-wallpaper: only one provider
+ can be installed at a time.
 
 Package: halos-desktop-marine
 Version: 0.3.6-1
