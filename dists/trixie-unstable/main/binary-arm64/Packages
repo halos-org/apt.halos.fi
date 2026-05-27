@@ -3631,7 +3631,7 @@ Description: HaLOS Cockpit configuration and branding
  integration.
 
 Package: halos-core-containers
-Version: 0.4.1-1
+Version: 0.4.1-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 221
@@ -3639,11 +3639,11 @@ Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-c
 Recommends: halos-cockpit-config
 Conflicts: halos-reverse-proxy
 Provides: halos-reverse-proxy
-Filename: pool/trixie-unstable/main/halos-core-containers_0.4.1-1_all.deb
-Size: 78444
-MD5sum: 8be3ca72ef05533d900a30cce7365184
-SHA1: 2d38aeb801eef897f1373c834892cb31ca694be4
-SHA256: 3ba67f63454daa91c3f60970c359009525a91843451d2c590bad8edc8f7cd958
+Filename: pool/trixie-unstable/main/halos-core-containers_0.4.1-2_all.deb
+Size: 78458
+MD5sum: 69404ab7b2356673297f9c61d43de320
+SHA1: 41c47240549c1f48873f648184a5e632b8090f84
+SHA256: a77671b60ad5981164d8469b462b69d1ad5ae2f1bf705abbe154a5ea46e3108d
 Section: web
 Priority: optional
 Homepage: https://github.com/halos-org/halos-core-containers
