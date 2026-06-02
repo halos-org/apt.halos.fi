@@ -3608,32 +3608,6 @@ Description: Base system metapackage for HaLOS
  HaLOS is a Debian-based operating system designed for easy management
  of Raspberry Pi systems through a web interface.
 
-Package: halos-browser-trust
-Version: 0.1.0-1
-Architecture: all
-Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 15
-Depends: libnss3, p11-kit-modules
-Filename: pool/trixie-unstable/main/halos-browser-trust_0.1.0-1_all.deb
-Size: 3042
-MD5sum: 6d64ddbab3b420a3dcdedd8f0670d752
-SHA1: c0ef0f9c7897e7bdea6be32aa59cbd77de4e1e8f
-SHA256: 612df734ddbd7f91450de8bf01a21db3e54543ea2c106a9d6f7c5d86e5601523
-Section: misc
-Priority: optional
-Homepage: https://github.com/halos-org/halos-browser-trust
-Description: Make NSS applications trust the system CA store
- Bridges NSS to the system p11-kit trust store by diverting libnssckbi.so to
- p11-kit-trust.so, the standard mechanism Fedora and Arch enable by default but
- Debian omits.
- .
- Without this, NSS-based applications (Chromium, Firefox) on a HaLOS desktop
- trust only the static Mozilla root bundle and ignore CAs installed into the
- system trust store via update-ca-certificates. With it, the on-device browser
- trusts the device's own auto-CA (and any operator-installed CA) with no manual
- per-user steps. Pulled in by the halos-desktop metapackage, so it lands only on
- desktop variants.
-
 Package: halos-cockpit-config
 Version: 0.5.7-1
 Architecture: all
