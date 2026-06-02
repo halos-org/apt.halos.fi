@@ -3952,10 +3952,10 @@ Installed-Size: 108
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-16_all.deb
-Size: 67018
-MD5sum: d81bf4b91d57416d1f84c0ceb6c92999
-SHA1: 5f953e91b21f2878759751eda4921c4c3b11d02c
-SHA256: aca0d9dca1dcabf5f772b7151396c6feae6aa02fc28ddcc2ef4e05dcab7a5f6e
+Size: 67010
+MD5sum: 0c7032d8db4bc68afa233979911d916b
+SHA1: 375f1aec2155658d136071fd8181dd536ff43339
+SHA256: eb283e2c3e9762a05569b92ad632d82e0b43cc28c1929d7c587870885e195368
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -4009,9 +4009,9 @@ Recommends: marine-influxdb-container
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-grafana-container_13.0.1-3_all.deb
 Size: 10010
-MD5sum: 437e28cf38fbd6294e2d6e483d302fa2
-SHA1: 4d0e9cd12844bc7f8fe9dd51068b954ce2cfc0b6
-SHA256: 82921f125d5a2a65645ad7f35692d30cb994d0d91a78beba6f6985b917cf54e5
+MD5sum: aa6762fae75399246d9a22bd69191bc3
+SHA1: 734ecdc3d7d431c55cc983d6b21c615486360a3a
+SHA256: c897b69fb8576d591f2d42991eb9e672c0a038fe2aa70d36f9ad1b8ff794a754
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -4036,10 +4036,10 @@ Installed-Size: 54
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-influxdb-container_2.9.1-2_all.deb
-Size: 8876
-MD5sum: 86c905b914ab958e1beeeb8425209540
-SHA1: b404c5151415e5ac39d634e7c00832ab4c550418
-SHA256: 18d89179980ffefac4eed9db1447091de0b81104a448c84cbdc0fed433344c82
+Size: 8898
+MD5sum: f1776bd84cb1d89538f72b78363981e6
+SHA1: dce80031fee95b7795afd7b7203997bf2a5ee445
+SHA256: 1ea9bd5a804f86d74f7aedab7111579934b8962c88d7677343a85d2332805a3e
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -4064,10 +4064,10 @@ Installed-Size: 52
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-15_all.deb
-Size: 12550
-MD5sum: 058a560034616aac3e4456f6bd2f5e1f
-SHA1: e9fab60d656675875c1be2c856f3eded2751eb78
-SHA256: 1960a7d423088bb3c7f8da77d656c4a1454250a27158a4339a0d52dc05237856
+Size: 12536
+MD5sum: 281d75f2f14cd529b555fb09b5715a3e
+SHA1: c65a881f98a81aee5ce1153e64821dfa9076924c
+SHA256: e7bdd1b61ba1b2836ef4d72d91bf1c1f857ba06a51b6f34a3c702e43b234e8ff
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -4086,17 +4086,17 @@ Description: Open source chart plotter and navigation software
 Tag: role::container-app, field::marine, field::navigation, field::geography, category::navigation, category::chartplotters, scope::application, interface::web, use::routing, works-with::maps, status::experimental, x-display-name::OpenCPN
 
 Package: marine-signalk-server-container
-Version: 2.27.0-2
+Version: 2.27.0-3
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 60
 Depends: docker-compose | docker-compose-plugin, docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.27.0-2_all.deb
+Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.27.0-3_all.deb
 Size: 10976
-MD5sum: f76a65c23ea11b4e7f9073ccc73475e8
-SHA1: 272ea1ac63d32b9e98d682a49022b37415d89295
-SHA256: 82f703ebf26e34f0e0a8dd624bd4614da8a04dbf84fb09bc5bf6bf07aff7a8a0
+MD5sum: 476ccf62d1557df017f4bbfb6ae02328
+SHA1: fad9aa456b20028b1220fdf2410aa99d0ea98d6d
+SHA256: 46161eaaedc3981b7110baec702f6e5b1d86f7cefeb048ed83dd43ed1af7dd39
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
