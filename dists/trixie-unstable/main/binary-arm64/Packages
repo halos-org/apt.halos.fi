@@ -3466,16 +3466,16 @@ Description: Cockpit plugin for Authelia user management
  Authelia users through Cockpit's web interface.
 
 Package: cockpit-container-apps
-Version: 0.2.2-1
+Version: 0.2.2-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 13042
 Depends: python3-yaml, python3:any, cockpit (>= 276), python3-apt
-Filename: pool/trixie-unstable/main/cockpit-container-apps_0.2.2-1_all.deb
-Size: 1287168
-MD5sum: c9b238a2e44a5ab67c78abd52e7f4fbe
-SHA1: 08f4cd5b0c324c2cad74fb5b8a5adf6642361d3d
-SHA256: d65d2cc8b3c7643eb2d84fab7fc438867ab0aa6a5875dc9756cc22df1d977056
+Filename: pool/trixie-unstable/main/cockpit-container-apps_0.2.2-2_all.deb
+Size: 1287076
+MD5sum: 610c017316d7d7555e5a3ad5e9da8d7c
+SHA1: f6e9be889a7f9de00f0adac7faf11f5559b7470d
+SHA256: 38c47991d85fdc5492fc5c4759e0b0b0aa4dbb8f86b3f9da513b4c226fd9c320
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/cockpit-container-apps
