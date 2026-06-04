@@ -17,7 +17,7 @@
         <div class="dist-section">
             <div class="dist-card">
                 <h3>Trixie Unstable</h3>
-                <p class="dist-meta">172 packages</p>
+                <p class="dist-meta">173 packages</p>
                 <p class="dist-desc">HaLOS packages for Debian Trixie (rolling)</p>
                 <div class="warning-box">
                     <strong>Warning: Unstable Channel:</strong> Contains latest packages from main branch. May include untested changes. Use stable for production systems.
@@ -26,7 +26,7 @@
                 <div class="package-list">
                     <strong>Available Packages:</strong>
                     <details class="component-group" open>
-                        <summary>Main Packages <span class="pkg-count">(172 packages)</span></summary>
+                        <summary>Main Packages <span class="pkg-count">(173 packages)</span></summary>
                         <div class="component-content">
                         <div class="package-item">
                             <h4>casaos-2fauth-container <span class="version">v1.0.0</span> <span class="arch-badge">all</span></h4>
@@ -789,6 +789,11 @@
                             <div class="install-cmd">sudo apt install halos</div>
                         </div>
                         <div class="package-item">
+                            <h4>halos-browser-trust <span class="version">v0.1.0-2</span> <span class="arch-badge">all</span></h4>
+                            <p class="description">Make on-device browsers trust the system CA store So Chromium, Firefox and other NSS applications on a HaLOS desktop trust CAs installed via update-ca-certificates — notably the device&#x27;s own auto-CA — with no manual per-user steps. . Chromium and other system-NSS apps: replaces libnss3&#x27;s libnssckbi.so with a symlink to p11-kit-trust.so (re-asserted via a dpkg trigger so it survives libnss3 upgrades), exposing the system p11-kit trust store the way Fedora and Arch do by default but Debian omits. . Firefox bundles its own NSS and root store, so a Firefox enterprise policy at /etc/firefox/policies/policies.json installs the system CA file instead. . Pulled in by the halos-desktop metapackage, so it lands only on desktop variants.</p>
+                            <div class="install-cmd">sudo apt install halos-browser-trust</div>
+                        </div>
+                        <div class="package-item">
                             <h4>halos-cockpit-config <span class="version">v0.5.7-1</span> <span class="arch-badge">all</span></h4>
                             <p class="description">HaLOS Cockpit configuration and branding This package provides HaLOS-specific configuration for the Cockpit web interface, including branding (logo, CSS, favicon) and Homarr dashboard integration.</p>
                             <div class="install-cmd">sudo apt install halos-cockpit-config</div>
@@ -909,7 +914,7 @@
         </div>
 
         <footer>
-            <p>Last updated: 2026-06-04 07:50:29 UTC</p>
+            <p>Last updated: 2026-06-04 09:43:34 UTC</p>
             <p><a href="index.html">Back to all distributions</a></p>
         </footer>
     </div>
