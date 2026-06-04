@@ -26,16 +26,16 @@ Description: Modern APT package manager interface for Cockpit
  and Ubuntu systems.
 
 Package: cockpit-authelia-users
-Version: 0.2.3-1
+Version: 0.2.4-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 13071
+Installed-Size: 13079
 Depends: python3, cockpit (>= 276), python3-yaml, python3-argon2
-Filename: pool/trixie-stable/main/cockpit-authelia-users_0.2.3-1_all.deb
-Size: 1270748
-MD5sum: 405b54aa6601b3a75ed4b42523c2e54a
-SHA1: 904904fe647571a436089aeada3224c7253a1469
-SHA256: 2b1b82d9d60f06f2380a84322f2468680a86a7e81fa7de89bcbe073628597ce4
+Filename: pool/trixie-stable/main/cockpit-authelia-users_0.2.4-1_all.deb
+Size: 1273124
+MD5sum: cfa76c21e128c4cc8fa7347e4402b3f1
+SHA1: 707170acef491eb2985c8e396e6bda9c5a839c63
+SHA256: a272b7f7003bb0a22f5bbb51b3b98d023e17401746ec925569d2d49269f0bf11
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/cockpit-authelia-users
