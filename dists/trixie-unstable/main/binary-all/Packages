@@ -3835,17 +3835,17 @@ Description: HaLOS headless marine system metapackage
  Future headless-specific marine packages will be added as dependencies.
 
 Package: halos-homarr-branding
-Version: 0.2.6-1
+Version: 0.2.6-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 759
 Depends: xdg-utils
 Recommends: halos-core-containers | halos-homarr-container
-Filename: pool/trixie-unstable/main/halos-homarr-branding_0.2.6-1_all.deb
-Size: 401268
-MD5sum: bb440aec0c972d63a970665f4f910253
-SHA1: 8a07a501ee01a1b1590a88b523495b85aaf520e2
-SHA256: d525bb609c5b8396bac35b389571e79a94bf70b2d68955fc1f791c455a9fab98
+Filename: pool/trixie-unstable/main/halos-homarr-branding_0.2.6-2_all.deb
+Size: 401150
+MD5sum: 2c2fde03e36ff4005ebefd50aedeab05
+SHA1: c8a188f48fc0ee8833d277ab3a560f2e85f21d1a
+SHA256: 60f02cf7b3ccac2aeef8cc411931d63aa2fb0fec185ea27e242eb91b12df7388
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/halos
