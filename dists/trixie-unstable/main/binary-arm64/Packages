@@ -3577,17 +3577,17 @@ Description: Generate Debian packages from container application definitions
  ready for building with dpkg-buildpackage.
 
 Package: halos
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
 Depends: cockpit, cockpit-networkmanager, cockpit-networkmanager-halos, cockpit-storaged, cockpit-apt, cockpit-authelia-users, cockpit-container-apps, halos-cockpit-config, docker.io (>= 20.10) | docker-ce (>= 20.10), docker-compose | docker-compose-plugin, docker-cli, halos-core-containers, homarr-container-adapter
 Breaks: halos-mdns-publisher (<< 1.0.0)
-Filename: pool/trixie-unstable/main/halos_0.3.7-1_all.deb
-Size: 2454
-MD5sum: 56fb62960f53581c794617ef72c14b74
-SHA1: f2a520bcaa9b5916deb6b9a4f0179b053808b90a
-SHA256: b2e5b054c97929ace97e1625ca046f1b3381c34b374c682a81d6c9efef47acf9
+Filename: pool/trixie-unstable/main/halos_0.3.7-2_all.deb
+Size: 2376
+MD5sum: c8c31734d03d5c06abb63250c234d76d
+SHA1: deed6fdb33bc01a96012a157cb343e19797f3090
+SHA256: d98443f6155064857f1971c639fe1602820f617abf08be91dbefda42d48f8f00
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -3690,16 +3690,16 @@ Description: Core infrastructure stack (Traefik, Authelia, Homarr)
 Tag: role::container-app, field::core, category::infrastructure, interface::web
 
 Package: halos-desktop
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
 Depends: halos, halos-desktop-wallpaper, halos-browser-trust
-Filename: pool/trixie-unstable/main/halos-desktop_0.3.7-1_all.deb
-Size: 2270
-MD5sum: eb9b465f48228e4b5118a167a0adcce3
-SHA1: 5f83ecfa617b1c9033be50768404b0da2e5f4ad0
-SHA256: a4978176399eab4e07502776903e671e862fdea9402c1319ad38fec09386010a
+Filename: pool/trixie-unstable/main/halos-desktop_0.3.7-2_all.deb
+Size: 2202
+MD5sum: eb73118facd6baa7546ccdff2b4e4e6a
+SHA1: 7d34bef7549ad3144202560051a394bc179bb0bc
+SHA256: 95e29c4d374bc0afc2ddae3dbafa8af19da18725b6028b33241c57e186ff320b
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -3743,16 +3743,16 @@ Description: HaLOS branded default desktop wallpaper
  can be installed at a time.
 
 Package: halos-desktop-marine
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
 Depends: halos-desktop, halos-marine
-Filename: pool/trixie-unstable/main/halos-desktop-marine_0.3.7-1_all.deb
-Size: 2146
-MD5sum: 202a2a26246cdb71159940ee50f76e19
-SHA1: 90a58f845398643390154ad0cb8abb2a354c336d
-SHA256: 57afff0ad8c49a2b15427e921f3bfe60a5fd09206773991bd0c466a62019f819
+Filename: pool/trixie-unstable/main/halos-desktop-marine_0.3.7-2_all.deb
+Size: 2074
+MD5sum: b208793859ef05aaa1096c99b8acd0b6
+SHA1: f9ba405c3029cc36805160a7116cb941b4925a77
+SHA256: 9ed633e9e4b8fc119e027b056c4d81a928c37221f76671ac78281b20d447832b
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -3761,16 +3761,16 @@ Description: HaLOS desktop marine system metapackage
  Future desktop-specific marine packages will be added as dependencies.
 
 Package: halos-halpi2
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
 Depends: halos, halpid, halpi2-firmware, i2c-tools, can-utils
-Filename: pool/trixie-unstable/main/halos-halpi2_0.3.7-1_all.deb
-Size: 2174
-MD5sum: e6badb1389a5308ff728a7be775115b6
-SHA1: ac52b4df1c2188c349727563f6a56037e87ca2cc
-SHA256: 82555bdc2f373c0ae00ad14a6180b0266189c70e09c3015e03c6dfe1e57a78cd
+Filename: pool/trixie-unstable/main/halos-halpi2_0.3.7-2_all.deb
+Size: 2104
+MD5sum: ab8de7080114540430c6a7a2f1f33c1a
+SHA1: cd1e4dc14177c617bfd8131436cd686284b3c170
+SHA256: cffeb99b4adfcdc4ffc10e53e496fc7c4384d68e0637356c8570e7ccdb642a76
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -3780,16 +3780,16 @@ Description: HaLOS HALPI2 hardware support metapackage
  CAN bus utilities.
 
 Package: halos-halpi2-marine
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
 Depends: halos-halpi2, halos-marine, halos-ublox-config, signalk-halpi
-Filename: pool/trixie-unstable/main/halos-halpi2-marine_0.3.7-1_all.deb
-Size: 2196
-MD5sum: 3ce3571295444f5163e487ec7ffd56c1
-SHA1: d23fbaead4c3df798bacd1e366469de67e7d6115
-SHA256: 1088939082bd20dfd8f11576e5aa0917cf8e1d7832d7a8c97093c43e83d89dee
+Filename: pool/trixie-unstable/main/halos-halpi2-marine_0.3.7-2_all.deb
+Size: 2128
+MD5sum: 4e24f768c410847b63423d1970df997b
+SHA1: dd232245477be2adcdcadcec766659f1efc7b7ab
+SHA256: cc3bf6b5308e071c45f9b0cd8dbd27eb7fc3b85ebe4a864430556c301f0693ac
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -3799,16 +3799,16 @@ Description: HaLOS HALPI2 marine system metapackage
  monitoring via the HALPI2 daemon.
 
 Package: halos-headless
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
 Depends: halos
-Filename: pool/trixie-unstable/main/halos-headless_0.3.7-1_all.deb
-Size: 2112
-MD5sum: d8bf1ac6a7d03a43ca067f5ad4ef15f2
-SHA1: f5eb58e902444351c12fc620ada81c617d389c15
-SHA256: 9e859fc47ce14d3e612e583cd2089f64533013c788c1e66300a3578d181b9567
+Filename: pool/trixie-unstable/main/halos-headless_0.3.7-2_all.deb
+Size: 2050
+MD5sum: 6b60a8f831182a1a39d225f6d3b9b138
+SHA1: b50e11f5ded2802b545618df77985d8e4b50e6a4
+SHA256: bd55c58566f95738e2bc118061471bf74afe2efd6daf1ae8a81226f3f2c26498
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -3817,16 +3817,16 @@ Description: HaLOS headless variant metapackage
  Future headless-specific packages will be added as dependencies.
 
 Package: halos-headless-marine
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
 Depends: halos-headless, halos-marine
-Filename: pool/trixie-unstable/main/halos-headless-marine_0.3.7-1_all.deb
-Size: 2154
-MD5sum: d210da2164db31bd807d13b66d61e0b6
-SHA1: 4162072dcaf444901afab50dfd7305f40eba805a
-SHA256: bd19f879e1a243b8dac8a4a0a4c9ac6da185a2865a34d8e0b0a5b10c6a9fc424
+Filename: pool/trixie-unstable/main/halos-headless-marine_0.3.7-2_all.deb
+Size: 2076
+MD5sum: b52f0eb28f6e827295b35e0099cf8380
+SHA1: afd614fe1446349ebaae7363b1a279a66448b963
+SHA256: 36432b3d7d3c5259372017cda1bd29d3f81bc6f91c45570fc7b88d2e9c9e5b04
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
@@ -3857,16 +3857,16 @@ Description: HaLOS branding and default configuration for Homarr dashboard
  branding.
 
 Package: halos-marine
-Version: 0.3.7-1
+Version: 0.3.7-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 12
-Depends: halos (>= 0.3.7-1), gpsd, marine-container-store, marine-signalk-server-container
-Filename: pool/trixie-unstable/main/halos-marine_0.3.7-1_all.deb
-Size: 2282
-MD5sum: cee708b6c629f889dcbb62d783a8580d
-SHA1: 5fb45f173e6db40c100cc532fef9325cc0acbe16
-SHA256: a95d7750e18052332ed7cd358e7efaffbbb64acb8fe111cbcbabb211368931e3
+Depends: halos (>= 0.3.7-2), gpsd, marine-container-store, marine-signalk-server-container
+Filename: pool/trixie-unstable/main/halos-marine_0.3.7-2_all.deb
+Size: 2206
+MD5sum: 5c7d7439a8d67b763e8e425fe07a41ec
+SHA1: ef95687cd957c216a4b2ddca21deef9db06ae5d9
+SHA256: bd565cd23a761e5420df1c0d3f9b7d08e91087d9ade1f9b2fc6278e703df2275
 Section: metapackages
 Priority: optional
 Homepage: https://github.com/halos-org/halos-metapackages
