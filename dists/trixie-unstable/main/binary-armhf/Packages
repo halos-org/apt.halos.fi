@@ -3639,7 +3639,7 @@ Description: Make on-device browsers trust the system CA store
  variants.
 
 Package: halos-cockpit-config
-Version: 0.5.8-1
+Version: 0.5.8-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 66
@@ -3647,11 +3647,11 @@ Depends: cockpit, xdg-utils
 Breaks: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Replaces: cockpit-branding-halos (<< 0.3.0), halos-cockpit-branding (<< 0.4.0)
 Provides: cockpit-branding-halos, halos-cockpit-branding
-Filename: pool/trixie-unstable/main/halos-cockpit-config_0.5.8-1_all.deb
-Size: 33514
-MD5sum: bbe86187bc551a2c14d059f3031a31f2
-SHA1: 2e931c3d059a5d84009f40d21b50a69226f61d29
-SHA256: 93f98b36073792344e30e3a1bd4139029439fd0c37613fc4d747965d2855caef
+Filename: pool/trixie-unstable/main/halos-cockpit-config_0.5.8-2_all.deb
+Size: 33316
+MD5sum: 0f21b437be8d3a4610cc69421cce9d90
+SHA1: bb13b26c26d889abe23ac23409c3a95ffb95f18f
+SHA256: 0ca39394b6cc236c7156e5b734d95856ef9abf50f7af75c470c09b43933002e4
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/halos
