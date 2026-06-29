@@ -3945,17 +3945,17 @@ Description: Homarr dashboard adapter for HaLOS
   - Auto-adds containers with homarr.* labels to dashboard
 
 Package: marine-avnav-container
-Version: 20251028-18
+Version: 20251028-19
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 113
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-18_all.deb
-Size: 67660
-MD5sum: cd7745c01f2794ff6a841e02ef1ca14a
-SHA1: a61862071cf9da563cc4397d4ac6d2c709009003
-SHA256: a0d284fcd3577af38d9207f6da3204f558f64658c6743961f49dc992bbec4210
+Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-19_all.deb
+Size: 67684
+MD5sum: ce74d2f5d74231228edf4c14ac32a007
+SHA1: fe08bc65f164b9087a272caa12dc1dc1e49f9a00
+SHA256: 25759dd8663c895f478acd6129508276b72877418582055affb36fdb9916cc63
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -4008,10 +4008,10 @@ Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0
 Recommends: marine-influxdb-container
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-grafana-container_13.1.0-1_all.deb
-Size: 10484
-MD5sum: c9e004cf103b5c05322314186e233a6a
-SHA1: 72dca397860983a08c59cc4afdec4ebecfebade8
-SHA256: 0904d9a628d76bee3a9e926cc1652ffb1605a0a62055c03a9ea48c1fded8bd30
+Size: 10486
+MD5sum: 1fb62782f3752c87caae7a7c14f80d22
+SHA1: fb5b7af45c9793ba0ff0e1792e147d4eb9d755b3
+SHA256: 74e5422b2d0936086564a553f119aa6596a9514e9cefce32b926acb39f91b162
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -4036,10 +4036,10 @@ Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-influxdb-container_2.9.1-4_all.deb
-Size: 9218
-MD5sum: 20096206572bf0caec0d3d90c1bdfd76
-SHA1: 8610976d6b1aa37b91b4dc43394ab731730fe6b1
-SHA256: ce705ab21c75e90b8d38efffa2f7ebaeb2ac9efc20aff8d32e84894611e7c577
+Size: 9200
+MD5sum: 04e6dedcb27d6d36d3f0fcdbec5647bf
+SHA1: 10ec34ca760d2d1bce388cbaa551a79fbd1e90b0
+SHA256: 7aecf45873730e053ef2eebbeaed5b40d64267fdfc28adb92049f712618ce25a
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -4064,10 +4064,10 @@ Installed-Size: 53
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-15_all.deb
-Size: 12722
-MD5sum: 81a1b07db42e69719c21aa3f92fa7d89
-SHA1: 6dddaf78b46b3381e2d5597c3825c51ab88932e6
-SHA256: 28b20eb677632442777c42016475de3f094fdfebb79c4a3eac5caaee3061aa8e
+Size: 12726
+MD5sum: 8a486e7f4f0039677762c3c0734f877b
+SHA1: 85db69d1d7b273111455347558775d40e70d5065
+SHA256: 7b8684ce28ded87e36b20bd354f694b142b0122070241ac268684166ec1bf7bc
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -4093,10 +4093,10 @@ Installed-Size: 62
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.28.0-1_all.deb
-Size: 11574
-MD5sum: efe8623293f0dbb577b31a8897913542
-SHA1: 8727642412dee809441d271e3346a23c52802449
-SHA256: db3aa9b7b97a36677c93778728042f8cfc7efb33db5018010ee9d176366010d5
+Size: 11578
+MD5sum: 4ce83a2f43d06771a8cd2ee081e3b7f2
+SHA1: 32cd0cc64f025d690b84f2e3b119bc4d6220594a
+SHA256: c428488210caeabce2375fbcf79f5bc0d338177ee15da44e9bbf29f9077ff89a
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
