@@ -529,17 +529,17 @@ Description: Homarr dashboard adapter for HaLOS
   - Auto-adds containers with homarr.* labels to dashboard
 
 Package: marine-avnav-container
-Version: 20251028-18
+Version: 20251028-19
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 113
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-stable/main/marine-avnav-container_20251028-18_all.deb
-Size: 67664
-MD5sum: af1781a77a6b1dba501521e2fc5df407
-SHA1: d7bfbd7584b87acae57fd22bb18e7ddc1988fa28
-SHA256: 1863bd0518dfd673b8458d353abd8263f8baaaeecffca2ec6bfa6838b10115ec
+Filename: pool/trixie-stable/main/marine-avnav-container_20251028-19_all.deb
+Size: 67684
+MD5sum: d64efe6dcd19f7a893ae15bd6ff95310
+SHA1: 792e5d50459ecb4484f347be69454b912e11b152
+SHA256: 1cef1ac6e1127fe9bc933ec8487b9cc8f9b62120a7ca7de39044a535e9a604ff
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -584,18 +584,18 @@ Description: Marine container application store for Cockpit Container Apps
 Tag: role::container-store
 
 Package: marine-grafana-container
-Version: 13.0.2-3
+Version: 13.1.0-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 59
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Recommends: marine-influxdb-container
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-stable/main/marine-grafana-container_13.0.2-3_all.deb
+Filename: pool/trixie-stable/main/marine-grafana-container_13.1.0-1_all.deb
 Size: 10488
-MD5sum: 4213b2fbff217cf5b283c9dec0b2f6d7
-SHA1: 6740140dec0e7df3361a830101cfe0b372dd0778
-SHA256: c2ecae10ada6244161d0bd59690526b1bb0e47aff6ec8ffe52a06250b38eb6fd
+MD5sum: 8274f946b1cfbe899f9e4c790a5648e9
+SHA1: 7c559a1d0da31a8792c296a22e55e738a69f7b89
+SHA256: 95b9750a9eb7c7865bd17a5415b9e5a3602a6e6853a15bc9f60082e56d7adfd9
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -620,10 +620,10 @@ Installed-Size: 55
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-stable/main/marine-influxdb-container_2.9.1-4_all.deb
-Size: 9212
-MD5sum: 8a25c9a3b141907515e4aab4e8c9265d
-SHA1: a13476de5ea7cd1116393e0f40151a2869f8345b
-SHA256: 3d2037e48d1f173231d25853eb8ffab82407d83900cc5f1ff70781e9a7a559f2
+Size: 9216
+MD5sum: fe280f2851d0ea39f1cdc1fa8454affc
+SHA1: e0f2d159963658eb22a44572e1389c4e4b50c326
+SHA256: ea3ac573fd886413b7bb28abd0d07326851cb516e7561a0911d26e13ababa6d0
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -648,10 +648,10 @@ Installed-Size: 53
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-stable/main/marine-opencpn-container_5.12.4-15_all.deb
-Size: 12730
-MD5sum: 63ce87d46602295331a3d748107e9331
-SHA1: 819d450f18a2d6a6ce489e72a375fac6f69fc0f1
-SHA256: ac87effb4e7d692eb486bc343d6db784112ee47acb4a5e38fe8f94a627f60168
+Size: 12728
+MD5sum: d6d91d94aeb0f0123f22dd61fe883482
+SHA1: 5b2ab758d082c2811062b7fb996e78323b1fe161
+SHA256: 1f58d5cbfc3addc1cbfa674a91e98bab5d7acea515a800090de6ae84fdd15a82
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -670,17 +670,17 @@ Description: Open source chart plotter and navigation software
 Tag: role::container-app, field::marine, field::navigation, field::geography, category::navigation, category::chartplotters, scope::application, interface::web, use::routing, works-with::maps, status::experimental, x-display-name::OpenCPN
 
 Package: marine-signalk-server-container
-Version: 2.27.0-5
+Version: 2.29.0-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 62
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-stable/main/marine-signalk-server-container_2.27.0-5_all.deb
+Filename: pool/trixie-stable/main/marine-signalk-server-container_2.29.0-1_all.deb
 Size: 11584
-MD5sum: 6422c7d9978ba80f7821760ca8e44032
-SHA1: 7b3f231d745d824ed13213414a617afe50462a1b
-SHA256: 3652991cf092dd2392a01a20b3ac0b1716b5e44a4a7848a82da220fe66eef1d3
+MD5sum: 83b70b07fe2caac0e96ac59184dcb976
+SHA1: a5e81cfc7d4fb9318d3ad74582d1168b5753baa7
+SHA256: 26b7c4351b61ddfb66eb26b5a514e866550b0b4cbb3df93481f91b92bbe3b941
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
