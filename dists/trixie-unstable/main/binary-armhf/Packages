@@ -3932,10 +3932,10 @@ Installed-Size: 113
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-19_all.deb
-Size: 67686
-MD5sum: 65db458429bf5d4588e2b536604ba5e6
-SHA1: 10b03ae920fcda2c24dee1dc077072554f39a867
-SHA256: 0c59ba4a2ccca80817ee81c06707ee74ecb6f9959fb20a20c03db011a0a56977
+Size: 67682
+MD5sum: 131211f943bfb66b15d1a161a1ba250f
+SHA1: 61577277e370aec4b3b348512432b83994c0f0e3
+SHA256: b00a64a2d129b959a7fbb227d4bf1e9598ba2d302e97e11cb8c54e249427e72e
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -3988,10 +3988,10 @@ Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0
 Recommends: marine-influxdb-container
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-grafana-container_13.1.0-1_all.deb
-Size: 10496
-MD5sum: 844d250deb760f7cac7bea1216ad3337
-SHA1: b62318a636ffc033e40ac9cae1ad15a5db93ffc0
-SHA256: 3865dbef757effc85504c784f39a833a2314a66fc23de0e88f57ad31d10f82bf
+Size: 10488
+MD5sum: b60d513dd344296eea65c0699f2a4e00
+SHA1: 4d052bc7d08a70760d7077fe485e54c67fd7289e
+SHA256: e393351b53035aa18fc445b33ea61c029d22815d6d7a3520a34b5c0ed032c965
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -4009,17 +4009,17 @@ Description: Data visualization and monitoring platform
 Tag: role::container-app, field::marine, category::visualization, category::monitoring, interface::web, use::monitoring, works-with::logfile, x-display-name::Grafana
 
 Package: marine-influxdb-container
-Version: 2.9.1-4
+Version: 2.9.1-5
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 55
+Installed-Size: 65
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-unstable/main/marine-influxdb-container_2.9.1-4_all.deb
-Size: 9218
-MD5sum: 431c8a5bb774756a8059f6c515f3d303
-SHA1: 8856711a5041dd48265690fb7ac9dae9fef8d386
-SHA256: d703e27e2e1c4006ff62a51b3c6899a7c5ca2feca1590bab742fadec130b262a
+Filename: pool/trixie-unstable/main/marine-influxdb-container_2.9.1-5_all.deb
+Size: 11872
+MD5sum: 4be694789ed274db71a8d998de2ac594
+SHA1: 4d19d8b3a30b25c5cec0d91fbc1250918833dff8
+SHA256: af5beb96b1a65a6c4aa96f311e9ddb079c63034f930eb157a0203b8c6e2579ed
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -4044,10 +4044,10 @@ Installed-Size: 53
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-15_all.deb
-Size: 12726
-MD5sum: 5d4404c05cd03bbfe935ac875c5cf5eb
-SHA1: acca07972b172f9cf093fe2e5a90e73044498661
-SHA256: 6c15245cd670ada4aff12db8654d303af2316a6d2c948d3a61557e0e56738780
+Size: 12716
+MD5sum: 080ec225821e9e6a8ca51f32972d05a2
+SHA1: 860cf50871423a2e37d25c06f744db28e8b7386e
+SHA256: 82b7d387ddbc3e00924bef6c73917282a4e9321aefa42eaa089c8b14fc95c926
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -4073,10 +4073,10 @@ Installed-Size: 62
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.30.0-2_all.deb
-Size: 11584
-MD5sum: 3f0a1d3ca5e8882e74bc7a96d080e188
-SHA1: 24660a8376fb9facf6e4329f1fc6282b4f67f21a
-SHA256: b853e72f5c533616227c0a03118562f7614beb0b50282f16049c63ff41a99cfa
+Size: 11582
+MD5sum: 8a6580f3dc665d5586bb3e8e2c9d2769
+SHA1: 2dcd6633b275f0feb9cb63057b38e309c2ecaa07
+SHA256: a05a030d79077bc68226a1b06c22a7fab0b5db22033298dd216e9e9a71f47b33
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
