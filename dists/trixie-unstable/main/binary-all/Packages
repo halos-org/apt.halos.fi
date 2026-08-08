@@ -3933,9 +3933,9 @@ Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-avnav-container_20251028-19_all.deb
 Size: 68374
-MD5sum: e0809833ccc3fb8786a08132264ef4c6
-SHA1: 0227ae5bc47596866f5093106c6b2ae543438a77
-SHA256: 74800467ca1bfc14eeb4d0c495ed94fcdaa7acce0e6735ee086a17c9b51fbfab
+MD5sum: b9a4f15ef4272e10b437fb1225228c51
+SHA1: 7e343f7a073fb69aa6a445a0fed1678174ed1575
+SHA256: 10f7700c667e38b38a8f4539d72e7a226e45ef6bd328a3fb1fb244f43e4e1144
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -3988,10 +3988,10 @@ Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0
 Recommends: marine-influxdb-container
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-grafana-container_13.1.0-1_all.deb
-Size: 11148
-MD5sum: 8f98ca8883e25c231c078a96f128b919
-SHA1: cb08c6903aef972b100b330d0ee35b34df100e8c
-SHA256: 7535f26a8bf12f4ca0af37cbf0ce7b8486e11a920fbdfbf79c1582712ff2efff
+Size: 11150
+MD5sum: b283285102ef3800091f42b5dad86e52
+SHA1: f8015d81eaf109b3ee605a493252ad76083f2278
+SHA256: 364d7d4e044fbeb7ff39fc2fa0544f78b3b27ecede218418520f227366c0368d
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
@@ -4016,10 +4016,10 @@ Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-influxdb-container_2.9.1-5_all.deb
-Size: 12536
-MD5sum: a012c9f905f278a40bb5655752b1c2eb
-SHA1: ef5a0bbd0c58a1d5d261b40b073473232b37b80a
-SHA256: cf8803d71c36383c1f135464f7992bf544cbc26ec7f7f03ef897cb05e7b09d38
+Size: 12542
+MD5sum: 1af89140b6098ebd73b0d3fadf9a861a
+SHA1: 9d042df444417bdef74a94b494cd84cea967e039
+SHA256: a8cbbd803e98b3b768ff3c29a068cb3bc108da1fe354b2018b91e932e7ab8cd7
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -4044,10 +4044,10 @@ Installed-Size: 56
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-15_all.deb
-Size: 13426
-MD5sum: eb0d911269d53265c36e6d634bc4b8c3
-SHA1: 9f1023e2883423cda8af4cd2a53aaf913d9d5157
-SHA256: 4afe802b5f29dff372d5bd405fc14dbeb868830b3c9626cdedb1a6b486a3fc66
+Size: 13412
+MD5sum: 88a7aa6313464487497b234d9037fb61
+SHA1: 5404350aedc7eabf5f716a8da39da83b6ba324cb
+SHA256: 0eb21f24ceab0fb11cd2cf9c0e5e9dec9d70deaab538ef77e7450ffb4eb0622b
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -4066,17 +4066,17 @@ Description: Open source chart plotter and navigation software
 Tag: role::container-app, field::marine, field::navigation, field::geography, category::navigation, category::chartplotters, scope::application, interface::web, use::routing, works-with::maps, status::experimental, x-display-name::OpenCPN
 
 Package: marine-signalk-server-container
-Version: 2.30.0-7
+Version: 2.30.0-8
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 78
+Installed-Size: 86
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.30.0-7_all.deb
-Size: 16454
-MD5sum: a2f0a59a410b4ea9b339f2199bc32490
-SHA1: c6167ddaf6fd77b6ea3b97f363c2d2cafe43a2cb
-SHA256: 283da4447e7b838598664bf53ffdc4fce02d87acb8f48d7f18cd1961bee84e8d
+Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.30.0-8_all.deb
+Size: 19270
+MD5sum: 805a5727ae0101c2fcab4272f5f95635
+SHA1: 4e87f6cadfa95a4786aa0af5b7c62894832d38dd
+SHA256: ea5b1f7d380343b3ca34d5c7eb4bbb121bd0b1a96fcb4fcfdf65aac56d79916f
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
