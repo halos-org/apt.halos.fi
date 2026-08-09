@@ -3415,16 +3415,16 @@ Description: Self-hosted ZeroTier network controller with web UI for centralized
 Tag: role::container-app, x-display-name::ztnet
 
 Package: cockpit-apt
-Version: 0.3.9-1
+Version: 0.3.10-1
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 13602
+Installed-Size: 13605
 Depends: cockpit (>= 276), python3, python3-apt
-Filename: pool/trixie-unstable/main/cockpit-apt_0.3.9-1_all.deb
-Size: 1343364
-MD5sum: 78b9a69d03df8a2e980d4cf1f991acc6
-SHA1: a53ea553cf7f9707bbb3f68ff1b689c4d99bc675
-SHA256: 1e5f7d7419b51b4fe154f4b853e0d6d3cac01cef8ea5d3ec2524ac28f9a2b935
+Filename: pool/trixie-unstable/main/cockpit-apt_0.3.10-1_all.deb
+Size: 1344372
+MD5sum: d25eaa5b01365deb70a728f50fc7d203
+SHA1: 5f9549e9c72edea4ecd3da2600d0f886bd53761d
+SHA256: 030cf9a72def66ce223e7361d7547b9b7d43cb71eb5186647b74b5dd40b406cc
 Section: admin
 Priority: optional
 Homepage: https://github.com/halos-org/cockpit-apt
