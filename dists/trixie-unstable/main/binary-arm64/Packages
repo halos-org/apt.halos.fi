@@ -3952,10 +3952,10 @@ Installed-Size: 116
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-avnav-container_20260709-1_all.deb
-Size: 68372
-MD5sum: 33c2a1c9fa754ea5bc354929fc5642c0
-SHA1: dfd3a7e9cdd5455b784069c8ca9f81addf4acfd6
-SHA256: 52799cd41593f037b7f105fd42886f5e8b1372fc8f49f3aab58db70da38901f4
+Size: 68356
+MD5sum: 186818f5caa152915fc7dafc3afd4e35
+SHA1: 087346b46de499aa588a5b9a19e86446a451e953
+SHA256: 292b6ac87505c56d3112590dde41614582845c1336b843eaa1ebcfd629a4a462
 Section: graphics
 Priority: optional
 Homepage: https://www.wellenvogel.net/software/avnav/docs/beschreibung.html
@@ -4000,25 +4000,26 @@ Description: Marine container application store for Cockpit Container Apps
 Tag: role::container-store
 
 Package: marine-grafana-container
-Version: 13.1.3-1
+Version: 13.1.3-2
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
-Installed-Size: 63
+Installed-Size: 66
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
-Recommends: marine-influxdb-container
+Recommends: marine-influxdb-container, marine-questdb-container
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
-Filename: pool/trixie-unstable/main/marine-grafana-container_13.1.3-1_all.deb
-Size: 11126
-MD5sum: 62db6a45bb321ce745e1ad850d607ae5
-SHA1: a521f14a689819df7f7274e165c40ab4f0267d58
-SHA256: 7a3b3ee67848c84b32310910163176963aaade2d6644441d7e68c3b0997baebe
+Filename: pool/trixie-unstable/main/marine-grafana-container_13.1.3-2_all.deb
+Size: 12270
+MD5sum: 813ab4883f8ddb2464f0370b22bb8d4d
+SHA1: 4c78f2008fa6596c2055743f04c673379691a48b
+SHA256: def9fdae7208d0ba7a7861c5ebc0883fa5980b2f839ece9cc37a2fcb5240502c
 Section: web
 Priority: optional
 Homepage: https://grafana.com/
 Description: Data visualization and monitoring platform
  Grafana is an open-source platform for monitoring and observability. Create
- beautiful dashboards to visualize marine data from InfluxDB, Signal K, and
- other data sources.
+ beautiful dashboards to visualize marine data recorded by QuestDB and
+ InfluxDB. A datasource for each is provisioned automatically when that app
+ is installed, so a fresh dashboard has something to query.
  .
  Features:
  - Rich visualization options (graphs, gauges, maps)
@@ -4036,10 +4037,10 @@ Installed-Size: 68
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-influxdb-container_2.9.1-5_all.deb
-Size: 12526
-MD5sum: a46bb915e2f4f7c808d8fb7082c8c438
-SHA1: a821758681e2173e0808b74fafa2862b54339d9a
-SHA256: 674e39f48bd6811a11978921251022c679f08336b28c4d9e98e6676485aa33a4
+Size: 12530
+MD5sum: 2920a3016272d1e38847b41556240079
+SHA1: 3a53a459a0ad588296c692044dbdae3d35579396
+SHA256: 547fa5f5e14b98079c3feafceee027466d22b4c1457e8e4cb8aebce0fed75903
 Section: net
 Priority: optional
 Homepage: https://www.influxdata.com/
@@ -4064,10 +4065,10 @@ Installed-Size: 56
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-opencpn-container_5.12.4-15_all.deb
-Size: 13406
-MD5sum: 0a19f7c13d378db6d7491e369a527503
-SHA1: 0b6f3da578b4a354d0365de269883c2a379d046e
-SHA256: 4d9bc1f91d51d3d923030d55d3fcd8c7bfe9e1405371f7eb9b5e364c0913938d
+Size: 13410
+MD5sum: 70f2a9c33c955aaef520791bebc68b66
+SHA1: a4a3b31c2c435c6e438b87e75281276e84d00fee
+SHA256: 7c1fabfe52c04a0f3b26b56d44c780fea65b60777fe6d90bb7c715b69c1fb230
 Section: graphics
 Priority: optional
 Homepage: https://opencpn.org/
@@ -4093,10 +4094,10 @@ Installed-Size: 56
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10)
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-questdb-container_10.0.0-1_all.deb
-Size: 9828
-MD5sum: 95e6d1f26b99804c5740227765da51dc
-SHA1: d33f246c513ca63027d0be2fafd2b7d1b37a92de
-SHA256: b92d70a60a994fb1600fd422152917ae0d3cb9b3702277548f35e82b6f840af4
+Size: 9838
+MD5sum: d50b04aa8bff98b73f7744c0194d4aaa
+SHA1: f551806137f15ed32d042675b705304c44d04268
+SHA256: bc7e340203b63fb5c96b8b28f7c8f826e838225c2493068d50b9c91279627115
 Section: net
 Priority: optional
 Homepage: https://questdb.com/
@@ -4125,10 +4126,10 @@ Installed-Size: 93
 Depends: docker-compose | docker-compose-plugin, halos-core-containers (>= 0.5.0), docker.io (>= 20.10) | docker-ce (>= 20.10), python3-bcrypt
 Breaks: halos-core-containers (<< 0.3.2), homarr-container-adapter (<< 0.4.6)
 Filename: pool/trixie-unstable/main/marine-signalk-server-container_2.31.1-2_all.deb
-Size: 21220
-MD5sum: cf497c96d199032460ac9f23b7595abe
-SHA1: 8761efcf5ba487b8e49182063d1e277f8c5c238b
-SHA256: d7ae2674bc3d8dfdf8124e37fbd6ff728f6c5d4d845cd04a62c410e7c5935bcc
+Size: 21232
+MD5sum: 81db09669d8b9e2f37661a5a390ac21c
+SHA1: 1ba9030f8a05071f3479f443d877d1354d2ce155
+SHA256: 9b342915ebe39929b00354f3849c6c81fe599320e1c93359377f70a1cdddaacc
 Section: net
 Priority: optional
 Homepage: https://signalk.org/
