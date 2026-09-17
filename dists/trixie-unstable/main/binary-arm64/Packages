@@ -3609,16 +3609,16 @@ Description: Base system metapackage for HaLOS
  of Raspberry Pi systems through a web interface.
 
 Package: halos-browser-trust
-Version: 0.1.0-6
+Version: 0.1.0-7
 Architecture: all
 Maintainer: Matti Airas <matti.airas@hatlabs.fi>
 Installed-Size: 20
 Depends: libnss3, p11-kit-modules
-Filename: pool/trixie-unstable/main/halos-browser-trust_0.1.0-6_all.deb
-Size: 3354
-MD5sum: cd42ede70ad73eb4d426a48a632e9d9d
-SHA1: 6d1ad235fe57fb7652d126b42be8362a4fceae10
-SHA256: a8bf5ec25e2e78498435d8777ba855e32f61cec4ab77d30e692411e56ab89d1b
+Filename: pool/trixie-unstable/main/halos-browser-trust_0.1.0-7_all.deb
+Size: 3392
+MD5sum: 72c13cca04781c349cd93edfaec3585c
+SHA1: 33211c4a3ced68fe710a20199cf0b3e2985d35ab
+SHA256: 2c7d31aa2144f145ad4be1b1ff58d726d9774ef47bc477bf25ef3ea515bf0b3e
 Section: misc
 Priority: optional
 Homepage: https://github.com/halos-org/halos-browser-trust
