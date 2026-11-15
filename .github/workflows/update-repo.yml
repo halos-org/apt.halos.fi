@@ -217,8 +217,9 @@ jobs:
                     echo "  No suffix found, using defaults: distro=$pkg_distro, component=$pkg_component"
                   fi
 
-                  # Create canonical filename
-                  correct_filename="${package_name}_${actual_version}_${architecture}.deb"
+                  # Create canonical filename. Debian archives leave the epoch
+                  # out of pool filenames; a colon in the URL path is untested here.
+                  correct_filename="${package_name}_${actual_version#*:}_${architecture}.deb"
                   final_path="packages/$correct_filename"
 
                   mv "$temp_file" "$final_path"
